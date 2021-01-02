@@ -1,9 +1,10 @@
 import React from 'react';
 import styled from 'styled-components';
+import Container from '../container';
 
-const ImageContainer = styled.img.attrs(props => ({
-    src: (props.src != undefined) ? props.src : '/imgs/logo.svg',
-    alt: (props.alt != undefined) ? props.alt : 'Logo',
+const Image = styled.img.attrs(({src,alt}) => ({
+    src: (src != undefined) ? src : '/imgs/logo.svg',
+    alt: (alt != undefined) ? alt : 'Logo',
   }))`
     width:6rem;
 	min-width: 6rem;
@@ -12,8 +13,9 @@ const ImageContainer = styled.img.attrs(props => ({
 
 const DefaultImage = (props) =>{
     return(
-        <ImageContainer>
-        </ImageContainer>
+        <Container width={'10%'}>
+            <Image/>
+        </Container>
     )
 }
 

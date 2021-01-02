@@ -2,18 +2,23 @@ import React,{useState} from 'react';
 import styled from 'styled-components';
 import colors from '../../constants/Colors';
 import Image from '../image';
+import Title from '../title';
 
 const Header = styled.div`
     width:100%;
     height: 6rem;
+    padding :1rem;
+    display:flex;
+    flex-direction:row;
     color:${colors.slowlycolor};
-    background-color:${(props) => {return (props.bgColor != undefined) ? props.bgColor: colors.seconddarkcolor}};
+    background-color:${({bgColor}) => {return (bgColor != undefined) ? bgColor: colors.seconddarkcolor}};
 `;
 
-const DefaultHeader = (props) =>{
+const DefaultHeader = () =>{
     return(
         <Header>
             <Image></Image>
+            <Title text={"PeraMe Software"}></Title>
         </Header>
     )
 }

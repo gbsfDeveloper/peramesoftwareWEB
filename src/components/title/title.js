@@ -1,17 +1,19 @@
 import React from 'react';
 import styled from 'styled-components';
+import Container from '../container';
 
 const Title = styled.h2`
     font-weight:bold;
-    color:#4298f4;
+    font-size:${({fontSize})=>{return (fontSize != undefined) ? fontSize : '2rem'}};
 `;
 
-const TitleComp = (params) =>{
-    const text = params.text;
+const TitleComp = ({text}) =>{
     return(
-        <Title>
-            {text}
-        </Title>
+        <Container width={'60%'}>
+            <Title>
+                {text}
+            </Title>
+        </Container>
     )
 }
 
