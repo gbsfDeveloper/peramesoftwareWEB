@@ -10,10 +10,11 @@ const SocialButton = styled.a.attrs(({href}) => ({
     justify-self:'center';
 	font-size: 1.5em;
     padding-left: 0.8em;
-	/* display: inline-block; */
     transition: all 0.3s;
+    &:visited{
+        color:${colors.slowlycolor};
+    }
     &:hover{
-        color:${colors.primary};
         font-size: 2em;
         padding-left: 0.4em;
     }

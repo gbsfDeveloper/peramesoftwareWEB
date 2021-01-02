@@ -14,7 +14,6 @@ const Container = styled.div`
 
 const DefaultContainer = (props) =>{
     const {width,flexDirection,justifyItems,justifyContent,alignItems,alignContent,children} = props
-    console.log(justifyContent);
     return(
         <Container 
             width={width}
