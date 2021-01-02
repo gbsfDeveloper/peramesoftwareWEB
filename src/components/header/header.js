@@ -3,6 +3,7 @@ import styled from 'styled-components';
 import colors from '../../constants/Colors';
 import Image from '../image';
 import Title from '../title';
+import SocialContainer from '../socialContainer';
 
 const Header = styled.div`
     width:100%;
@@ -19,6 +20,7 @@ const DefaultHeader = () =>{
         <Header>
             <Image></Image>
             <Title text={"PeraMe Software"}></Title>
+            <SocialContainer/>
         </Header>
     )
 }
