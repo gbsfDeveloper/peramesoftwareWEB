@@ -8,15 +8,14 @@ const SocialButton = styled.a.attrs(({href}) => ({
   }))`
     align-self:'center';
     justify-self:'center';
-	font-size: 1.5em;
-    padding-left: 0.8em;
+	font-size: 2rem;
+    padding-left: 0.8rem;
     transition: all 0.3s;
     &:visited{
         color:${colors.slowlycolor};
     }
     &:hover{
-        font-size: 2em;
-        padding-left: 0.4em;
+        font-size: 2.5rem;
     }
 `;
 

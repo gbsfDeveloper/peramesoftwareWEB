@@ -5,7 +5,7 @@ import SocialButton from '../socialbutton';
 
 const SocialContainer = () =>{
     return(
-        <Container width={'10%'}>
+        <Container>
             <SocialButton 
                 href={'https://www.facebook.com/gelaciobenyair.santosfernandez.3'}
                 Class={'fab fa-facebook-square'}

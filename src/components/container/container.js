@@ -4,6 +4,7 @@ import styled from 'styled-components';
 const Container = styled.div`
     width:${({width})=>{return (width !== undefined) ? width : '10%'}};
     display:flex;
+    flex-grow:${({flexGrow})=>{return (flexGrow !== undefined) ? flexGrow : ''}};
     flex-wrap: ${({flexWrap})=>{return (flexWrap !== undefined) ? flexWrap : 'row'}};
     flex-direction:${({flexDirection})=>{return (flexDirection !== undefined) ? flexDirection : 'row'}};
     justify-content:${({justifyContent})=>{return (justifyContent !== undefined) ? justifyContent : 'center'}};
@@ -13,10 +14,11 @@ const Container = styled.div`
 `
 
 const DefaultContainer = (props) =>{
-    const {width,flexDirection,justifyItems,justifyContent,alignItems,alignContent,children} = props
+    const {width,flexDirection,justifyItems,justifyContent,alignItems,alignContent,flexGrow,children} = props
     return(
         <Container 
             width={width}
+            flexGrow={flexGrow}
             flexDirection={flexDirection}
             justifyItems={justifyItems}
             justifyContent={justifyContent}
