@@ -9,7 +9,7 @@ const Title = styled.h2`
 
 const TitleComp = ({text}) =>{
     return(
-        <Container width={'80%'}justifyContent={'flex-start'}>
+        <Container width={'80vw'} justifyContent={'flex-start'}>
             <Title>
                 {text}
             </Title>

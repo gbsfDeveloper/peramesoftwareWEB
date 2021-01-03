@@ -1,6 +1,7 @@
 import React from 'react';
 import LoginContainer from './components/loginContainer';
 import Header from './components/header';
+import Global from "./styles/global";
 import styled from 'styled-components';
 
 const Main = styled.div`
@@ -15,6 +16,7 @@ const Main = styled.div`
 const App = () => {
     return (
         <Main>
+            <Global/>
             <Header/>
         </Main>
     )

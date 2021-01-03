@@ -1,8 +1,10 @@
 import React from 'react';
 import styled from 'styled-components';
+import px2vw from "../../utils/px2vw";
 
 const Container = styled.div`
-    width:${({width})=>{return (width !== undefined) ? width : '10%'}};
+    width:${({width})=>{return (width !== undefined) ? width : '10vw'}};
+    max-width: 100%;
     display:flex;
     flex-grow:${({flexGrow})=>{return (flexGrow !== undefined) ? flexGrow : ''}};
     flex-wrap: ${({flexWrap})=>{return (flexWrap !== undefined) ? flexWrap : 'row'}};
@@ -11,6 +13,10 @@ const Container = styled.div`
     justify-items:${({justifyItems})=>{return (justifyItems !== undefined) ? justifyItems : 'center'}};
     align-items:${({alignItems})=>{return (alignItems !== undefined) ? alignItems : 'center'}};
     align-content :${({alignContent})=>{return (alignContent !== undefined) ? alignContent : 'center'}};
+    
+    @media (min-width: 1024px) {
+        flex-wrap: nowrap;
+    }
 `
 
 const DefaultContainer = (props) =>{

@@ -7,13 +7,11 @@ const Image = styled.img.attrs(({src,alt}) => ({
     alt: (alt != undefined) ? alt : 'Logo',
   }))`
     width:6rem;
-	min-width: 6rem;
-	max-width: 6rem;
 `;
 
 const DefaultImage = (props) =>{
     return(
-        <Container width={'10%'}>
+        <Container>
             <Image/>
         </Container>
     )
