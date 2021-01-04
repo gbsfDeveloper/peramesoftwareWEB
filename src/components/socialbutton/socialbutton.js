@@ -16,7 +16,7 @@ const SocialButton = styled.a.attrs(({href}) => ({
         color:${colors.slowlycolor};
     }
     &:hover{
-        font-size: ${px2vw(45)};
+        font-size: ${px2vw(75)};
     }
 
     @media (min-width: 768px) {
