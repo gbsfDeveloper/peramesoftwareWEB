@@ -1,4 +1,5 @@
 import React,{useState} from 'react';
+import useViewport from '../../hooks/useViewport';
 import styled from 'styled-components';
 import colors from '../../constants/Colors';
 import Image from '../image';
@@ -17,11 +18,22 @@ const Header = styled.div`
 `;
 
 const DefaultHeader = () =>{
+    let {Width} = useViewport();
+    console.log(Width);
     return(
         <Header>
-            <Image></Image>
-            <Title text={"PeraMe Software"}></Title>
-            <SocialContainer/>
+            <Image
+                Width={ (Width>768) ? '10vw' : '15vw'}
+            />
+            <Title 
+                text={"PeraMe Software"}
+                Width={ (Width>768) ? '80vw' : '70vw'}
+                justifyContent={'flex-start'}
+                padding={`0vw 0vw 0vw ${px2vw(15)}`}
+            />
+            <SocialContainer
+                Width={ (Width>768) ? '10vw' : '15vw'}
+            />
         </Header>
     )
 }

@@ -1,4 +1,4 @@
-import React from 'react';
+import React,{useState} from 'react';
 import styled from 'styled-components';
 import px2vw from "../../utils/px2vw";
 import Container from '../container';
@@ -15,9 +15,9 @@ const Title = styled.h2`
     }
 `;
 
-const TitleComp = ({text}) =>{
+const TitleComp = ({text,Width,justifyContent,padding}) =>{
     return(
-        <Container width={'80vw'} justifyContent={'flex-start'} padding={`0vw 0vw 0vw ${px2vw(15)}` }>
+        <Container width={Width} justifyContent={justifyContent} padding={padding}>
             <Title>
                 {text}
             </Title>
