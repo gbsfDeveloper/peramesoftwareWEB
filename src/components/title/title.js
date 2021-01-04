@@ -5,20 +5,20 @@ import Container from '../container';
 
 const Title = styled.h2`
     font-weight:bold;
-    font-size:${({fontSize})=>{return (fontSize != undefined) ? fontSize : px2vw(70)}};
+    font-size:${({FontSize})=>{return (FontSize != undefined) ? px2vw(FontSize) : px2vw(70)}};
     @media (min-width: 768px) {
-        font-size: ${px2vw(40)};
+        font-size: ${({FontSize})=>{return (FontSize != undefined) ? px2vw((FontSize - (FontSize * 0.3))) : px2vw(40)}};
     }
 
     @media (min-width: 1024px) {
-        font-size: ${px2vw(35)};
+        font-size: ${({FontSize})=>{return (FontSize != undefined) ? px2vw((FontSize - (FontSize * 0.35))) : px2vw(35)}};
     }
 `;
 
-const TitleComp = ({Text,Width,JustifyContent,Padding}) =>{
+const TitleComp = ({Text,Width,JustifyContent,Padding,FontSize}) =>{
     return(
         <Container width={Width} justifyContent={JustifyContent} padding={Padding}>
-            <Title>
+            <Title FontSize={FontSize}>
                 {Text}
             </Title>
         </Container>

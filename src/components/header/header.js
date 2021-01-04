@@ -30,11 +30,12 @@ const DefaultHeader = () =>{
                 Text={"PeraMe Software"}
                 Width={ (Width>768) ? '80vw' : '70vw'}
                 JustifyContent={'flex-start'}
-                Padding={`0vw 0vw 0vw ${px2vw(15)}`}
+                FontSize={50}
             />
             <SocialContainer
                 Width={ (Width>768) ? '10vw' : '20vw'}
                 Wrap={'wrap'}
+                FontSize={50}
             />
         </Header>
     )
