@@ -15,11 +15,11 @@ const Title = styled.h2`
     }
 `;
 
-const TitleComp = ({text,Width,justifyContent,padding}) =>{
+const TitleComp = ({Text,Width,JustifyContent,Padding}) =>{
     return(
-        <Container width={Width} justifyContent={justifyContent} padding={padding}>
+        <Container width={Width} justifyContent={JustifyContent} padding={Padding}>
             <Title>
-                {text}
+                {Text}
             </Title>
         </Container>
     )

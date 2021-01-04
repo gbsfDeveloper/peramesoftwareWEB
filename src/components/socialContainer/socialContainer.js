@@ -3,9 +3,9 @@ import styled from 'styled-components';
 import Container from '../container';
 import SocialButton from '../socialbutton';
 
-const SocialContainer = ({Width}) =>{
+const SocialContainer = ({Width,Wrap}) =>{
     return(
-        <Container flexWrap={'wrap'} width={Width}>
+        <Container flexWrap={Wrap} width={Width}>
             <SocialButton 
                 href={'https://www.facebook.com/gelaciobenyair.santosfernandez.3'}
                 Class={'fab fa-facebook-square'}

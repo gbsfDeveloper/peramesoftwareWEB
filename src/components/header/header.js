@@ -26,13 +26,14 @@ const DefaultHeader = () =>{
                 Width={ (Width>768) ? '10vw' : '15vw'}
             />
             <Title 
-                text={"PeraMe Software"}
+                Text={"PeraMe Software"}
                 Width={ (Width>768) ? '80vw' : '70vw'}
-                justifyContent={'flex-start'}
-                padding={`0vw 0vw 0vw ${px2vw(15)}`}
+                JustifyContent={'flex-start'}
+                Padding={`0vw 0vw 0vw ${px2vw(15)}`}
             />
             <SocialContainer
                 Width={ (Width>768) ? '10vw' : '15vw'}
+                Wrap={'wrap'}
             />
         </Header>
     )
