@@ -19,7 +19,6 @@ const Header = styled.div`
 
 const DefaultHeader = () =>{
     let {Width} = useViewport();
-    console.log(Width);
     return(
         <Header>
             <Image
