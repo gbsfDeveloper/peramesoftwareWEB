@@ -23,6 +23,7 @@ const DefaultHeader = () =>{
         <Header>
             <Image
                 Width={'10vw'}
+                ImgWidth={'100'}
                 Src={'/imgs/logo.svg'}
             />
             <Title 
