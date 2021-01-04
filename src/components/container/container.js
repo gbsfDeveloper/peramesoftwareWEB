@@ -4,7 +4,6 @@ import px2vw from "../../utils/px2vw";
 
 const Container = styled.div`
     width:${({width})=>{return (width !== undefined) ? width : '10vw'}};
-    /* max-width: ${({width})=>{return (width !== undefined) ? width : '10vw'}};; */
     display:flex;
     flex-grow:${({flexGrow})=>{return (flexGrow !== undefined) ? flexGrow : ''}};
     flex-wrap: ${({flexWrap})=>{return (flexWrap !== undefined) ? flexWrap : 'nowrap'}};
