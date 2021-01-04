@@ -22,7 +22,7 @@ const DefaultHeader = () =>{
     return(
         <Header>
             <Image
-                Width={ (Width>768) ? '10vw' : '15vw'}
+                Width={'10vw'}
                 Src={'/imgs/logo.svg'}
             />
             <Title 
@@ -32,7 +32,7 @@ const DefaultHeader = () =>{
                 Padding={`0vw 0vw 0vw ${px2vw(15)}`}
             />
             <SocialContainer
-                Width={ (Width>768) ? '10vw' : '15vw'}
+                Width={ (Width>768) ? '10vw' : '20vw'}
                 Wrap={'wrap'}
             />
         </Header>
