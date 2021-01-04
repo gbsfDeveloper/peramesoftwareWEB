@@ -23,6 +23,7 @@ const DefaultHeader = () =>{
         <Header>
             <Image
                 Width={ (Width>768) ? '10vw' : '15vw'}
+                Src={'/imgs/logo.svg'}
             />
             <Title 
                 Text={"PeraMe Software"}

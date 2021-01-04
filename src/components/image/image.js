@@ -9,10 +9,10 @@ const Image = styled.img.attrs(({src,alt}) => ({
     width:6rem;
 `;
 
-const DefaultImage = ({Width}) =>{
+const DefaultImage = ({Width, Src, Alt}) =>{
     return(
         <Container width={Width}>
-            <Image/>
+            <Image src={Src} alt={Alt}/>
         </Container>
     )
 }
