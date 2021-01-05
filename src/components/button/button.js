@@ -14,7 +14,7 @@ const Button = styled.a.attrs(({Href,HrefTarget}) => ({
     padding:${({ButtonPadding})=>{return (ButtonPadding !== undefined) ? ButtonPadding : '0'}};
     color:${({ButtonFontColor})=>{return (ButtonFontColor !== undefined) ? ButtonFontColor : 'black'}};
     background-color:${({ButtonBgColor})=>{return (ButtonBgColor !== undefined) ? ButtonBgColor : 'transparent'}};
-    border-radius:${({ButtonBorderRadius})=>{return (ButtonBorderRadius != undefined) ? px2vw(ButtonBorderRadius) : px2vw(250)}};
+    border-radius:${({ButtonBorderRadius})=>{return (ButtonBorderRadius !== undefined) ? px2vw(ButtonBorderRadius) : px2vw(250)}};
     border: none;
     outline: none;
     transition: 0.5s;
@@ -25,20 +25,20 @@ const Button = styled.a.attrs(({Href,HrefTarget}) => ({
         color:${({ButtonHoverFontColor})=>{return (ButtonHoverFontColor !== undefined) ? ButtonHoverFontColor : 'black'}};
     }
     
-    font-size:${({FontSize})=>{return (FontSize != undefined) ? px2vw(FontSize) : px2vw(70)}};
+    font-size:${({FontSize})=>{return (FontSize !== undefined) ? px2vw(FontSize) : px2vw(70)}};
     @media (min-width: 768px) {
-        font-size: ${({FontSize})=>{return (FontSize != undefined) ? px2vw((FontSize - (FontSize * 0.2))) : px2vw(40)}};
+        font-size: ${({FontSize})=>{return (FontSize !== undefined) ? px2vw((FontSize - (FontSize * 0.2))) : px2vw(40)}};
     }
 
     @media (min-width: 1024px) {
-        font-size: ${({FontSize})=>{return (FontSize != undefined) ? px2vw((FontSize - (FontSize * 0.25))) : px2vw(35)}};
+        font-size: ${({FontSize})=>{return (FontSize !== undefined) ? px2vw((FontSize - (FontSize * 0.25))) : px2vw(35)}};
     }
 `;
 
 const Icon = styled.i.attrs(({Class}) => ({
-    className:  (Class != undefined) ? Class : '',
+    className:  (Class !== undefined) ? Class : '',
   }))`
-    padding-right:${({Class})=>{return (Class != undefined) ? px2vw(10) : '0'}};
+    padding-right:${({Class})=>{return (Class !== undefined) ? px2vw(10) : '0'}};
 `;
 
 const DefaultButton = ({
