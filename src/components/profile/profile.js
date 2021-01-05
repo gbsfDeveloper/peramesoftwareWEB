@@ -4,6 +4,7 @@ import styled from 'styled-components';
 import colors from '../../constants/Colors';
 import px2vw from "../../utils/px2vw";
 import Container from '../container';
+import NavBar from '../navbar';
 import Image from '../image';
 import Title from '../title';
 import Message from '../message';
@@ -32,28 +33,7 @@ const DefaultProfile = ({bgColor}) =>{
                 width={'60vw'}
                 flexDirection={'column'}
             >
-                {/* NAVBAR */}
-                <Container
-                    width={'60vw'}
-                    height={px2vw(100)}
-                    bgcolor={'#FFFFFF'}
-                >
-                     <Button
-                            Text={"About"}
-                            Width={'10%'}
-                            Height={'100%'}
-                            FontSize={25}
-                            Href={'#'}
-                            ButtonWidth={'100%'}
-                            ButtonPadding={px2vw(10)}
-                            ButtonBorderRadius={'0'}
-                            ButtonBgColor={'transparent'}
-                            ButtonHoverBgColor={colors.primary}
-                            ButtonFontColor={colors.primary}
-                            ButtonHoverFontColor={colors.white}
-                        />
-                </Container>
-                
+                <NavBar/>   
                 {/* CARD */}
                 <Container
                     width={'60vw'}

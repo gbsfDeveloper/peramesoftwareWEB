@@ -27,11 +27,11 @@ const Button = styled.a.attrs(({Href}) => ({
     
     font-size:${({FontSize})=>{return (FontSize != undefined) ? px2vw(FontSize) : px2vw(70)}};
     @media (min-width: 768px) {
-        font-size: ${({FontSize})=>{return (FontSize != undefined) ? px2vw((FontSize - (FontSize * 0.3))) : px2vw(40)}};
+        font-size: ${({FontSize})=>{return (FontSize != undefined) ? px2vw((FontSize - (FontSize * 0.2))) : px2vw(40)}};
     }
 
     @media (min-width: 1024px) {
-        font-size: ${({FontSize})=>{return (FontSize != undefined) ? px2vw((FontSize - (FontSize * 0.35))) : px2vw(35)}};
+        font-size: ${({FontSize})=>{return (FontSize != undefined) ? px2vw((FontSize - (FontSize * 0.25))) : px2vw(35)}};
     }
 `;
 
