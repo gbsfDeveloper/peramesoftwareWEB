@@ -51,6 +51,7 @@ const NavBar = () =>{
             width={'60vw'}
             height={px2vw(100)}
             bgcolor={'#FFFFFF'}
+            justifyContent={'flex-end'}
         >
             {buttonsList}
         </Container>
