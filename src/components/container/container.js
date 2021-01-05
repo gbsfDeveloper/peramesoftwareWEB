@@ -15,13 +15,15 @@ const Container = styled.div`
     align-content :${({alignContent})=>{return (alignContent !== undefined) ? alignContent : 'center'}};
     padding:${({padding})=>{return (padding !== undefined) ? padding : '0'}};
     background-color:${({bgcolor})=>{return (bgcolor !== undefined) ? bgcolor : 'transparent'}};
+    border:${({border})=>{return (border !== undefined) ? border : ''}};
+    border-style:${({borderStyle})=>{return (borderStyle !== undefined) ? borderStyle : ''}};
     @media (min-width: 1024px) {
         flex-wrap: nowrap;
     }
 `
 
 const DefaultContainer = (props) =>{
-    const {width,height,flexDirection,justifyItems,justifyContent,alignItems,alignContent,flexGrow,flexWrap,children,padding,bgcolor} = props
+    const {width,height,flexDirection,justifyItems,justifyContent,alignItems,alignContent,flexGrow,flexWrap,children,padding,bgcolor,border,borderStyle} = props
     return(
         <Container 
             width={width}
@@ -34,7 +36,9 @@ const DefaultContainer = (props) =>{
             alignItems={alignItems}
             alignContent={alignContent}
             padding={padding}
-            bgcolor={bgcolor}
+            bgcolor={bgcolor}       
+            border={border}       
+            borderStyle={borderStyle}       
         >
             {children}
         </Container>

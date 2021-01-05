@@ -11,8 +11,8 @@ import Button from '../button';
 
 const Profile = styled.div`
     width:100%;
-    height: 100%;
-    padding :${px2vw(10)};
+    height: ${px2vw(500)};
+    padding :${px2vw(25)};
     display:flex;
     flex-direction:row;
     justify-items:center;
@@ -29,8 +29,10 @@ const DefaultProfile = ({bgColor}) =>{
         <Profile bgColor={bgColor}>
             <Container
                 width={'60vw'}
-                padding={`${px2vw(35)} ${px2vw(0)} ${px2vw(25)} ${px2vw(50)}`}
+                height={px2vw(350)}
+                padding={`${px2vw(0)} ${px2vw(0)} ${px2vw(0)} ${px2vw(50)}`}
                 flexDirection={'row'}
+                justifyContent={'space-between'}
                 flexWrap={'nowrap'}
                 bgcolor={'#FFFFFF'}
             >
@@ -40,8 +42,8 @@ const DefaultProfile = ({bgColor}) =>{
                     flexDirection={'column'}
                     flexWrap={'wrap'}
                     alignItems={'flex-start'}
-                    justifyContent={'space-around'}
-                    justifyItems={'space-around'}
+                    justifyContent={'center'}
+                    // justifyItems={'space-around'}
                 >
                     <Title
                         Text={"Gelacio Ben Yair"}
@@ -50,7 +52,7 @@ const DefaultProfile = ({bgColor}) =>{
                         FontSize={50}
                     />
                     <Message
-                        Text={"Backend Developer"}
+                        Text={"Backend & Frontend Developer"}
                         Width={ (Width>768) ? '100%' : '100%'}
                         JustifyContent={'flex-start'}
                         FontSize={35}
@@ -72,8 +74,11 @@ const DefaultProfile = ({bgColor}) =>{
                     />
                 </Container>
                 <Image
-                    Width={'30vw'}
-                    ImgWidth={'300'}
+                    Width={'20vw'}
+                    Height={'100%'}
+                    border={`${px2vw(2)} solid ${colors.slowlycolor2}`}
+                    borderStyle={'none none none solid'}
+                    ImgWidth={'250'}
                     Src={'/imgs/foto.jpg'}
                     BorderRadius={'150'}
                 />

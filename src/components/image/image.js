@@ -11,17 +11,17 @@ const Image = styled.img.attrs(({src,alt}) => ({
     width:${({ImgWidth})=>{return (ImgWidth != undefined) ? px2vw(ImgWidth) : px2vw(70)}};
 
     @media (min-width: 768px) {
-        width: ${({ImgWidth})=>{return (ImgWidth != undefined) ? px2vw((ImgWidth - (ImgWidth * 0.3))) : px2vw(40)}};
+        width: ${({ImgWidth})=>{return (ImgWidth != undefined) ? px2vw((ImgWidth - (ImgWidth * 0.1))) : px2vw(40)}};
     }
 
     @media (min-width: 1024px) {
-        width: ${({ImgWidth})=>{return (ImgWidth != undefined) ? px2vw((ImgWidth - (ImgWidth * 0.35))) : px2vw(35)}};
+        width: ${({ImgWidth})=>{return (ImgWidth != undefined) ? px2vw((ImgWidth - (ImgWidth * 0.15))) : px2vw(35)}};
     }
 `;
 
-const DefaultImage = ({Width, Src, Alt, ImgWidth, BorderRadius}) =>{
+const DefaultImage = ({Width, Height, Src, Alt, ImgWidth, BorderRadius,border,borderStyle}) =>{
     return(
-        <Container width={Width}>
+        <Container width={Width} height={Height} border={border} borderStyle={borderStyle} >
             <Image src={Src} alt={Alt} ImgWidth={ImgWidth} BorderRadius={BorderRadius}/>
         </Container>
     )
