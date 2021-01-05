@@ -38,7 +38,20 @@ const DefaultProfile = ({bgColor}) =>{
                     height={px2vw(100)}
                     bgcolor={'#FFFFFF'}
                 >
-                    
+                     <Button
+                            Text={"About"}
+                            Width={'10%'}
+                            Height={'100%'}
+                            FontSize={25}
+                            Href={'#'}
+                            ButtonWidth={'100%'}
+                            ButtonPadding={px2vw(10)}
+                            ButtonBorderRadius={'0'}
+                            ButtonBgColor={'transparent'}
+                            ButtonHoverBgColor={colors.primary}
+                            ButtonFontColor={colors.primary}
+                            ButtonHoverFontColor={colors.white}
+                        />
                 </Container>
                 
                 {/* CARD */}
@@ -80,13 +93,15 @@ const DefaultProfile = ({bgColor}) =>{
                         <Button
                             Text={"Portafolio"}
                             Width={'40%'}
+                            FontSize={25}
+                            Href={'https://github.com/gbsfDeveloper'}
+                            Padding={`${px2vw(25)} 0vw 0vw 0vw`}
+                            IconClassFA={'fas fa-folder-open'}
                             ButtonPadding={px2vw(10)}
                             ButtonBorderRadius={'0'}
-                            FontSize={25}
-                            Padding={`${px2vw(25)} 0vw 0vw 0vw`}
-                            Href={'https://github.com/gbsfDeveloper'}
-                            IconClassFA={'fas fa-folder-open'}
                             ButtonBgColor={colors.primary}
+                            ButtonFontColor={colors.white}
+                            ButtonHoverFontColor={colors.white}
                         />
                     </Container>
                     <Image

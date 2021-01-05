@@ -12,16 +12,17 @@ const Button = styled.a.attrs(({Href}) => ({
     text-decoration:none;
     height:${({ButtonHeight})=>{return (ButtonHeight !== undefined) ? ButtonHeight : ''}};
     padding:${({ButtonPadding})=>{return (ButtonPadding !== undefined) ? ButtonPadding : '0'}};
+    color:${({ButtonFontColor})=>{return (ButtonFontColor !== undefined) ? ButtonFontColor : 'black'}};
     background-color:${({ButtonBgColor})=>{return (ButtonBgColor !== undefined) ? ButtonBgColor : 'transparent'}};
     border-radius:${({ButtonBorderRadius})=>{return (ButtonBorderRadius != undefined) ? px2vw(ButtonBorderRadius) : px2vw(250)}};
     border: none;
     outline: none;
-    color:white;
     transition: 0.5s;
     &:hover{
         background-color:${({ButtonHoverBgColor})=>{return (ButtonHoverBgColor !== undefined) ? ButtonHoverBgColor : '#2c68a7'}};
         border:${({ButtonHoverBorder})=>{return (ButtonHoverBorder !== undefined) ? ButtonHoverBorder : 'none'}};
         cursor:${({ButtonHoverCursor})=>{return (ButtonHoverCursor !== undefined) ? ButtonHoverCursor : 'pointer'}};
+        color:${({ButtonHoverFontColor})=>{return (ButtonHoverFontColor !== undefined) ? ButtonHoverFontColor : 'black'}};
     }
     
     font-size:${({FontSize})=>{return (FontSize != undefined) ? px2vw(FontSize) : px2vw(70)}};
@@ -37,12 +38,13 @@ const Button = styled.a.attrs(({Href}) => ({
 const Icon = styled.i.attrs(({Class}) => ({
     className:  (Class != undefined) ? Class : '',
   }))`
-    padding-right:${px2vw(10)};
+    padding-right:${({Class})=>{return (Class != undefined) ? px2vw(10) : '0'}};
 `;
 
 const DefaultButton = ({
     Text,
     Width,
+    Height,
     Padding,
     JustifyContent,
     FontSize,
@@ -55,10 +57,12 @@ const DefaultButton = ({
     ButtonHoverBgColor,
     ButtonHoverBorder,
     ButtonHoverCursor,
+    ButtonFontColor,
+    ButtonHoverFontColor,
     IconClassFA
 }) =>{
     return(
-        <Container width={Width} justifyContent={JustifyContent} padding={Padding}>
+        <Container width={Width} height={Height} justifyContent={JustifyContent} padding={Padding}>
             <Button
                 ButtonWidth={ButtonWidth}
                 ButtonHeight={ButtonHeight}
@@ -67,7 +71,9 @@ const DefaultButton = ({
                 ButtonBorderRadius={ButtonBorderRadius}
                 ButtonHoverBgColor={ButtonHoverBgColor}
                 ButtonHoverBorder={ButtonHoverBorder}
-                ButtonHoverCursor={ButtonHoverCursor}
+                ButtonHoverCursor={ButtonHoverCursor} 
+                ButtonFontColor={ButtonFontColor} 
+                ButtonHoverFontColor={ButtonHoverFontColor} 
                 FontSize={FontSize}
                 Href={Href}
             >
