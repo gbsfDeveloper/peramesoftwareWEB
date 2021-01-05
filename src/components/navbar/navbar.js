@@ -30,6 +30,7 @@ const NavBar = () =>{
     ]
     const buttonsList = buttonsContent.map((button)=>{
         return <Button
+            key={button.text}
             Text={button.text}
             Width={'15%'}
             Height={'100%'}
