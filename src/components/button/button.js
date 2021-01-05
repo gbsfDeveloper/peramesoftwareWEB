@@ -2,12 +2,13 @@ import React,{useState} from 'react';
 import styled from 'styled-components';
 
 const Button = styled.button`
-    width: 60%;
-    margin-top: 1rem;
-    padding: 1rem;
+    width:${({width})=>{return (width !== undefined) ? width : '10vw'}};
+    height:${({height})=>{return (height !== undefined) ? height : ''}};
+    padding:${({padding})=>{return (padding !== undefined) ? padding : '0'}};
+    background-color:${({bgcolor})=>{return (bgcolor !== undefined) ? bgcolor : '#4298f4'}};
+    border-radius:${({BorderRadius})=>{return (BorderRadius != undefined) ? px2vw(BorderRadius) : px2vw(250)}};
     border: none;
     outline: none;
-    background-color:#4298f4;
     border-radius:2rem;
     color:white;
     transition: 0.5s;
@@ -18,12 +19,10 @@ const Button = styled.button`
     }
 `;
 
-const DefaultButton = (params) =>{
-    const text = params.text;
-    const [buttonText] = useState(text);
+const DefaultButton = ({Text}) =>{
     return(
         <Button>
-            {buttonText}
+            {Text}
         </Button>
     )
 }

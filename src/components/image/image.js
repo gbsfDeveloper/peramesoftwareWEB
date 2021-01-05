@@ -7,6 +7,7 @@ const Image = styled.img.attrs(({src,alt}) => ({
     src: (src != undefined) ? src : '/imgs/logo.svg',
     alt: (alt != undefined) ? alt : 'Logo',
   }))`
+    border-radius:${({BorderRadius})=>{return (BorderRadius != undefined) ? px2vw(BorderRadius) : px2vw(250)}};
     width:${({ImgWidth})=>{return (ImgWidth != undefined) ? px2vw(ImgWidth) : px2vw(70)}};
 
     @media (min-width: 768px) {
@@ -18,10 +19,10 @@ const Image = styled.img.attrs(({src,alt}) => ({
     }
 `;
 
-const DefaultImage = ({Width, Src, Alt, ImgWidth}) =>{
+const DefaultImage = ({Width, Src, Alt, ImgWidth, BorderRadius}) =>{
     return(
         <Container width={Width}>
-            <Image src={Src} alt={Alt} ImgWidth={ImgWidth}/>
+            <Image src={Src} alt={Alt} ImgWidth={ImgWidth} BorderRadius={BorderRadius}/>
         </Container>
     )
 }
