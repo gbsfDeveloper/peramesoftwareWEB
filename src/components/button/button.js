@@ -3,9 +3,13 @@ import styled from 'styled-components';
 import px2vw from "../../utils/px2vw";
 import Container from '../container';
 
-const Button = styled.a`
+const Button = styled.a.attrs(({Href}) => ({
+    href: (Href != undefined) ? Href : 'https://www.facebook.com/gelaciobenyair.santosfernandez.3',
+    target: (Href != undefined) ? '_blank' : '',
+  }))`
     width:${({ButtonWidth})=>{return (ButtonWidth !== undefined) ? ButtonWidth : '100%'}};
     text-align:center;
+    text-decoration:none;
     height:${({ButtonHeight})=>{return (ButtonHeight !== undefined) ? ButtonHeight : ''}};
     padding:${({ButtonPadding})=>{return (ButtonPadding !== undefined) ? ButtonPadding : '0'}};
     background-color:${({ButtonBgColor})=>{return (ButtonBgColor !== undefined) ? ButtonBgColor : '#4298f4'}};
@@ -36,6 +40,7 @@ const DefaultButton = ({
     Padding,
     JustifyContent,
     FontSize,
+    Href,
     ButtonWidth,
     ButtonHeight,
     ButtonPadding,
@@ -57,6 +62,7 @@ const DefaultButton = ({
                 ButtonHoverBorder={ButtonHoverBorder}
                 ButtonHoverCursor={ButtonHoverCursor}
                 FontSize={FontSize}
+                Href={Href}
             >
                 {Text}
             </Button>

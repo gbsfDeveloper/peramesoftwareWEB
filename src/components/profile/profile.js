@@ -29,7 +29,7 @@ const DefaultProfile = ({bgColor}) =>{
         <Profile bgColor={bgColor}>
             <Container
                 width={'60vw'}
-                padding={px2vw(35)}
+                padding={`${px2vw(35)} ${px2vw(0)} ${px2vw(25)} ${px2vw(50)}`}
                 flexDirection={'row'}
                 flexWrap={'nowrap'}
                 bgcolor={'#FFFFFF'}
@@ -68,6 +68,7 @@ const DefaultProfile = ({bgColor}) =>{
                         ButtonBorderRadius={'0'}
                         FontSize={25}
                         Padding={`${px2vw(25)} 0vw 0vw 0vw`}
+                        Href={'https://github.com/gbsfDeveloper'}
                     />
                 </Container>
                 <Image
