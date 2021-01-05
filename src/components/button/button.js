@@ -35,7 +35,7 @@ const Button = styled.a.attrs(({Href}) => ({
 `;
 
 const Icon = styled.i.attrs(({Class}) => ({
-    className:  (Class != undefined) ? Class : 'fab fa-facebook-square',
+    className:  (Class != undefined) ? Class : '',
   }))`
     padding-right:${px2vw(10)};
 `;
