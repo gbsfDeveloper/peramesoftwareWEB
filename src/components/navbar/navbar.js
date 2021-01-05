@@ -6,16 +6,6 @@ import Container from '../container';
 import Button from '../button';
 
 const NavBar = () =>{
-    const Width = '15%';
-    const Height = '15%';
-    const FontSize = '15%';
-    const ButtonWidth = '15%';
-    const ButtonPadding = px2vw(10)
-    const ButtonBorderRadius = '0'
-    const ButtonBgColor = 'transparent'
-    const ButtonHoverBgColor = colors.primary
-    const ButtonFontColor = colors.primary
-    const ButtonHoverFontColor = colors.white
     const buttonsContent = [
         {
             text:"Sobre mi",
