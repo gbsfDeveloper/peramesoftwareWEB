@@ -7,6 +7,7 @@ import Container from '../container';
 import Image from '../image';
 import Title from '../title';
 import Message from '../message';
+import Button from '../button';
 
 const Profile = styled.div`
     width:100%;
@@ -30,13 +31,17 @@ const DefaultProfile = ({bgColor}) =>{
                 width={'60vw'}
                 padding={px2vw(35)}
                 flexDirection={'row'}
-                flexWrap={'wrap'}
+                flexWrap={'nowrap'}
                 bgcolor={'#FFFFFF'}
             >
                 <Container
                     width={'30vw'}
+                    height={'100%'}
                     flexDirection={'column'}
                     flexWrap={'wrap'}
+                    alignItems={'flex-start'}
+                    justifyContent={'space-around'}
+                    justifyItems={'space-around'}
                 >
                     <Title
                         Text={"Gelacio Ben Yair"}
@@ -51,10 +56,18 @@ const DefaultProfile = ({bgColor}) =>{
                         FontSize={35}
                     />
                     <Message
-                        Text={"El exito lo hace la disciplina"}
+                        Text={"La disciplina hace al exito"}
                         Width={ (Width>768) ? '100%' : '100%'}
                         JustifyContent={'flex-start'}
                         FontSize={22}
+                    />
+                    <Button
+                        Text={"Portafolio"}
+                        Width={'40%'}
+                        ButtonPadding={px2vw(10)}
+                        ButtonBorderRadius={'0'}
+                        FontSize={25}
+                        Padding={`${px2vw(25)} 0vw 0vw 0vw`}
                     />
                 </Container>
                 <Image
