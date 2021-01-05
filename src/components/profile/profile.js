@@ -10,7 +10,7 @@ import Card from '../card';
 
 const Profile = styled.div`
     width:100%;
-    height: ${px2vw(500)};
+    height: ${px2vw(510)};
     padding :${px2vw(25)};
     display:flex;
     flex-direction:row;
@@ -29,11 +29,12 @@ const DefaultProfile = ({bgColor}) =>{
 
             <Container
                 width={'60vw'}
+                height={'100%'}
                 flexDirection={'column'}
+                justifyContent={'space-between'}
             >
                 {(Width>768) ? <NavBar/> : undefined}
                 <Card/>   
-                
             </Container>
             
         </Profile>
