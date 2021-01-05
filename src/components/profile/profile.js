@@ -86,6 +86,7 @@ const DefaultProfile = ({bgColor}) =>{
                             Padding={`${px2vw(25)} 0vw 0vw 0vw`}
                             Href={'https://github.com/gbsfDeveloper'}
                             IconClassFA={'fas fa-folder-open'}
+                            ButtonBgColor={colors.primary}
                         />
                     </Container>
                     <Image

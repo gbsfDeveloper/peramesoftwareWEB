@@ -12,7 +12,7 @@ const Button = styled.a.attrs(({Href}) => ({
     text-decoration:none;
     height:${({ButtonHeight})=>{return (ButtonHeight !== undefined) ? ButtonHeight : ''}};
     padding:${({ButtonPadding})=>{return (ButtonPadding !== undefined) ? ButtonPadding : '0'}};
-    background-color:${({ButtonBgColor})=>{return (ButtonBgColor !== undefined) ? ButtonBgColor : '#4298f4'}};
+    background-color:${({ButtonBgColor})=>{return (ButtonBgColor !== undefined) ? ButtonBgColor : 'transparent'}};
     border-radius:${({ButtonBorderRadius})=>{return (ButtonBorderRadius != undefined) ? px2vw(ButtonBorderRadius) : px2vw(250)}};
     border: none;
     outline: none;
