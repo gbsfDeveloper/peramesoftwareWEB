@@ -34,6 +34,12 @@ const Button = styled.a.attrs(({Href}) => ({
     }
 `;
 
+const Icon = styled.i.attrs(({Class}) => ({
+    className:  (Class != undefined) ? Class : 'fab fa-facebook-square',
+  }))`
+    padding-right:${px2vw(10)};
+`;
+
 const DefaultButton = ({
     Text,
     Width,
@@ -48,7 +54,8 @@ const DefaultButton = ({
     ButtonBorderRadius,
     ButtonHoverBgColor,
     ButtonHoverBorder,
-    ButtonHoverCursor
+    ButtonHoverCursor,
+    IconClassFA
 }) =>{
     return(
         <Container width={Width} justifyContent={JustifyContent} padding={Padding}>
@@ -64,6 +71,7 @@ const DefaultButton = ({
                 FontSize={FontSize}
                 Href={Href}
             >
+                <Icon Class={IconClassFA}/>
                 {Text}
             </Button>
         </Container>

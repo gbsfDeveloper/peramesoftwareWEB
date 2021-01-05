@@ -43,7 +43,6 @@ const DefaultProfile = ({bgColor}) =>{
                     flexWrap={'wrap'}
                     alignItems={'flex-start'}
                     justifyContent={'center'}
-                    // justifyItems={'space-around'}
                 >
                     <Title
                         Text={"Gelacio Ben Yair"}
@@ -71,6 +70,7 @@ const DefaultProfile = ({bgColor}) =>{
                         FontSize={25}
                         Padding={`${px2vw(25)} 0vw 0vw 0vw`}
                         Href={'https://github.com/gbsfDeveloper'}
+                        IconClassFA={'fas fa-folder-open'}
                     />
                 </Container>
                 <Image
