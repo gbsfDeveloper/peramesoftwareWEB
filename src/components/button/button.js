@@ -4,8 +4,8 @@ import px2vw from "../../utils/px2vw";
 import Container from '../container';
 
 const Button = styled.a.attrs(({Href,HrefTarget}) => ({
-    href: (Href != undefined) ? Href : 'https://www.facebook.com/gelaciobenyair.santosfernandez.3',
-    target: (HrefTarget != undefined) ? HrefTarget : '_blank',
+    href: (Href !== undefined) ? Href : 'https://www.facebook.com/gelaciobenyair.santosfernandez.3',
+    target: (HrefTarget !== undefined) ? HrefTarget : '_blank',
   }))`
     width:${({ButtonWidth})=>{return (ButtonWidth !== undefined) ? ButtonWidth : '100%'}};
     text-align:center;
