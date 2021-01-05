@@ -18,6 +18,7 @@ const NavBar = () =>{
                     Height={'100%'}
                     FontSize={20}
                     Href={'#'}
+                    HrefTarget={''}
                     ButtonWidth={'100%'}
                     ButtonPadding={px2vw(10)}
                     ButtonBorderRadius={'0'}
@@ -32,6 +33,7 @@ const NavBar = () =>{
                     Height={'100%'}
                     FontSize={20}
                     Href={'#'}
+                    HrefTarget={''}
                     ButtonWidth={'100%'}
                     ButtonPadding={px2vw(10)}
                     ButtonBorderRadius={'0'}
@@ -46,6 +48,7 @@ const NavBar = () =>{
                     Height={'100%'}
                     FontSize={20}
                     Href={'#'}
+                    HrefTarget={''}
                     ButtonWidth={'100%'}
                     ButtonPadding={px2vw(10)}
                     ButtonBorderRadius={'0'}
@@ -60,6 +63,7 @@ const NavBar = () =>{
                     Height={'100%'}
                     FontSize={20}
                     Href={'#'}
+                    HrefTarget={''}
                     ButtonWidth={'100%'}
                     ButtonPadding={px2vw(10)}
                     ButtonBorderRadius={'0'}
