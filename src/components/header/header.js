@@ -14,7 +14,7 @@ const Header = styled.div`
     display:flex;
     flex-direction:row;
     color:${colors.slowlycolor};
-    background-color:${({bgColor}) => {return (bgColor != undefined) ? bgColor: colors.seconddarkcolor}};
+    background-color:${({bgColor}) => {return (bgColor !== undefined) ? bgColor: colors.seconddarkcolor}};
 `;
 
 const DefaultHeader = () =>{
