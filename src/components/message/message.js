@@ -6,6 +6,7 @@ import Container from '../container';
 const Message = styled.p`
     font-weight:normal;
     font-size:${({FontSize})=>{return (FontSize !== undefined) ? px2vw(FontSize) : px2vw(70)}};
+    text-align:${({TextAlign})=>{return (TextAlign !== undefined) ? TextAlign : 'left'}};
     @media (min-width: 768px) {
         font-size: ${({FontSize})=>{return (FontSize !== undefined) ? px2vw((FontSize - (FontSize * 0.3))) : px2vw(40)}};
     }
@@ -15,10 +16,10 @@ const Message = styled.p`
     }
 `;
 
-const MessageComp = ({Text,Width,JustifyContent,Padding,FontSize}) =>{
+const MessageComp = ({Text,Width,Height, JustifyContent,AlignContent,Padding,FontSize,TextAlign}) =>{
     return(
-        <Container width={Width} justifyContent={JustifyContent} padding={Padding}>
-            <Message FontSize={FontSize}>
+        <Container width={Width} height={Height} alignContent={AlignContent} justifyContent={JustifyContent} padding={Padding}>
+            <Message FontSize={FontSize} TextAlign={TextAlign}>
                 {Text}
             </Message>
         </Container>

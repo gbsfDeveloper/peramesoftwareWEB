@@ -6,11 +6,12 @@ import px2vw from "../../utils/px2vw";
 import Container from '../container';
 import NavBar from '../navbar';
 import Card from '../card';
+import AboutMe from '../aboutme';
 
 
 const Profile = styled.div`
     width:100%;
-    height: ${px2vw(510)};
+    height: ${px2vw(810)};
     padding :${px2vw(25)};
     display:flex;
     flex-direction:row;
@@ -34,7 +35,8 @@ const DefaultProfile = ({bgColor}) =>{
                 justifyContent={'space-between'}
             >
                 {(Width>768) ? <NavBar/> : undefined}
-                <Card/>   
+                <Card/>
+                <AboutMe/>
             </Container>
             
         </Profile>
