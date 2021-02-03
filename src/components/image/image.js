@@ -4,10 +4,10 @@ import Container from '../container';
 import px2vw from "../../utils/px2vw";
 
 const Image = styled.img.attrs(({src,alt}) => ({
-    src: (src !== undefined) ? src : '/imgs/logo.svg',
-    alt: (alt !== undefined) ? alt : 'Logo',
+    src: (src !== undefined) ? src : '',
+    // alt: (alt !== undefined) ? alt : 'Logo',
   }))`
-    border-radius:${({BorderRadius})=>{return (BorderRadius !== undefined) ? px2vw(BorderRadius) : px2vw(250)}};
+    border-radius:${({BorderRadius})=>{return (BorderRadius !== undefined) ? px2vw(BorderRadius) : px2vw(0)}};
     width:${({ImgWidth})=>{return (ImgWidth !== undefined) ? px2vw(ImgWidth) : px2vw(70)}};
 
     @media (min-width: 768px) {
@@ -19,9 +19,9 @@ const Image = styled.img.attrs(({src,alt}) => ({
     }
 `;
 
-const DefaultImage = ({Width, Height, Src, Alt, ImgWidth, BorderRadius,border,borderStyle}) =>{
+const DefaultImage = ({Width, Height, Src, Alt, ImgWidth, BorderRadius,border,borderStyle,BgImage}) =>{
     return(
-        <Container width={Width} height={Height} border={border} borderStyle={borderStyle} >
+        <Container width={Width} height={Height} border={border} borderStyle={borderStyle} bgimage={BgImage}>
             <Image src={Src} alt={Alt} ImgWidth={ImgWidth} BorderRadius={BorderRadius}/>
         </Container>
     )

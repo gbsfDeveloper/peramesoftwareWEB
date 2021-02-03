@@ -4,6 +4,7 @@ import px2vw from "../../utils/px2vw";
 import colors from '../../constants/Colors';
 import Container from '../container';
 import Button from '../button';
+import Title from '../title';
 
 const NavBar = () =>{
     const buttonsContent = [
@@ -33,12 +34,13 @@ const NavBar = () =>{
             key={button.text}
             Text={button.text}
             Width={'15%'}
-            Height={'100%'}
+            height={px2vw(100)}
             FontSize={20}
             Href={button.href}
             HrefTarget={button.hrefTarget}
             ButtonWidth={'100%'}
-            ButtonPadding={px2vw(10)}
+            ButtonHeight={px2vw(100)}
+            ButtonPadding={`${px2vw(40)} ${px2vw(0)} ${px2vw(0)} ${px2vw(0)}`}
             ButtonBorderRadius={'0'}
             ButtonBgColor={'transparent'}
             ButtonHoverBgColor={colors.primary}
@@ -51,8 +53,19 @@ const NavBar = () =>{
             width={'60vw'}
             height={px2vw(100)}
             bgcolor={'#FFFFFF'}
-            justifyContent={'flex-end'}
+            justifyContent={'flex-start'}
         >
+            <Container
+                width={'35%'}
+                height={px2vw(100)}
+                justifyContent={'flex-start'}
+            >
+                <Title
+                    Text={"General Information"}
+                    Width={'90%'}
+                    FontSize={35}
+                />
+            </Container>
             {buttonsList}
         </Container>
     )

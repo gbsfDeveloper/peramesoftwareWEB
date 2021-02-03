@@ -8,9 +8,9 @@ const Button = styled.a.attrs(({Href,HrefTarget}) => ({
     target: (HrefTarget !== undefined) ? HrefTarget : '_blank',
   }))`
     width:${({ButtonWidth})=>{return (ButtonWidth !== undefined) ? ButtonWidth : '100%'}};
+    height:${({ButtonHeight})=>{return (ButtonHeight !== undefined) ? ButtonHeight : ''}};
     text-align:center;
     text-decoration:none;
-    height:${({ButtonHeight})=>{return (ButtonHeight !== undefined) ? ButtonHeight : ''}};
     padding:${({ButtonPadding})=>{return (ButtonPadding !== undefined) ? ButtonPadding : '0'}};
     color:${({ButtonFontColor})=>{return (ButtonFontColor !== undefined) ? ButtonFontColor : 'black'}};
     background-color:${({ButtonBgColor})=>{return (ButtonBgColor !== undefined) ? ButtonBgColor : 'transparent'}};

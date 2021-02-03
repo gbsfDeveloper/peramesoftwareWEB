@@ -14,6 +14,8 @@ const Container = styled.div`
     align-items:${({alignItems})=>{return (alignItems !== undefined) ? alignItems : 'center'}};
     align-content :${({alignContent})=>{return (alignContent !== undefined) ? alignContent : 'center'}};
     padding:${({padding})=>{return (padding !== undefined) ? padding : '0'}};
+    background:url(${({bgimage})=>{return (bgimage !== undefined) ? bgimage : 'none'}});
+    background-size: 100% 100%;
     background-color:${({bgcolor})=>{return (bgcolor !== undefined) ? bgcolor : 'transparent'}};
     border:${({border})=>{return (border !== undefined) ? border : ''}};
     border-style:${({borderStyle})=>{return (borderStyle !== undefined) ? borderStyle : ''}};
@@ -23,7 +25,7 @@ const Container = styled.div`
 `
 
 const DefaultContainer = (props) =>{
-    const {width,height,flexDirection,justifyItems,justifyContent,alignItems,alignContent,flexGrow,flexWrap,children,padding,bgcolor,border,borderStyle} = props
+    const {width,height,flexDirection,justifyItems,justifyContent,alignItems,alignContent,flexGrow,flexWrap,children,padding,bgcolor,bgimage,border,borderStyle} = props
     return(
         <Container 
             width={width}
@@ -37,6 +39,7 @@ const DefaultContainer = (props) =>{
             alignContent={alignContent}
             padding={padding}
             bgcolor={bgcolor}       
+            bgimage={bgimage}       
             border={border}       
             borderStyle={borderStyle}       
         >

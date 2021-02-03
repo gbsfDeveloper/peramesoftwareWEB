@@ -16,15 +16,16 @@ const Icon = styled.i.attrs(({Class,FontSize}) => ({
 const AboutMe = ({bgColor}) =>{
     return(
         <Container
-            width={'60vw'}
-            height={px2vw(300)}
+            width={'40vw'}
+            height={px2vw(350)}
             padding={`${px2vw(5)} ${px2vw(40)}`}
             bgcolor={'#FFFFFF'}
             flexDirection={'column'}
+            alignItems={'center'}
         >
             <Container
                 width={'100%'}
-                height={'30%'}
+                height={px2vw(50)}
                 flexDirection={'row'}
                 alignItems={'center'}
             >
@@ -33,21 +34,20 @@ const AboutMe = ({bgColor}) =>{
                 >
                     <Icon 
                         Class={'fas fa-user'}  
-                        FontSize={30}
+                        FontSize={20}
                     />
                 </Container>
                 <Title
                     Text={"Sobre mi"}
                     Width={'95%'}
                     JustifyContent={'flex-start'}
-                    FontSize={50}
+                    FontSize={30}
                 />
             </Container>
             <Message
                 Width={'100%'}
-                Height={'30%'}
                 Text={"Mi meta más grande siempre fue desempeñarme como desarrollador de software profesional y aunque este mundo está en constante cambio, cada dia que pasa busco la forma de seguir aprendiendo y de mejorar continuamente para aprovechar al máximo todas las ventajas de las tendencias tecnológicas."}
-                FontSize={25}
+                FontSize={22}
                 TextAlign={'justify'}
             />
         </Container>

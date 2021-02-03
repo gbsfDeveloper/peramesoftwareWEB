@@ -12,44 +12,57 @@ const Card = () =>{
     
     return(
         <Container
-            width={'60vw'}
-            height={px2vw(350)}
-            padding={`${px2vw(0)} ${px2vw(0)} ${px2vw(0)} ${px2vw(50)}`}
-            flexDirection={'row'}
+            width={'20vw'}
+            height={px2vw(450)}
+            // padding={`${px2vw(0)} ${px2vw(0)} ${px2vw(0)} ${px2vw(50)}`}
+            flexDirection={'column'}
             justifyContent={'space-between'}
             flexWrap={'nowrap'}
             bgcolor={'#FFFFFF'}
         >
+            <Image
+                Width={'100%'}
+                Height={px2vw(300)}
+                BgImage={'/imgs/foto.jpg'}
+            />
             <Container
-                width={'30vw'}
-                height={'100%'}
+                width={'20vw'}
+                height={px2vw(150)}
                 flexDirection={'column'}
                 flexWrap={'wrap'}
                 alignItems={'flex-start'}
                 justifyContent={'center'}
+                bgcolor={'#213078'}
+                padding={`${px2vw(0)} ${px2vw(0)} ${px2vw(0)} ${px2vw(20)}`}
             >
-                <Title
-                    Text={"Gelacio Ben Yair"}
-                    Width={'100%'}
-                    JustifyContent={'flex-start'}
-                    FontSize={50}
-                />
                 <Message
-                    Text={"Backend & Frontend Developer"}
+                    Text={"Name: Gelacio Ben Yair"}
                     Width={'100%'}
-                    JustifyContent={'flex-start'}
-                    FontSize={35}
-                />
-                <Message
-                    Text={"La disciplina hace al exito"}
-                    Width={'100%'}
+                    Height={px2vw(30)}
                     JustifyContent={'flex-start'}
                     FontSize={22}
+                    FontColor={'#FFFFFF'}
                 />
-                <Button
+                <Message
+                    Text={"Location: Mexico City"}
+                    Width={'100%'}
+                    Height={px2vw(30)}
+                    JustifyContent={'flex-start'}
+                    FontSize={22}
+                    FontColor={'#FFFFFF'}
+                />
+                <Message
+                    Text={"Date of Birth: 11 Agosto 1993"}
+                    Width={'100%'}
+                    Height={px2vw(30)}
+                    JustifyContent={'flex-start'}
+                    FontSize={22}
+                    FontColor={'#FFFFFF'}
+                />
+                {/* <Button
                     Text={"Portafolio"}
                     Width={'40%'}
-                    FontSize={25}
+                    FontSize={12}
                     Href={'https://github.com/gbsfDeveloper'}
                     Padding={`${px2vw(25)} 0vw 0vw 0vw`}
                     IconClassFA={'fas fa-folder-open'}
@@ -58,17 +71,9 @@ const Card = () =>{
                     ButtonBgColor={colors.primary}
                     ButtonFontColor={colors.white}
                     ButtonHoverFontColor={colors.white}
-                />
+                /> */}
             </Container>
-            <Image
-                Width={'20vw'}
-                Height={'100%'}
-                border={`${px2vw(2)} solid ${colors.slowlycolor2}`}
-                borderStyle={'none none none solid'}
-                ImgWidth={'250'}
-                Src={'/imgs/foto.jpg'}
-                BorderRadius={'150'}
-            />
+            
         </Container>
     )
 }
