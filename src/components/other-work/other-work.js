@@ -4,11 +4,8 @@ import styled from 'styled-components';
 import colors from '../../constants/Colors';
 import px2vw from "../../utils/px2vw";
 import Container from '../container';
-import NavBar from '../navbar';
-import Card from '../card';
-import AboutMe from '../aboutme';
 import Title from '../title';
-import Message from '../message';
+import Button from '../button';
 
 const DefaultOtherWorks = ({bgColor}) =>{
     let {Width} = useViewport();
@@ -16,27 +13,53 @@ const DefaultOtherWorks = ({bgColor}) =>{
         <Container
             width={'50%'}
             height={px2vw(200)}
+            padding={`${px2vw(20)} ${px2vw(0)} ${px2vw(0)} ${px2vw(0)}`}
             flexDirection={'column'}
             justifyContent={'flex-start'}
-            bgcolor={'yellow'}
+            bgcolor={colors.darkcolor}
         >
-                <h2 class="contactTitle">Otros trabajos</h2>
-                <div class="icons-container d-flex align-self-center">
-                    <a class="icon-link col-6" href="https://github.com/gbsfgames" target="_blank">
-                    <div class="oneIcon d-flex flex-column ">
-                        <i class="icon-logo fab fa-github"></i>
-                        <span class="icon-title">Github</span>
-                        <p class="icon-text">Software Desarrollado</p>
-                    </div>
-                    </a>
-                    <a class="icon-link col-6" href="https://www.hackerrank.com/gbsfgames" target="_blank">
-                    <div class="oneIcon d-flex flex-column ">
-                        <i class="icon-logo fab fa-hackerrank"></i>
-                        <span class="icon-title">Hacker Rank</span>
-                        <p class="icon-text">Algunos de mis logros</p>
-                    </div>
-                    </a>
-                </div>
+                <Title
+                    Text={"Portafolio"}
+                    Width={'100%'}
+                    JustifyContent={'center'}
+                    FontSize={30}
+                    FontColor={colors.white}
+                />
+                <Container
+                    width={'50%'}
+                    padding={`${px2vw(10)} ${px2vw(0)} ${px2vw(0)} ${px2vw(0)}`}
+                    flexDirection={'row'}
+                    justifyContent={'space-around'}
+                >
+                    <Button
+                        Text={""}
+                        Href={'https://github.com/gbsfgames'}
+                        Width={'8vw'}
+                        Height={'7vw'}
+                        FontSize={80}
+                        IconClassFA={'fab fa-github'}
+                        ButtonWidth={'100%'}
+                        ButtonHeight={'100%'}
+                        ButtonBorderRadius={'0'}
+                        ButtonBgColor={colors.primary}
+                        ButtonFontColor={colors.white}
+                        ButtonHoverFontColor={colors.white}
+                    />
+                    <Button
+                        Text={""}
+                        Href={'https://www.hackerrank.com/gbsfgames'}
+                        Width={'8vw'}
+                        Height={'7vw'}
+                        FontSize={80}
+                        IconClassFA={'fab fa-hackerrank'}
+                        ButtonWidth={'100%'}
+                        ButtonHeight={'100%'}
+                        ButtonBorderRadius={'0'}
+                        ButtonBgColor={colors.primary}
+                        ButtonFontColor={colors.white}
+                        ButtonHoverFontColor={colors.white}
+                    />
+                </Container>
         </Container>
             
     )

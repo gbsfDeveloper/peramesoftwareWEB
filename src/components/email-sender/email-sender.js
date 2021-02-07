@@ -4,11 +4,7 @@ import styled from 'styled-components';
 import colors from '../../constants/Colors';
 import px2vw from "../../utils/px2vw";
 import Container from '../container';
-import NavBar from '../navbar';
-import Card from '../card';
-import AboutMe from '../aboutme';
 import Title from '../title';
-import Message from '../message';
 import Button from '../button';
 
 

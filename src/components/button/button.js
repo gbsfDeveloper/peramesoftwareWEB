@@ -38,7 +38,7 @@ const Button = styled.a.attrs(({Href,HrefTarget}) => ({
 const Icon = styled.i.attrs(({Class}) => ({
     className:  (Class !== undefined) ? Class : '',
   }))`
-    padding-right:${({Class})=>{return (Class !== undefined) ? px2vw(10) : '0'}};
+    padding-right:${({Padding})=>{return (Padding !== undefined) ? Padding : '0'}};
 `;
 
 const DefaultButton = ({
