@@ -61,7 +61,6 @@ const DefaultEmailSender = ({bgColor}) =>{
                         height={px2vw(30)}
                         flexDirection={'column'}
                         justifyContent={'center'}
-                        bgcolor={'yellow'}
                         margin={`${px2vw(10)} ${px2vw(0)} ${px2vw(0)} ${px2vw(0)}`}
                     >
                         <Input 
@@ -75,7 +74,6 @@ const DefaultEmailSender = ({bgColor}) =>{
                         height={px2vw(30)}
                         flexDirection={'column'}
                         justifyContent={'center'}
-                        bgcolor={'yellow'}
                         margin={`${px2vw(10)} ${px2vw(0)} ${px2vw(0)} ${px2vw(0)}`}
                     >
                         <Input 
@@ -90,7 +88,6 @@ const DefaultEmailSender = ({bgColor}) =>{
                     height={px2vw(70)}
                     flexDirection={'column'}
                     justifyContent={'center'}
-                    bgcolor={'yellow'}
                     margin={`${px2vw(10)} ${px2vw(0)} ${px2vw(0)} ${px2vw(0)}`}
                 >
                     <TextArea 
