@@ -77,6 +77,7 @@ const DefaultProfile = ({bgColor}) =>{
                 </Container>
                 <Container
                      width={'70vw'}
+                     padding={`${px2vw(5)} ${px2vw(0)} ${px2vw(0)} ${px2vw(0)}`}
                      flexDirection={'row'}
                 >
                     <OtherWorks/>
