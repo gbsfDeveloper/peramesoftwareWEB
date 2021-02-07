@@ -13,7 +13,7 @@ import Message from '../message';
 
 const Profile = styled.div`
     width:100%;
-    height: ${px2vw(800)};
+    /* height: ${px2vw(800)}; */
     padding :${px2vw(25)};
     display:flex;
     flex-direction:row;
@@ -34,6 +34,7 @@ const DefaultProfile = ({bgColor}) =>{
                 height={'100%'}
                 flexDirection={'column'}
                 justifyContent={'flex-start'}
+                boxShadow={'0 3px 10px 0 rgba(0,0,0,.1)'}
             >
                 {(Width>768) ? <NavBar/> : undefined}
                 <Container

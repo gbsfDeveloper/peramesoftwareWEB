@@ -19,13 +19,14 @@ const Container = styled.div`
     background-color:${({bgcolor})=>{return (bgcolor !== undefined) ? bgcolor : 'transparent'}};
     border:${({border})=>{return (border !== undefined) ? border : ''}};
     border-style:${({borderStyle})=>{return (borderStyle !== undefined) ? borderStyle : ''}};
+    box-shadow:${({boxShadow})=>{return (boxShadow !== undefined) ? boxShadow : ''}};);
     @media (min-width: 1024px) {
         flex-wrap: nowrap;
     }
 `
 
 const DefaultContainer = (props) =>{
-    const {width,height,flexDirection,justifyItems,justifyContent,alignItems,alignContent,flexGrow,flexWrap,children,padding,bgcolor,bgimage,border,borderStyle} = props
+    const {width,height,flexDirection,justifyItems,justifyContent,alignItems,alignContent,flexGrow,flexWrap,children,padding,bgcolor,bgimage,border,borderStyle,boxShadow} = props
     return(
         <Container 
             width={width}
@@ -42,6 +43,7 @@ const DefaultContainer = (props) =>{
             bgimage={bgimage}       
             border={border}       
             borderStyle={borderStyle}       
+            boxShadow={boxShadow}       
         >
             {children}
         </Container>
