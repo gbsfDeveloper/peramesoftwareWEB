@@ -30,25 +30,25 @@ const DefaultProfile = ({bgColor}) =>{
     return(
         <Profile bgColor={bgColor}>
             <Container
-                width={'60vw'}
+                width={'70vw'}
                 height={'100%'}
                 flexDirection={'column'}
                 justifyContent={'flex-start'}
             >
                 {(Width>768) ? <NavBar/> : undefined}
                 <Container
-                     width={'60vw'}
+                     width={'70vw'}
                      flexDirection={'row'}
                      justifyContent={'space-between'}
                 >
                     <Card/>
                     <Container
-                     width={'40vw'}
+                     width={'50vw'}
                      flexDirection={'column'}
                      justifyContent={'flex-start'}
                     >
                         <Container
-                            width={'40vw'}
+                            width={'50vw'}
                             height={px2vw(150)}
                             flexDirection={'column'}
                             bgcolor={colors.white}

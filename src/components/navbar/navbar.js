@@ -33,7 +33,7 @@ const NavBar = () =>{
         return <Button
             key={button.text}
             Text={button.text}
-            Width={'10vw'}
+            Width={'12.5vw'}
             height={px2vw(100)}
             FontSize={20}
             Href={button.href}
@@ -50,7 +50,7 @@ const NavBar = () =>{
     })
     return(
         <Container
-            width={'60vw'}
+            width={'70vw'}
             height={px2vw(100)}
             bgcolor={colors.darkcolor}
             justifyContent={'flex-start'}
