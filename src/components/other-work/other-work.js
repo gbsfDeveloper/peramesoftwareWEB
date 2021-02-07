@@ -13,7 +13,7 @@ const DefaultOtherWorks = ({bgColor}) =>{
         <Container
             width={'50%'}
             height={px2vw(200)}
-            padding={`${px2vw(20)} ${px2vw(0)} ${px2vw(0)} ${px2vw(0)}`}
+            padding={`${px2vw(13)} ${px2vw(0)} ${px2vw(0)} ${px2vw(0)}`}
             flexDirection={'column'}
             justifyContent={'flex-start'}
             bgcolor={colors.darkcolor}

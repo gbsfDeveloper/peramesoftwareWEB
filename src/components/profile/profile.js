@@ -46,12 +46,12 @@ const DefaultProfile = ({bgColor}) =>{
                 >
                     <Card/>
                     <Container
-                     width={'50vw'}
-                     flexDirection={'column'}
-                     justifyContent={'flex-start'}
+                        width={'50vw'}
+                        flexDirection={'column'}
+                        justifyContent={'flex-start'}
                     >
-                        <Container
-                            width={'50vw'}
+                        {/* <Container
+                            width={'100%'}
                             height={px2vw(150)}
                             flexDirection={'column'}
                             bgcolor={colors.white}
@@ -65,14 +65,25 @@ const DefaultProfile = ({bgColor}) =>{
                                 FontColor={colors.darkcolor}
                             />
                             <Message
-                                Text={"Desarrollador Frontend & Backend"}
+                                Text={"Desarrollador de Software"}
                                 Width={'100%'}
                                 JustifyContent={'flex-start'}
                                 FontSize={30}
                                 FontColor={colors.darkcolor}
                             />
                         </Container>
-                        <AboutMe/>
+                        <AboutMe/> */}
+
+                        <Container
+                            width={'100%'}
+                            height={px2vw(150)}
+                            flexDirection={'column'}
+                            bgcolor={colors.white}
+                            padding={`${px2vw(0)} ${px2vw(0)} ${px2vw(0)} ${px2vw(80)}`}
+                        >
+                            
+                        </Container>
+                        
                     </Container>
                 </Container>
                 <Container

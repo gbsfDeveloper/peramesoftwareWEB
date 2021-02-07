@@ -16,7 +16,7 @@ const Icon = styled.i.attrs(({Class,FontSize}) => ({
 const AboutMe = ({bgColor}) =>{
     return(
         <Container
-            width={'50vw'}
+            width={'100%'}
             height={px2vw(300)}
             padding={`${px2vw(5)} ${px2vw(40)}`}
             bgcolor={'#FFFFFF'}
