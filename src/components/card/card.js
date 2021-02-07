@@ -32,11 +32,12 @@ const Card = () =>{
                 flexWrap={'wrap'}
                 alignItems={'flex-start'}
                 justifyContent={'center'}
-                bgcolor={'#213078'}
+                bgcolor={colors.darkcolor}
                 padding={`${px2vw(0)} ${px2vw(0)} ${px2vw(0)} ${px2vw(20)}`}
             >
                 <Message
-                    Text={"Name: Gelacio Ben Yair"}
+                    TextBold={"Nombre: "}
+                    Text={"Gelacio Ben Yair"}
                     Width={'100%'}
                     Height={px2vw(30)}
                     JustifyContent={'flex-start'}
@@ -44,21 +45,24 @@ const Card = () =>{
                     FontColor={'#FFFFFF'}
                 />
                 <Message
-                    Text={"Location: Mexico City"}
+                    TextBold={"Ubicacion: "}
+                    Text={"Mexico City"}
                     Width={'100%'}
                     Height={px2vw(30)}
                     JustifyContent={'flex-start'}
                     FontSize={22}
                     FontColor={'#FFFFFF'}
                 />
-                <Message
-                    Text={"Date of Birth: 11 Agosto 1993"}
+                {/* <Message
+                    TextBold={"Fecha de nacimiento:"}
+                    Text={""}
+                    Text={" 11 Agosto 1993"}
                     Width={'100%'}
                     Height={px2vw(30)}
                     JustifyContent={'flex-start'}
                     FontSize={22}
                     FontColor={'#FFFFFF'}
-                />
+                /> */}
                 {/* <Button
                     Text={"Portafolio"}
                     Width={'40%'}

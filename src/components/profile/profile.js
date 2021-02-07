@@ -51,7 +51,7 @@ const DefaultProfile = ({bgColor}) =>{
                             width={'40vw'}
                             height={px2vw(50)}
                             flexDirection={'column'}
-                            bgcolor={'#213078'}
+                            bgcolor={colors.darkcolor}
                             padding={`${px2vw(0)} ${px2vw(0)} ${px2vw(0)} ${px2vw(80)}`}
                         >
                             <Title
@@ -66,7 +66,7 @@ const DefaultProfile = ({bgColor}) =>{
                             width={'40vw'}
                             height={px2vw(50)}
                             flexDirection={'column'}
-                            bgcolor={'#213078'}
+                            bgcolor={colors.darkcolor}
                             padding={`${px2vw(0)} ${px2vw(0)} ${px2vw(0)} ${px2vw(80)}`}
                         >
                             <Message

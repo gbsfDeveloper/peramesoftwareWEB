@@ -6,6 +6,7 @@ import Container from '../container';
 const Message = styled.p`
     font-weight:normal;
     font-size:${({FontSize})=>{return (FontSize !== undefined) ? px2vw(FontSize) : px2vw(70)}};
+    font-family:${({FontFamily})=>{return (FontFamily !== undefined) ? FontFamily : ''}};
     color:${({FontColor})=>{return (FontColor !== undefined) ? FontColor : ''}};
     text-align:${({TextAlign})=>{return (TextAlign !== undefined) ? TextAlign : 'left'}};
     @media (min-width: 768px) {
@@ -17,11 +18,11 @@ const Message = styled.p`
     }
 `;
 
-const MessageComp = ({Text,Width,Height, JustifyContent,AlignContent,Padding,FontSize,FontColor,TextAlign}) =>{
+const MessageComp = ({Text,TextBold,Width,Height, JustifyContent,AlignContent,Padding,FontSize,FontColor,TextAlign}) =>{
     return(
         <Container width={Width} height={Height} alignContent={AlignContent} justifyContent={JustifyContent} padding={Padding}>
             <Message FontSize={FontSize} FontColor={FontColor} TextAlign={TextAlign}>
-                {Text}
+                <b>{TextBold}</b>{Text}
             </Message>
         </Container>
     )

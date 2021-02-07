@@ -6,6 +6,7 @@ import Container from '../container';
 const Title = styled.h2`
     font-weight:bold;
     font-size:${({FontSize})=>{return (FontSize !== undefined) ? px2vw(FontSize) : px2vw(70)}};
+    font-family:${({FontFamily})=>{return (FontFamily !== undefined) ? FontFamily : ''}};
     color:${({FontColor})=>{return (FontColor !== undefined) ? FontColor : ''}};
     @media (min-width: 768px) {
         font-size: ${({FontSize})=>{return (FontSize !== undefined) ? px2vw((FontSize - (FontSize * 0.3))) : px2vw(40)}};
@@ -16,11 +17,11 @@ const Title = styled.h2`
     }
 `;
 
-const TitleComp = ({Text,Width,JustifyContent,Padding,FontSize,FontColor}) =>{
+const TitleComp = ({Text,TextBold,Width,JustifyContent,Padding,FontSize,FontColor,FontFamily}) =>{
     return(
         <Container width={Width} justifyContent={JustifyContent} padding={Padding}>
-            <Title FontSize={FontSize} FontColor={FontColor}>
-                {Text}
+            <Title FontSize={FontSize} FontFamily={FontFamily} FontColor={FontColor}>
+                <b>{TextBold}</b>{Text}
             </Title>
         </Container>
     )

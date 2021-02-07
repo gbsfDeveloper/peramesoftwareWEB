@@ -8,7 +8,7 @@ export const Global = createGlobalStyle`
         box-sizing: border-box;
     }
     :root {
-        font-family:'Fredoka One';
+        font-family:'Noto Sans JP';
         font-size: ${px2vw(24)};
 
         @media (min-width: 768px) {
