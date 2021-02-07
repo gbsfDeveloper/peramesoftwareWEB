@@ -7,6 +7,8 @@ import Container from '../container';
 import NavBar from '../navbar';
 import Card from '../card';
 import AboutMe from '../aboutme';
+import EmailSender from '../email-sender';
+import OtherWorks from '../other-work';
 import Title from '../title';
 import Message from '../message';
 
@@ -70,26 +72,17 @@ const DefaultProfile = ({bgColor}) =>{
                                 FontColor={colors.darkcolor}
                             />
                         </Container>
-                        {/* <Container
-                            width={'40vw'}
-                            height={px2vw(50)}
-                            flexDirection={'column'}
-                            bgcolor={colors.white}
-                            padding={`${px2vw(0)} ${px2vw(0)} ${px2vw(0)} ${px2vw(80)}`}
-                        >
-                            <Message
-                                Text={"Frontend & Backend Developer"}
-                                Width={'100%'}
-                                JustifyContent={'flex-start'}
-                                FontSize={30}
-                                FontColor={colors.darkcolor}
-                            />
-                        </Container> */}
                         <AboutMe/>
                     </Container>
                 </Container>
+                <Container
+                     width={'70vw'}
+                     flexDirection={'row'}
+                >
+                    <OtherWorks/>
+                    <EmailSender/>
+                </Container>
             </Container>
-            
         </Profile>
     )
 }
