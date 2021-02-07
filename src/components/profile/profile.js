@@ -13,7 +13,7 @@ import Message from '../message';
 
 const Profile = styled.div`
     width:100%;
-    height: ${px2vw(810)};
+    height: ${px2vw(800)};
     padding :${px2vw(25)};
     display:flex;
     flex-direction:row;
@@ -21,7 +21,7 @@ const Profile = styled.div`
     justify-content:center;
     align-items:center;
     align-content:center;
-    color:${colors.primary};
+    color:${colors.darkcolor};
     background-color:${({bgColor}) => {return (bgColor != undefined) ? bgColor: colors.slowlycolor2}};
 `;
 
@@ -49,9 +49,9 @@ const DefaultProfile = ({bgColor}) =>{
                     >
                         <Container
                             width={'40vw'}
-                            height={px2vw(50)}
+                            height={px2vw(150)}
                             flexDirection={'column'}
-                            bgcolor={colors.darkcolor}
+                            bgcolor={colors.white}
                             padding={`${px2vw(0)} ${px2vw(0)} ${px2vw(0)} ${px2vw(80)}`}
                         >
                             <Title
@@ -59,24 +59,31 @@ const DefaultProfile = ({bgColor}) =>{
                                 Width={'100%'}
                                 JustifyContent={'flex-start'}
                                 FontSize={50}
-                                FontColor={'#FFFFFF'}
+                                FontColor={colors.darkcolor}
                             />
-                        </Container>
-                        <Container
-                            width={'40vw'}
-                            height={px2vw(50)}
-                            flexDirection={'column'}
-                            bgcolor={colors.darkcolor}
-                            padding={`${px2vw(0)} ${px2vw(0)} ${px2vw(0)} ${px2vw(80)}`}
-                        >
                             <Message
-                                Text={"Frontend & Banckend Developer"}
+                                Text={"Desarrollador Frontend & Backend"}
                                 Width={'100%'}
                                 JustifyContent={'flex-start'}
                                 FontSize={30}
-                                FontColor={'#FFFFFF'}
+                                FontColor={colors.darkcolor}
                             />
                         </Container>
+                        {/* <Container
+                            width={'40vw'}
+                            height={px2vw(50)}
+                            flexDirection={'column'}
+                            bgcolor={colors.white}
+                            padding={`${px2vw(0)} ${px2vw(0)} ${px2vw(0)} ${px2vw(80)}`}
+                        >
+                            <Message
+                                Text={"Frontend & Backend Developer"}
+                                Width={'100%'}
+                                JustifyContent={'flex-start'}
+                                FontSize={30}
+                                FontColor={colors.darkcolor}
+                            />
+                        </Container> */}
                         <AboutMe/>
                     </Container>
                 </Container>

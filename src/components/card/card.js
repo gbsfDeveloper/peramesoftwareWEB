@@ -14,7 +14,6 @@ const Card = () =>{
         <Container
             width={'20vw'}
             height={px2vw(450)}
-            // padding={`${px2vw(0)} ${px2vw(0)} ${px2vw(0)} ${px2vw(50)}`}
             flexDirection={'column'}
             justifyContent={'space-between'}
             flexWrap={'nowrap'}
@@ -37,7 +36,7 @@ const Card = () =>{
             >
                 <Message
                     TextBold={"Nombre: "}
-                    Text={"Gelacio Ben Yair"}
+                    Text={"Gelacio Santos Fernandez"}
                     Width={'100%'}
                     Height={px2vw(30)}
                     JustifyContent={'flex-start'}
@@ -46,23 +45,22 @@ const Card = () =>{
                 />
                 <Message
                     TextBold={"Ubicacion: "}
-                    Text={"Mexico City"}
+                    Text={"Ciudad de Mexico"}
                     Width={'100%'}
                     Height={px2vw(30)}
                     JustifyContent={'flex-start'}
                     FontSize={22}
                     FontColor={'#FFFFFF'}
                 />
-                {/* <Message
-                    TextBold={"Fecha de nacimiento:"}
-                    Text={""}
-                    Text={" 11 Agosto 1993"}
+                <Message
+                    TextBold={"Telefono: "}
+                    Text={"914 114 18 95"}
                     Width={'100%'}
                     Height={px2vw(30)}
                     JustifyContent={'flex-start'}
                     FontSize={22}
                     FontColor={'#FFFFFF'}
-                /> */}
+                />
                 {/* <Button
                     Text={"Portafolio"}
                     Width={'40%'}

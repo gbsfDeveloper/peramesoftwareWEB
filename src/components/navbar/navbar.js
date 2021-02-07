@@ -9,7 +9,7 @@ import Title from '../title';
 const NavBar = () =>{
     const buttonsContent = [
         {
-            text:"Sobre mi",
+            text:"Acerca de",
             href:"#",
             hrefTarget:""
         },
@@ -33,7 +33,7 @@ const NavBar = () =>{
         return <Button
             key={button.text}
             Text={button.text}
-            Width={'15%'}
+            Width={'10vw'}
             height={px2vw(100)}
             FontSize={20}
             Href={button.href}
@@ -42,28 +42,29 @@ const NavBar = () =>{
             ButtonHeight={px2vw(100)}
             ButtonPadding={`${px2vw(40)} ${px2vw(0)} ${px2vw(0)} ${px2vw(0)}`}
             ButtonBorderRadius={'0'}
-            ButtonBgColor={'transparent'}
-            ButtonHoverBgColor={colors.primary}
-            ButtonFontColor={colors.primary}
-            ButtonHoverFontColor={colors.white}
+            ButtonBgColor={colors.darkcolor}
+            ButtonHoverBgColor={colors.white}
+            ButtonFontColor={colors.white}
+            ButtonHoverFontColor={colors.darkcolor}
         />
     })
     return(
         <Container
             width={'60vw'}
             height={px2vw(100)}
-            bgcolor={'#FFFFFF'}
+            bgcolor={colors.darkcolor}
             justifyContent={'flex-start'}
         >
             <Container
-                width={'35%'}
+                width={'20vw'}
                 height={px2vw(100)}
                 justifyContent={'flex-start'}
             >
                 <Title
-                    Text={"General Information"}
-                    Width={'90%'}
+                    Text={"Informacion General"}
+                    Width={'100%'}
                     FontSize={35}
+                    FontColor={colors.white}
                 />
             </Container>
             {buttonsList}

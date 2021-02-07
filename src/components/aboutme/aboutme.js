@@ -17,11 +17,11 @@ const AboutMe = ({bgColor}) =>{
     return(
         <Container
             width={'40vw'}
-            height={px2vw(350)}
+            height={px2vw(300)}
             padding={`${px2vw(5)} ${px2vw(40)}`}
             bgcolor={'#FFFFFF'}
             flexDirection={'column'}
-            alignItems={'center'}
+            justifyContent={'flex-start'}
         >
             <Container
                 width={'100%'}
@@ -38,7 +38,7 @@ const AboutMe = ({bgColor}) =>{
                     />
                 </Container>
                 <Title
-                    Text={"Sobre mi"}
+                    Text={"Acerca de"}
                     Width={'95%'}
                     JustifyContent={'flex-start'}
                     FontSize={30}
@@ -46,7 +46,7 @@ const AboutMe = ({bgColor}) =>{
             </Container>
             <Message
                 Width={'100%'}
-                Text={"Mi meta más grande siempre fue desempeñarme como desarrollador de software profesional y aunque este mundo está en constante cambio, cada dia que pasa busco la forma de seguir aprendiendo y de mejorar continuamente para aprovechar al máximo todas las ventajas de las tendencias tecnológicas."}
+                Text={"Mi meta más grande siempre fue desempeñarme como un profesional del desarrollo de software y aunque este mundo está en constante cambio, cada dia que pasa busco la forma de seguir aprendiendo y de mejorar continuamente, aprovechando al máximo todas las ventajas de las tendencias tecnológicas."}
                 FontSize={22}
                 TextAlign={'justify'}
             />
