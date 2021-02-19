@@ -4,9 +4,15 @@ import px2vw from "../../utils/px2vw";
 import colors from '../../constants/Colors';
 import Container from '../container';
 import Image from '../image';
-import Title from '../title';
 import Message from '../message';
-import Button from '../button';
+
+const Icon = styled.i.attrs(({Class,FontSize}) => ({
+    className:  (Class !== undefined) ? Class : '',
+  }))`
+    padding-right:${({Class})=>{return (Class !== undefined) ? px2vw(10) : '0'}};
+    font-size:${({FontSize})=>{return (FontSize !== undefined) ? px2vw(FontSize) : px2vw(70)}};
+    color:${colors.white};
+`;
 
 const Card = () =>{
     
@@ -17,12 +23,12 @@ const Card = () =>{
             flexDirection={'column'}
             justifyContent={'space-between'}
             flexWrap={'nowrap'}
-            bgcolor={'#FFFFFF'}
+            bgcolor={colors.white}
         >
             <Image
                 Width={'100%'}
                 Height={px2vw(300)}
-                BgImage={'/imgs/foto.jpg'}
+                BgImage={'/imgs/user.png'}
             />
             <Container
                 width={'20vw'}
@@ -34,46 +40,94 @@ const Card = () =>{
                 bgcolor={colors.darkcolor}
                 padding={`${px2vw(0)} ${px2vw(0)} ${px2vw(0)} ${px2vw(20)}`}
             >
-                <Message
-                    TextBold={"Nombre: "}
-                    Text={"Gelacio Santos Fernandez"}
-                    Width={'100%'}
-                    Height={px2vw(30)}
-                    JustifyContent={'flex-start'}
-                    FontSize={22}
-                    FontColor={'#FFFFFF'}
-                />
-                <Message
-                    TextBold={"Ubicacion: "}
-                    Text={"Ciudad de Mexico"}
-                    Width={'100%'}
-                    Height={px2vw(30)}
-                    JustifyContent={'flex-start'}
-                    FontSize={22}
-                    FontColor={'#FFFFFF'}
-                />
-                <Message
-                    TextBold={"Telefono: "}
-                    Text={"914 114 18 95"}
-                    Width={'100%'}
-                    Height={px2vw(30)}
-                    JustifyContent={'flex-start'}
-                    FontSize={22}
-                    FontColor={'#FFFFFF'}
-                />
-                {/* <Button
-                    Text={"Portafolio"}
-                    Width={'40%'}
-                    FontSize={12}
-                    Href={'https://github.com/gbsfDeveloper'}
-                    Padding={`${px2vw(25)} 0vw 0vw 0vw`}
-                    IconClassFA={'fas fa-folder-open'}
-                    ButtonPadding={px2vw(10)}
-                    ButtonBorderRadius={'0'}
-                    ButtonBgColor={colors.primary}
-                    ButtonFontColor={colors.white}
-                    ButtonHoverFontColor={colors.white}
-                /> */}
+                <Container
+                    width={'100%'}
+                    height={px2vw(30)}
+                    flexDirection={'row'}
+                    alignItems={'center'}
+                >
+                    <Container
+                        width={'5%'}
+                    >
+                        <Icon 
+                            Class={'fas fa-user'}  
+                            FontSize={15}
+                        />
+                    </Container>
+                    <Message
+                        Text={"Gelacio Santos Fernandez"}
+                        Width={'90%'}
+                        JustifyContent={'flex-start'}
+                        FontSize={22}
+                        FontColor={colors.white}
+                    />
+                </Container>
+                <Container
+                    width={'100%'}
+                    height={px2vw(30)}
+                    flexDirection={'row'}
+                    alignItems={'center'}
+                >
+                    <Container
+                        width={'5%'}
+                    >
+                        <Icon 
+                            Class={'fas fa-map-marker-alt'}  
+                            FontSize={15}
+                        />
+                    </Container>
+                    <Message
+                        Text={"Ciudad de Mexico"}
+                        Width={'90%'}
+                        JustifyContent={'flex-start'}
+                        FontSize={22}
+                        FontColor={colors.white}
+                    />
+                </Container>
+                <Container
+                    width={'100%'}
+                    height={px2vw(30)}
+                    flexDirection={'row'}
+                    alignItems={'center'}
+                >
+                    <Container
+                        width={'5%'}
+                    >
+                        <Icon 
+                            Class={'fas fa-mobile-alt'}
+                            FontSize={15}
+                        />
+                    </Container>
+                    <Message
+                        Text={"914 114 18 95"}
+                        Width={'90%'}
+                        JustifyContent={'flex-start'}
+                        FontSize={22}
+                        FontColor={colors.white}
+                    />
+                </Container>
+                <Container
+                    width={'100%'}
+                    height={px2vw(30)}
+                    flexDirection={'row'}
+                    alignItems={'center'}
+                >
+                    <Container
+                        width={'5%'}
+                    >
+                        <Icon 
+                            Class={'fas fa-envelope-open-text'}
+                            FontSize={15}
+                        />
+                    </Container>
+                    <Message
+                        Text={"gbsf.software.dev@gmail.com"}
+                        Width={'90%'}
+                        JustifyContent={'flex-start'}
+                        FontSize={22}
+                        FontColor={colors.white}
+                    />
+                </Container>
             </Container>
             
         </Container>

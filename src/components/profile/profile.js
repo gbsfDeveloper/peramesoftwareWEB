@@ -8,6 +8,7 @@ import NavBar from '../navbar';
 import Card from '../card';
 import ProfileSkils from '../profile-skills';
 import AboutMe from '../aboutme';
+import ProfileExperience from '../profile-experience';
 import EmailSender from '../email-sender';
 import OtherWorks from '../other-work';
 import Title from '../title';
@@ -114,6 +115,9 @@ const DefaultProfile = ({bgColor}) =>{
                         />
                         <ProfileSkils
                             Display={SectionsState.Skills.isActive ? 'flex' : 'none'}
+                        />
+                        <ProfileExperience
+                            Display={SectionsState.Experience.isActive ? 'flex' : 'none'}
                         />
                     </Container>
                 </Container>
