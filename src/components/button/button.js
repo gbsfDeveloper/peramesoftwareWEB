@@ -3,9 +3,10 @@ import styled from 'styled-components';
 import px2vw from "../../utils/px2vw";
 import Container from '../container';
 
-const Button = styled.a.attrs(({Href,HrefTarget}) => ({
+const Button = styled.a.attrs(({Href,HrefTarget,onClick}) => ({
     href: (Href !== undefined) ? Href : 'https://www.facebook.com/gelaciobenyair.santosfernandez.3',
     target: (HrefTarget !== undefined) ? HrefTarget : '_blank',
+    onClick:(onClick !== undefined) ? onClick : ''
   }))`
     width:${({ButtonWidth})=>{return (ButtonWidth !== undefined) ? ButtonWidth : '100%'}};
     height:${({ButtonHeight})=>{return (ButtonHeight !== undefined) ? ButtonHeight : ''}};
@@ -60,7 +61,8 @@ const DefaultButton = ({
     ButtonHoverCursor,
     ButtonFontColor,
     ButtonHoverFontColor,
-    IconClassFA
+    IconClassFA,
+    onClick
 }) =>{
     return(
         <Container width={Width} height={Height} justifyContent={JustifyContent} padding={Padding}>
@@ -78,6 +80,7 @@ const DefaultButton = ({
                 FontSize={FontSize}
                 Href={Href}
                 HrefTarget={HrefTarget}
+                onClick={onClick}
             >
                 <Icon Class={IconClassFA}/>
                 {Text}

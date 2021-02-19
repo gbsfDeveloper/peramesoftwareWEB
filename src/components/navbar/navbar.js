@@ -6,31 +6,40 @@ import Container from '../container';
 import Button from '../button';
 import Title from '../title';
 
-const NavBar = () =>{
+const NavBar = ({HandleSection}) =>{
     const buttonsContent = [
         {
             text:"Acerca de",
+            section:'About',
             href:"#",
-            hrefTarget:""
+            hrefTarget:"",
+            HandleSection:HandleSection
         },
         {
             text:"Habilidades",
+            section:'Skills',
             href:"#",
-            hrefTarget:""
+            hrefTarget:"",
+            HandleSection:HandleSection
         },
         {
             text:"Experiencia",
+            section:'Experience',
             href:"#",
-            hrefTarget:""
+            hrefTarget:"",
+            HandleSection:HandleSection
         },
         {
             text:"Contacto",
+            section:'Contact',
             href:"#",
-            hrefTarget:""
+            hrefTarget:"",
+            HandleSection:HandleSection
         }
     ]
     const buttonsList = buttonsContent.map((button)=>{
         return <Button
+            onClick={()=>{button.HandleSection(button.section)}}
             key={button.text}
             Text={button.text}
             Width={'12.5vw'}

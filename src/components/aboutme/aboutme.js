@@ -13,16 +13,39 @@ const Icon = styled.i.attrs(({Class,FontSize}) => ({
     font-size:${({FontSize})=>{return (FontSize !== undefined) ? px2vw(FontSize) : px2vw(70)}};
 `;
 
-const AboutMe = ({bgColor}) =>{
+const AboutMe = ({Display}) =>{
     return(
         <Container
             width={'100%'}
-            height={px2vw(300)}
+            height={px2vw(450)}
+            display={Display}
             padding={`${px2vw(5)} ${px2vw(40)}`}
-            bgcolor={'#FFFFFF'}
+            bgcolor={colors.white}
             flexDirection={'column'}
             justifyContent={'flex-start'}
         >
+            <Container
+                width={'100%'}
+                height={px2vw(150)}
+                flexDirection={'column'}
+                bgcolor={colors.white}
+                padding={`${px2vw(0)} ${px2vw(0)} ${px2vw(0)} ${px2vw(80)}`}
+            >
+                <Title
+                    Text={"Gelacio Santos Fernández"}
+                    Width={'100%'}
+                    JustifyContent={'flex-start'}
+                    FontSize={50}
+                    FontColor={colors.darkcolor}
+                />
+                <Message
+                    Text={"Desarrollador de Software"}
+                    Width={'100%'}
+                    JustifyContent={'flex-start'}
+                    FontSize={30}
+                    FontColor={colors.darkcolor}
+                />
+            </Container>
             <Container
                 width={'100%'}
                 height={px2vw(50)}

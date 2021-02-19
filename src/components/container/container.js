@@ -5,7 +5,7 @@ import px2vw from "../../utils/px2vw";
 const Container = styled.div`
     width:${({width})=>{return (width !== undefined) ? width : '10vw'}};
     height:${({height})=>{return (height !== undefined) ? height : ''}};
-    display:flex;
+    display:${({display})=>{return (display !== undefined) ? display : 'flex'}};
     flex-grow:${({flexGrow})=>{return (flexGrow !== undefined) ? flexGrow : ''}};
     flex-wrap: ${({flexWrap})=>{return (flexWrap !== undefined) ? flexWrap : 'nowrap'}};
     flex-direction:${({flexDirection})=>{return (flexDirection !== undefined) ? flexDirection : 'row'}};
@@ -27,11 +27,12 @@ const Container = styled.div`
 `
 
 const DefaultContainer = (props) =>{
-    const {width,height,flexDirection,justifyItems,justifyContent,alignItems,alignContent,flexGrow,flexWrap,children,padding,margin,bgcolor,bgimage,border,borderStyle,boxShadow} = props
+    const {width,height,flexDirection,justifyItems,justifyContent,alignItems,alignContent,flexGrow,flexWrap,children,padding,margin,bgcolor,bgimage,border,borderStyle,boxShadow,display} = props
     return(
         <Container 
             width={width}
             height={height}
+            display={display}
             flexGrow={flexGrow}
             flexWrap={flexWrap}
             flexDirection={flexDirection}
