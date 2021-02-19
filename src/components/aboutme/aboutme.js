@@ -19,17 +19,19 @@ const AboutMe = ({Display}) =>{
             width={'100%'}
             height={px2vw(450)}
             display={Display}
-            padding={`${px2vw(5)} ${px2vw(40)}`}
+            padding={`${px2vw(0)} ${px2vw(40)}`}
             bgcolor={colors.white}
             flexDirection={'column'}
             justifyContent={'flex-start'}
+            alignItems={'flex-start'}
         >
             <Container
                 width={'100%'}
-                height={px2vw(150)}
+                height={px2vw(130)}
                 flexDirection={'column'}
+                borderBottom={`1px solid ${colors.slowlycolor}`}
                 bgcolor={colors.white}
-                padding={`${px2vw(0)} ${px2vw(0)} ${px2vw(0)} ${px2vw(80)}`}
+                padding={`${px2vw(0)} ${px2vw(0)} ${px2vw(0)} ${px2vw(0)}`}
             >
                 <Title
                     Text={"Gelacio Santos Fernández"}
@@ -48,11 +50,11 @@ const AboutMe = ({Display}) =>{
             </Container>
             <Container
                 width={'100%'}
-                height={px2vw(50)}
+                height={px2vw(10)}
                 flexDirection={'row'}
                 alignItems={'center'}
             >
-                <Container
+                {/* <Container
                     width={'5%'}
                 >
                     <Icon 
@@ -65,10 +67,11 @@ const AboutMe = ({Display}) =>{
                     Width={'95%'}
                     JustifyContent={'flex-start'}
                     FontSize={30}
-                />
+                /> */}
             </Container>
             <Message
                 Width={'100%'}
+                Height={px2vw(100)}
                 Text={"Mi meta más grande siempre fue desempeñarme como un profesional del desarrollo de software y aunque este mundo está en constante cambio, cada dia que pasa busco la forma de seguir aprendiendo y de mejorar continuamente, aprovechando al máximo todas las ventajas de las tendencias tecnológicas."}
                 FontSize={22}
                 TextAlign={'justify'}

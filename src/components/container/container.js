@@ -19,6 +19,7 @@ const Container = styled.div`
     background-size: 100% 100%;
     background-color:${({bgcolor})=>{return (bgcolor !== undefined) ? bgcolor : 'transparent'}};
     border:${({border})=>{return (border !== undefined) ? border : ''}};
+    border-bottom:${({borderBottom})=>{return (borderBottom !== undefined) ? borderBottom : ''}};
     border-style:${({borderStyle})=>{return (borderStyle !== undefined) ? borderStyle : ''}};
     box-shadow:${({boxShadow})=>{return (boxShadow !== undefined) ? boxShadow : ''}};
     @media (min-width: 1024px) {
@@ -27,7 +28,7 @@ const Container = styled.div`
 `
 
 const DefaultContainer = (props) =>{
-    const {width,height,flexDirection,justifyItems,justifyContent,alignItems,alignContent,flexGrow,flexWrap,children,padding,margin,bgcolor,bgimage,border,borderStyle,boxShadow,display} = props
+    const {width,height,flexDirection,justifyItems,justifyContent,alignItems,alignContent,flexGrow,flexWrap,children,padding,margin,bgcolor,bgimage,border,borderStyle,boxShadow,display,borderBottom} = props
     return(
         <Container 
             width={width}
@@ -46,7 +47,8 @@ const DefaultContainer = (props) =>{
             bgimage={bgimage}       
             border={border}       
             borderStyle={borderStyle}       
-            boxShadow={boxShadow}       
+            boxShadow={boxShadow}
+            borderBottom={borderBottom}       
         >
             {children}
         </Container>
