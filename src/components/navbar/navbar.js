@@ -39,7 +39,10 @@ const NavBar = ({HandleSection}) =>{
     ]
     const buttonsList = buttonsContent.map((button)=>{
         return <Button
-            onClick={()=>{button.HandleSection(button.section)}}
+            onClick={(e)=>{
+                e.preventDefault();
+                button.HandleSection(button.section)
+            }}
             key={button.text}
             Text={button.text}
             Width={'12.5vw'}
