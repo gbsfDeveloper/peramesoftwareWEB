@@ -98,7 +98,7 @@ const DefaultProfile = ({bgColor}) =>{
                 justifyContent={'flex-start'}
                 boxShadow={'0 3px 10px 0 rgba(0,0,0,.1)'}
             >
-                {(Width>768) ? <NavBar HandleSection={handleSection}/> : undefined}
+                {(Width>768) ? <NavBar HandleSection={handleSection} SectionsState={SectionsState}/> : undefined}
                 <Container
                      width={'70vw'}
                      flexDirection={'row'}

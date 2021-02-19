@@ -6,35 +6,39 @@ import Container from '../container';
 import Button from '../button';
 import Title from '../title';
 
-const NavBar = ({HandleSection}) =>{
+const NavBar = ({HandleSection,SectionsState}) =>{
     const buttonsContent = [
         {
             text:"Acerca de",
             section:'About',
             href:"#",
             hrefTarget:"",
-            HandleSection:HandleSection
+            HandleSection:HandleSection,
+            SectionsState:SectionsState.About
         },
         {
             text:"Habilidades",
             section:'Skills',
             href:"#",
             hrefTarget:"",
-            HandleSection:HandleSection
+            HandleSection:HandleSection,
+            SectionsState:SectionsState.Skills
         },
         {
             text:"Experiencia",
             section:'Experience',
             href:"#",
             hrefTarget:"",
-            HandleSection:HandleSection
+            HandleSection:HandleSection,
+            SectionsState:SectionsState.Experience
         },
         {
             text:"Contacto",
             section:'Contact',
             href:"#",
             hrefTarget:"",
-            HandleSection:HandleSection
+            HandleSection:HandleSection,
+            SectionsState:SectionsState.Contact
         }
     ]
     const buttonsList = buttonsContent.map((button)=>{
@@ -54,9 +58,9 @@ const NavBar = ({HandleSection}) =>{
             ButtonHeight={px2vw(100)}
             ButtonPadding={`${px2vw(40)} ${px2vw(0)} ${px2vw(0)} ${px2vw(0)}`}
             ButtonBorderRadius={'0'}
-            ButtonBgColor={colors.darkcolor}
+            ButtonBgColor={button.SectionsState.isActive ? colors.white :colors.darkcolor}
+            ButtonFontColor={button.SectionsState.isActive ? colors.darkcolor :colors.white}
             ButtonHoverBgColor={colors.white}
-            ButtonFontColor={colors.white}
             ButtonHoverFontColor={colors.darkcolor}
         />
     })
