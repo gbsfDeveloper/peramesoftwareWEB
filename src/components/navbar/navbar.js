@@ -17,20 +17,20 @@ const NavBar = ({HandleSection,SectionsState}) =>{
             SectionsState:SectionsState.About
         },
         {
-            text:"Habilidades",
-            section:'Skills',
-            href:"#",
-            hrefTarget:"",
-            HandleSection:HandleSection,
-            SectionsState:SectionsState.Skills
-        },
-        {
             text:"Experiencia",
             section:'Experience',
             href:"#",
             hrefTarget:"",
             HandleSection:HandleSection,
             SectionsState:SectionsState.Experience
+        },
+        {
+            text:"Tecnologías",
+            section:'Skills',
+            href:"#",
+            hrefTarget:"",
+            HandleSection:HandleSection,
+            SectionsState:SectionsState.Skills
         },
         {
             text:"Contacto",
