@@ -23,15 +23,16 @@ const ProfileExperience = ({Display}) =>{
             padding={`${px2vw(15)} ${px2vw(40)}`}
             bgcolor={colors.white}
             flexDirection={'column'}
-            justifyContent={'flex-start'}
+            justifyContent={'space-around'}
         >
             {/* ACTUAL EXPERIENCIA */}
             <Container
                 width={'100%'}
-                height={'50%'}
+                height={'45%'}
                 flexDirection={'column'}
                 alignItems={'flex-start'}
                 justifyContent={'flex-start'}
+                borderBottom={`1px solid ${colors.slowlycolor}`}
             >
                 <Container
                     width={'100%'}
@@ -71,7 +72,7 @@ const ProfileExperience = ({Display}) =>{
             {/* ANTERIOR EXPERIENCIA */}
             <Container
                 width={'100%'}
-                height={'50%'}
+                height={'45%'}
                 flexDirection={'column'}
                 alignItems={'flex-start'}
                 justifyContent={'flex-start'}

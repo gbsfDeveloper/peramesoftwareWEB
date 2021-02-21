@@ -22,298 +22,267 @@ const ProfileSkils = ({Display}) =>{
         display={Display}
         flexDirection={'column'}
         bgcolor={colors.white}
-        padding={`${px2vw(0)} ${px2vw(0)} ${px2vw(0)} ${px2vw(0)}`}
+        padding={`${px2vw(0)} ${px2vw(0)} ${px2vw(0)} ${px2vw(40)}`}
     >
         <Container
             width={'100%'}
             height={px2vw(50)}
             flexDirection={'row'}
             alignItems={'center'}
+            justifyContent={'flex-start'}
+            padding={`${px2vw(0)} ${px2vw(0)} ${px2vw(0)} ${px2vw(20)}`}
         >
             <Container
-                width={'5%'}
+                width={'2%'}
             >
                 <Icon 
-                    Class={'fas fa-server'}  
-                    FontSize={20}
+                    Class={'fas fa-caret-right'}
+                    FontSize={25}
                 />
             </Container>
-            <Title
-                Text={"Desarrollo Backend"}
+            <Message
+                TextBold={"Lenguajes de programacion: "}
                 Width={'90%'}
                 JustifyContent={'flex-start'}
-                FontSize={30}
+                FontSize={25}
             />
         </Container>
         <Container
             width={'100%'}
-            height={px2vw(150)}
+            height={px2vw(20)}
             flexDirection={'row'}
             alignItems={'center'}
+            justifyContent={'flex-start'}
+            padding={`${px2vw(0)} ${px2vw(0)} ${px2vw(0)} ${px2vw(40)}`}
         >
-
-            {/* PHP */}
-            <Container
-                // width={'10%'}
-                height={px2vw(100)}
-                flexDirection={'column'}
-            >
-                <SkillCircle
-                    FillValue={0.80}
-                    TextColor={'#213078'}
-                    Width={50}
-                    Height={50}
-                    TrackColor={'#F2F2F2'}
-                    ProgressColor={'#213078'}
-                    ProgressWidth={10}
-                    TrackWidth={10}
-                    LogoDY={'0.4rem'}
-                    LogoFontSize={'2.5rem'}
-                    LogoClass={''}
-                    PercentageDY={'1.5rem'}
-                    PercentageFontSize={'1rem'}
-                    PercentageText={'80%'}
-                />
-                <Title
-                    Text={"PHP"}
-                    Width={'100%'}
-                    Padding={`${px2vw(10)} ${px2vw(0)} ${px2vw(0)} ${px2vw(0)}`}
-                    JustifyContent={'center'}
-                    FontSize={20}
-                />
-            </Container>
-            {/* NODE JS */}
-            <Container
-                // width={'10%'}
-                height={px2vw(100)}
-                flexDirection={'column'}
-            >
-                <SkillCircle
-                    FillValue={0.70}
-                    TextColor={'#168130'}
-                    Width={50}
-                    Height={50}
-                    TrackColor={'#F2F2F2'}
-                    ProgressColor={'#168130'}
-                    ProgressWidth={10}
-                    TrackWidth={10}
-                    LogoDY={'0.4rem'}
-                    LogoFontSize={'2.5rem'}
-                    LogoClass={''}
-                    PercentageDY={'1.5rem'}
-                    PercentageFontSize={'1rem'}
-                    PercentageText={'70%'}
-                />
-                <Title
-                    Text={"Node JS"}
-                    Width={'100%'}
-                    Padding={`${px2vw(10)} ${px2vw(0)} ${px2vw(0)} ${px2vw(0)}`}
-                    JustifyContent={'center'}
-                    FontSize={20}
-                />
-            </Container>
-            {/* PYTHON */}
-            <Container
-                // width={'10%'}
-                height={px2vw(100)}
-                flexDirection={'column'}
-            >
-                <SkillCircle
-                    FillValue={0.80}
-                    TextColor={'#11BF1C'}
-                    Width={50}
-                    Height={50}
-                    TrackColor={'#F2F2F2'}
-                    ProgressColor={'#11BF1C'}
-                    ProgressWidth={10}
-                    TrackWidth={10}
-                    LogoDY={'0.4rem'}
-                    LogoFontSize={'2.5rem'}
-                    LogoClass={''}
-                    PercentageDY={'1.5rem'}
-                    PercentageFontSize={'1rem'}
-                    PercentageText={'80%'}
-                />
-                <Title
-                    Text={"Python"}
-                    Width={'100%'}
-                    Padding={`${px2vw(10)} ${px2vw(0)} ${px2vw(0)} ${px2vw(0)}`}
-                    JustifyContent={'center'}
-                    FontSize={20}
-                />
-            </Container>
-        </Container>
-        {/* <Container
-            width={'100%'}
-            height={px2vw(50)}
-            flexDirection={'row'}
-            alignItems={'center'}
-        >
-            <Container
-                width={'5%'}
-            >
-                <Icon 
-                    Class={'fas fa-gamepad'}  
-                    FontSize={20}
-                />
-            </Container>
-            <Title
-                Text={"Desarrollo de Videojuegos"}
-                Width={'95%'}
+            <Message
+                TextBold={"Lenguajes de proposito general: "}
+                Text={"Python, C++"}
+                Width={'90%'}
                 JustifyContent={'flex-start'}
-                FontSize={30}
+                FontSize={20}
             />
-        </Container> */}
+        </Container>
+        <Container
+            width={'100%'}
+            height={px2vw(20)}
+            flexDirection={'row'}
+            alignItems={'center'}
+            justifyContent={'flex-start'}
+            padding={`${px2vw(0)} ${px2vw(0)} ${px2vw(0)} ${px2vw(40)}`}
+        >
+            <Message
+                TextBold={"Lenguajes Web: "}
+                Text={"PHP, Javascript"}
+                Width={'90%'}
+                JustifyContent={'flex-start'}
+                FontSize={20}
+            />
+        </Container>
+        <Container
+            width={'100%'}
+            height={px2vw(20)}
+            flexDirection={'row'}
+            alignItems={'center'}
+            justifyContent={'flex-start'}
+            padding={`${px2vw(0)} ${px2vw(0)} ${px2vw(0)} ${px2vw(40)}`}
+        >
+            <Message
+                TextBold={"Tecnologias Web: "}
+                Text={"React JS, CSS, HTML"}
+                Width={'90%'}
+                JustifyContent={'flex-start'}
+                FontSize={20}
+            />
+        </Container>
+        <Container
+            width={'100%'}
+            height={px2vw(20)}
+            flexDirection={'row'}
+            alignItems={'center'}
+            justifyContent={'flex-start'}
+            padding={`${px2vw(0)} ${px2vw(0)} ${px2vw(0)} ${px2vw(40)}`}
+        >
+            <Message
+                TextBold={"Frameworks y Librerias: "}
+                Text={"Yii2, React JS, Flask, Django"}
+                Width={'90%'}
+                JustifyContent={'flex-start'}
+                FontSize={20}
+            />
+        </Container>
         <Container
             width={'100%'}
             height={px2vw(50)}
             flexDirection={'row'}
             alignItems={'center'}
+            justifyContent={'flex-start'}
+            padding={`${px2vw(0)} ${px2vw(0)} ${px2vw(0)} ${px2vw(20)}`}
         >
             <Container
-                width={'5%'}
+                width={'2%'}
             >
                 <Icon 
-                    Class={'fas fa-globe'}  
-                    FontSize={20}
+                    Class={'fas fa-caret-right'}
+                    FontSize={25}
                 />
             </Container>
-            <Title
-                Text={"Desarrollo Frontend"}
+            <Message
+                TextBold={"Bases de Datos: "}
                 Width={'90%'}
                 JustifyContent={'flex-start'}
-                FontSize={30}
+                FontSize={25}
             />
         </Container>
         <Container
             width={'100%'}
-            height={px2vw(150)}
-            padding={`${px2vw(15)} ${px2vw(0)} ${px2vw(15)} ${px2vw(0)}`}
+            height={px2vw(20)}
             flexDirection={'row'}
             alignItems={'center'}
+            justifyContent={'flex-start'}
+            padding={`${px2vw(0)} ${px2vw(0)} ${px2vw(0)} ${px2vw(40)}`}
         >
-            {/* React */}
-            <Container
-                // width={'10%'}
-                height={px2vw(100)}
-                flexDirection={'column'}
-            >
-                <SkillCircle
-                    FillValue={0.50}
-                    TextColor={'#89EBFF'}
-                    Width={50}
-                    Height={50}
-                    TrackColor={'#F2F2F2'}
-                    ProgressColor={'#89EBFF'}
-                    ProgressWidth={10}
-                    TrackWidth={10}
-                    LogoDY={'0.4rem'}
-                    LogoFontSize={'2.5rem'}
-                    LogoClass={''}
-                    PercentageDY={'1.5rem'}
-                    PercentageFontSize={'1rem'}
-                    PercentageText={'50%'}
-                />
-                <Title
-                    Text={"React JS"}
-                    Width={'100%'}
-                    Padding={`${px2vw(10)} ${px2vw(0)} ${px2vw(0)} ${px2vw(0)}`}
-                    JustifyContent={'center'}
-                    FontSize={20}
-                />
-            </Container>
-            {/* Javascript */}
-            <Container
-                // width={'10%'}
-                height={px2vw(100)}
-                flexDirection={'column'}
-            >
-                <SkillCircle
-                    FillValue={0.80}
-                    TextColor={'#D7E433'}
-                    Width={50}
-                    Height={50}
-                    TrackColor={'#F2F2F2'}
-                    ProgressColor={'#D7E433'}
-                    ProgressWidth={10}
-                    TrackWidth={10}
-                    LogoDY={'0.4rem'}
-                    LogoFontSize={'2.5rem'}
-                    LogoClass={''}
-                    PercentageDY={'1.5rem'}
-                    PercentageFontSize={'1rem'}
-                    PercentageText={'80%'}
-                />
-                <Title
-                    Text={"Javascript"}
-                    Width={'100%'}
-                    Padding={`${px2vw(10)} ${px2vw(0)} ${px2vw(0)} ${px2vw(0)}`}
-                    JustifyContent={'center'}
-                    FontSize={20}
-                />
-            </Container>
-            {/* CSS */}
-            <Container
-                // width={'10%'}
-                height={px2vw(100)}
-                flexDirection={'column'}
-            >
-                <SkillCircle
-                    FillValue={0.80}
-                    TextColor={'#00AEFF'}
-                    Width={50}
-                    Height={50}
-                    TrackColor={'#F2F2F2'}
-                    ProgressColor={'#00AEFF'}
-                    ProgressWidth={10}
-                    TrackWidth={10}
-                    LogoDY={'0.4rem'}
-                    LogoFontSize={'2.5rem'}
-                    LogoClass={''}
-                    PercentageDY={'1.5rem'}
-                    PercentageFontSize={'1rem'}
-                    PercentageText={'80%'}
-                />
-                <Title
-                    Text={"CSS"}
-                    Width={'100%'}
-                    Padding={`${px2vw(10)} ${px2vw(0)} ${px2vw(0)} ${px2vw(0)}`}
-                    JustifyContent={'center'}
-                    FontSize={20}
-                />
-            </Container>
-            {/* HTML */}
-            <Container
-                // width={'10%'}
-                height={px2vw(100)}
-                flexDirection={'column'}
-            >
-                <SkillCircle
-                    FillValue={0.90}
-                    TextColor={'#E33434'}
-                    Width={50}
-                    Height={50}
-                    TrackColor={'#F2F2F2'}
-                    ProgressColor={'#E33434'}
-                    ProgressWidth={10}
-                    TrackWidth={10}
-                    LogoDY={'0.4rem'}
-                    LogoFontSize={'2.5rem'}
-                    LogoClass={''}
-                    PercentageDY={'1.5rem'}
-                    PercentageFontSize={'1rem'}
-                    PercentageText={'90%'}
-                />
-                <Title
-                    Text={"HTML"}
-                    Width={'100%'}
-                    Padding={`${px2vw(10)} ${px2vw(0)} ${px2vw(0)} ${px2vw(0)}`}
-                    JustifyContent={'center'}
-                    FontSize={20}
-                />
-            </Container>
+            <Message
+                TextBold={"Relacionales: "}
+                Text={"SQL Server, MySql"}
+                Width={'90%'}
+                JustifyContent={'flex-start'}
+                FontSize={20}
+            />
         </Container>
-        
+        <Container
+            width={'100%'}
+            height={px2vw(20)}
+            flexDirection={'row'}
+            alignItems={'center'}
+            justifyContent={'flex-start'}
+            padding={`${px2vw(0)} ${px2vw(0)} ${px2vw(0)} ${px2vw(40)}`}
+        >
+            <Message
+                TextBold={"No Relacionales: "}
+                Text={"Mongo DB"}
+                Width={'90%'}
+                JustifyContent={'flex-start'}
+                FontSize={20}
+            />
+        </Container>
+        <Container
+            width={'100%'}
+            height={px2vw(50)}
+            flexDirection={'row'}
+            alignItems={'center'}
+            justifyContent={'flex-start'}
+            padding={`${px2vw(0)} ${px2vw(0)} ${px2vw(0)} ${px2vw(20)}`}
+        >
+            <Container
+                width={'2%'}
+            >
+                <Icon 
+                    Class={'fas fa-caret-right'}
+                    FontSize={25}
+                />
+            </Container>
+            <Message
+                TextBold={"Servidores: "}
+                Width={'90%'}
+                JustifyContent={'flex-start'}
+                FontSize={25}
+            />
+        </Container>
+        <Container
+            width={'100%'}
+            height={px2vw(20)}
+            flexDirection={'row'}
+            alignItems={'center'}
+            justifyContent={'flex-start'}
+            padding={`${px2vw(0)} ${px2vw(0)} ${px2vw(0)} ${px2vw(40)}`}
+        >
+            <Message
+                TextBold={"Linux: "}
+                Text={"Ubuntu, Cent OS, SUSE"}
+                Width={'90%'}
+                JustifyContent={'flex-start'}
+                FontSize={20}
+            />
+        </Container>
+        <Container
+            width={'100%'}
+            height={px2vw(50)}
+            flexDirection={'row'}
+            alignItems={'center'}
+            justifyContent={'flex-start'}
+            padding={`${px2vw(0)} ${px2vw(0)} ${px2vw(0)} ${px2vw(20)}`}
+        >
+            <Container
+                width={'2%'}
+            >
+                <Icon 
+                    Class={'fas fa-caret-right'}
+                    FontSize={25}
+                />
+            </Container>
+            <Message
+                TextBold={"Tecnologias Google: "}
+                Width={'90%'}
+                JustifyContent={'flex-start'}
+                FontSize={25}
+            />
+        </Container>
+        <Container
+            width={'100%'}
+            height={px2vw(20)}
+            flexDirection={'row'}
+            alignItems={'center'}
+            justifyContent={'flex-start'}
+            padding={`${px2vw(0)} ${px2vw(0)} ${px2vw(0)} ${px2vw(40)}`}
+        >
+            <Message
+                TextBold={"Firebase: "}
+                Text={"Cloud Messagging, Realtime Database"}
+                Width={'90%'}
+                JustifyContent={'flex-start'}
+                FontSize={20}
+            />
+        </Container>
+        <Container
+            width={'100%'}
+            height={px2vw(50)}
+            flexDirection={'row'}
+            alignItems={'center'}
+            justifyContent={'flex-start'}
+            padding={`${px2vw(0)} ${px2vw(0)} ${px2vw(0)} ${px2vw(20)}`}
+        >
+            <Container
+                width={'2%'}
+            >
+                <Icon 
+                    Class={'fas fa-caret-right'}
+                    FontSize={25}
+                />
+            </Container>
+            <Message
+                TextBold={"Desarrollo de Videojuegos: "}
+                Width={'90%'}
+                JustifyContent={'flex-start'}
+                FontSize={25}
+            />
+        </Container>
+        <Container
+            width={'100%'}
+            height={px2vw(20)}
+            flexDirection={'row'}
+            alignItems={'center'}
+            justifyContent={'flex-start'}
+            padding={`${px2vw(0)} ${px2vw(0)} ${px2vw(0)} ${px2vw(40)}`}
+        >
+            <Message
+                TextBold={"Engines: "}
+                Text={"Phaser, Godot"}
+                Width={'90%'}
+                JustifyContent={'flex-start'}
+                FontSize={20}
+            />
+        </Container>
         
     </Container>
     )

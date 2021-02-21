@@ -33,7 +33,7 @@ const NavBar = ({HandleSection,SectionsState}) =>{
             SectionsState:SectionsState.Skills
         },
         {
-            text:"Contacto",
+            text:"Proyectos",
             section:'Contact',
             href:"#",
             hrefTarget:"",

@@ -107,6 +107,36 @@ const AboutMe = ({Display}) =>{
                         FontSize={20}
                     />
                 </Container>
+                 {/* PYTHON */}
+                 <Container
+                    // width={'10%'}
+                    height={px2vw(100)}
+                    flexDirection={'column'}
+                >
+                    <SkillCircle
+                        FillValue={1}
+                        TextColor={'#FFDB4E'}
+                        Width={50}
+                        Height={50}
+                        TrackColor={'#F2F2F2'}
+                        ProgressColor={'#FFDB4E'}
+                        ProgressWidth={10}
+                        TrackWidth={10}
+                        LogoDY={'1rem'}
+                        LogoFontSize={'2.5rem'}
+                        LogoClass={''}
+                        PercentageDY={'1.5rem'}
+                        PercentageFontSize={'1rem'}
+                        PercentageText={''}
+                    />
+                    <Title
+                        Text={"Python"}
+                        Width={'100%'}
+                        Padding={`${px2vw(10)} ${px2vw(0)} ${px2vw(0)} ${px2vw(0)}`}
+                        JustifyContent={'center'}
+                        FontSize={20}
+                    />
+                </Container>
                 {/* NODE JS */}
                 <Container
                     // width={'10%'}
@@ -131,36 +161,6 @@ const AboutMe = ({Display}) =>{
                     />
                     <Title
                         Text={"Node JS"}
-                        Width={'100%'}
-                        Padding={`${px2vw(10)} ${px2vw(0)} ${px2vw(0)} ${px2vw(0)}`}
-                        JustifyContent={'center'}
-                        FontSize={20}
-                    />
-                </Container>
-                {/* PYTHON */}
-                <Container
-                    // width={'10%'}
-                    height={px2vw(100)}
-                    flexDirection={'column'}
-                >
-                    <SkillCircle
-                        FillValue={1}
-                        TextColor={'#FFDB4E'}
-                        Width={50}
-                        Height={50}
-                        TrackColor={'#F2F2F2'}
-                        ProgressColor={'#FFDB4E'}
-                        ProgressWidth={10}
-                        TrackWidth={10}
-                        LogoDY={'1rem'}
-                        LogoFontSize={'2.5rem'}
-                        LogoClass={''}
-                        PercentageDY={'1.5rem'}
-                        PercentageFontSize={'1rem'}
-                        PercentageText={''}
-                    />
-                    <Title
-                        Text={"Python"}
                         Width={'100%'}
                         Padding={`${px2vw(10)} ${px2vw(0)} ${px2vw(0)} ${px2vw(0)}`}
                         JustifyContent={'center'}
