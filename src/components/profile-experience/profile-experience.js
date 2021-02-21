@@ -105,7 +105,7 @@ const ProfileExperience = ({Display}) =>{
                 <Message
                     Width={'100%'}
                     TextBold={"Actividades: "}
-                    Text={"Desarrollo de software en lenguaje Python para solución de problemas específicos, Uso y Gestión de bases de datos con MONGODB, Uso de ambientes y servidores virtuales LINUX (UBUNTU, CentOS) y AWS, Frameworks para diseño de aplicaciones web :FLASK (medio)."}
+                    Text={"Desarrollo de software en lenguaje Python para solución de problemas específicos, uso y Gestión de bases de datos con MONGODB, uso de ambientes y servidores virtuales LINUX (UBUNTU, CentOS) y AWS, Frameworks para diseño de aplicaciones web :FLASK (medio)."}
                     FontSize={22}
                     TextAlign={'justify'}
                     Padding={`${px2vw(15)} ${px2vw(0)}`}
