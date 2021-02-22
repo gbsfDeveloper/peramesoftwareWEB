@@ -9,8 +9,6 @@ import OtherWorks from '../other-work767';
 
 const Footer = styled.div`
     width:100%;
-    position:absolute;
-    bottom:0;
     padding :${px2vw(10)};
     display:flex;
     flex-direction:row;

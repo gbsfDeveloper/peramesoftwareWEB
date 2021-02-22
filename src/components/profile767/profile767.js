@@ -7,7 +7,7 @@ import Container from '../container';
 import NavBar from '../navbar';
 import Card from '../card767';
 import ProfileSkils from '../profile-skills';
-import AboutMe from '../aboutme';
+import AboutMe from '../aboutme767';
 import ProfileExperience from '../profile-experience';
 
 
@@ -100,7 +100,7 @@ const DefaultProfile = ({bgColor}) =>{
                 >
                     <Card/>
                     <Container
-                        width={'50vw'}
+                        width={'95%'}
                         flexDirection={'column'}
                         justifyContent={'flex-start'}
                     >
@@ -116,7 +116,7 @@ const DefaultProfile = ({bgColor}) =>{
                     </Container>
                 </Container>
                 <Container
-                     width={'70vw'}
+                     width={'95%'}
                      height={px2vw(20)}
                      bgcolor={colors.darkcolor}
                 >
