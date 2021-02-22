@@ -1,8 +1,10 @@
 import React from 'react';
 import Header from './components/header';
 import Profile from './components/profile';
+import Footer from './components/footer';
 import Global from "./styles/global";
 import styled from 'styled-components';
+
 
 const Main = styled.div`
     width: 100%;
@@ -19,6 +21,7 @@ const App = () => {
             <Global/>
             <Header/>
             <Profile/>
+            <Footer/>
         </Main>
     )
 }
