@@ -5,7 +5,7 @@ import colors from '../../constants/Colors';
 import px2vw from "../../utils/px2vw";
 import Container from '../container';
 import NavBar from '../navbar';
-import Card from '../card';
+import Card from '../card767';
 import ProfileSkils from '../profile-skills';
 import AboutMe from '../aboutme';
 import ProfileExperience from '../profile-experience';
@@ -13,8 +13,7 @@ import ProfileExperience from '../profile-experience';
 
 const Profile = styled.div`
     width:100%;
-    /* height: ${px2vw(800)}; */
-    padding :${px2vw(25)};
+    padding :${px2vw(0)};
     display:flex;
     flex-direction:row;
     justify-items:center;
@@ -87,7 +86,7 @@ const DefaultProfile = ({bgColor}) =>{
     return(
         <Profile bgColor={bgColor}>
             <Container
-                width={'70vw'}
+                width={'100%'}
                 height={'100%'}
                 flexDirection={'column'}
                 justifyContent={'flex-start'}
@@ -95,8 +94,8 @@ const DefaultProfile = ({bgColor}) =>{
             >
                 {(Width>768) ? <NavBar HandleSection={handleSection} SectionsState={SectionsState}/> : undefined}
                 <Container
-                     width={'70vw'}
-                     flexDirection={'row'}
+                     width={'100%'}
+                     flexDirection={'column'}
                      justifyContent={'space-between'}
                 >
                     <Card/>

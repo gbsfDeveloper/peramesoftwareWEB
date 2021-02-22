@@ -2,6 +2,7 @@ import React from 'react';
 import useViewport from './hooks/useViewport';
 import Header767 from './components/header767';
 import Footer767 from './components/footer767';
+import Profile767 from './components/profile767';
 import Header from './components/header';
 import Profile from './components/profile';
 import Footer from './components/footer';
@@ -23,7 +24,7 @@ const App = () => {
         if(Width<767){
             return <>
                 <Header767/>
-                <Profile/>
+                <Profile767/>
                 <Footer767/>
             </>
         }
