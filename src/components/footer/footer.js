@@ -9,7 +9,7 @@ import OtherWorks from '../other-work';
 
 const Footer = styled.div`
     width:100%;
-    height: 100%;
+    /* height: 100%; */
     padding :${px2vw(10)};
     display:flex;
     flex-direction:row;
