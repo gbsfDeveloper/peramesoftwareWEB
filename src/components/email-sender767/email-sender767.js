@@ -16,6 +16,7 @@ const Input = styled.input.attrs(({PlaceHolder,Type,Id}) => ({
     width:100%;
     height:100%;
     padding: 3% 3%;
+    font-size:${({FontSize})=>{return (FontSize !== undefined) ? px2vw(FontSize) : px2vw(70)}};
 `;
 
 const TextArea = styled.textarea.attrs(({PlaceHolder,Type,Id,Rows}) => ({
@@ -31,6 +32,7 @@ const TextArea = styled.textarea.attrs(({PlaceHolder,Type,Id,Rows}) => ({
     max-width:100%;
     max-height:100%;
     padding: 2% 2%;
+    font-size:${({FontSize})=>{return (FontSize !== undefined) ? px2vw(FontSize) : px2vw(70)}};
 `;
 
 const DefaultEmailSender = ({bgColor}) =>{
@@ -47,7 +49,7 @@ const DefaultEmailSender = ({bgColor}) =>{
                     Text={"Contactame"}
                     Width={'100%'}
                     JustifyContent={'center'}
-                    FontSize={60}
+                    FontSize={70}
                     FontColor={colors.white}
                 />
                 <Container
@@ -68,7 +70,7 @@ const DefaultEmailSender = ({bgColor}) =>{
                     height={px2vw(150)}
                     flexDirection={'column'}
                     justifyContent={'center'}
-                    margin={`${px2vw(50)} ${px2vw(0)} ${px2vw(0)} ${px2vw(0)}`}
+                    margin={`${px2vw(20)} ${px2vw(0)} ${px2vw(0)} ${px2vw(0)}`}
                 >
                     <Input 
                         Id={'inputName'}
@@ -81,7 +83,7 @@ const DefaultEmailSender = ({bgColor}) =>{
                     height={px2vw(300)}
                     flexDirection={'column'}
                     justifyContent={'center'}
-                    margin={`${px2vw(50)} ${px2vw(0)} ${px2vw(0)} ${px2vw(0)}`}
+                    margin={`${px2vw(20)} ${px2vw(0)} ${px2vw(0)} ${px2vw(0)}`}
                 >
                     <TextArea 
                         Id={'inputMessage'}

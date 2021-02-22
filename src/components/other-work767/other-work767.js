@@ -22,7 +22,7 @@ const DefaultOtherWorks = ({bgColor}) =>{
                     Text={"Portafolio"}
                     Width={'100%'}
                     JustifyContent={'center'}
-                    FontSize={60}
+                    FontSize={70}
                     FontColor={colors.white}
                 />
                 <Container

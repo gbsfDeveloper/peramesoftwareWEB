@@ -19,6 +19,10 @@ export const Global = createGlobalStyle`
             font-size: ${px2vw(16)};
         }
     }
+    textarea{
+        font-family:'Noto Sans JP';
+        font-weight:bold;
+    }
 `;
 
 export default Global;
