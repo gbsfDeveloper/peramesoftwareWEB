@@ -30,57 +30,8 @@ const DefaultProfile = ({bgColor}) =>{
     const Sections = {
         About: {name:'About',isActive:true},
         Skills: {name:'Skills',isActive:false},
-        Experience: {name:'Experience',isActive:false},
+        Experience: {name:'Experience',isActive:true},
         Contact: {name:'Contact',isActive:false}
-    }
-
-    let {Width} = useViewport();
-    const [ActiveSection,setActiveSection] = useState(Sections.About.name);
-    const [SectionsState,setSectionsState] = useState(Sections);
-    
-    useEffect(() => { 
-        return SectionsState;
-    },[]);
-
-    const handleSection = (name) =>{
-        switch (name) {
-            case 'About':
-                setSectionsState({
-                    ...SectionsState,
-                    About:{name:'About',isActive:true},
-                    Skills:{name:'Skills',isActive:false},
-                    Experience:{name:'Experience',isActive:false},
-                    Contact:{name:'Contact',isActive:false}
-                });
-                break;
-            case 'Skills':
-                setSectionsState({
-                    ...SectionsState,
-                    About:{name:'About',isActive:false},
-                    Skills:{name:'Skills',isActive:true},
-                    Experience:{name:'Experience',isActive:false},
-                    Contact:{name:'Contact',isActive:false}
-                });
-                break;
-            case 'Experience':
-                setSectionsState({
-                    ...SectionsState,
-                    About:{name:'About',isActive:false},
-                    Skills:{name:'Skills',isActive:false},
-                    Experience:{name:'Experience',isActive:true},
-                    Contact:{name:'Contact',isActive:false}
-                });
-                break;
-            case 'Contact':
-                setSectionsState({
-                    ...SectionsState,
-                    About:{name:'About',isActive:false},
-                    Skills:{name:'Skills',isActive:false},
-                    Experience:{name:'Experience',isActive:false},
-                    Contact:{name:'Contact',isActive:true}
-                });
-                break;
-        }
     }
 
     return(
@@ -92,7 +43,6 @@ const DefaultProfile = ({bgColor}) =>{
                 justifyContent={'flex-start'}
                 boxShadow={'0 3px 10px 0 rgba(0,0,0,.1)'}
             >
-                {(Width>768) ? <NavBar HandleSection={handleSection} SectionsState={SectionsState}/> : undefined}
                 <Container
                      width={'100%'}
                      flexDirection={'column'}
@@ -105,13 +55,19 @@ const DefaultProfile = ({bgColor}) =>{
                         justifyContent={'flex-start'}
                     >
                         <AboutMe 
-                            Display={SectionsState.About.isActive ? 'flex' : 'none'}
+                            Display={'flex'}
+                        />
+                        <Container
+                            width={'100%'}
+                            height={px2vw(20)}
+                            bgcolor={colors.darkcolor}
+                        >
+                        </Container>
+                        <ProfileExperience
+                            Display={'flex'}
                         />
                         <ProfileSkils
-                            Display={SectionsState.Skills.isActive ? 'flex' : 'none'}
-                        />
-                        <ProfileExperience
-                            Display={SectionsState.Experience.isActive ? 'flex' : 'none'}
+                            Display={'flex'}
                         />
                     </Container>
                 </Container>
