@@ -23,20 +23,21 @@ const DefaultHeader = () =>{
         <Header>
             <Image
                 Width={'10vw'}
-                ImgWidth={'100'}
+                ImgWidth={'150'}
                 Src={'/imgs/logo.svg'}
             />
             <Title 
                 Text={"PeraMe Software"}
                 Width={'70vw'}
+                Padding={`${px2vw(0)} ${px2vw(0)} ${px2vw(0)} ${px2vw(20)}`}
                 JustifyContent={'flex-start'}
                 FontFamily={'Fredoka One'}
-                FontSize={80}
+                FontSize={85}
             />
             <SocialContainer
                 Width={'10vw'}
                 Wrap={'nowrap'}
-                FontSize={100}
+                FontSize={120}
             />
         </Header>
     )
