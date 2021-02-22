@@ -6,7 +6,7 @@ import px2vw from "../../utils/px2vw";
 import Container from '../container';
 import NavBar from '../navbar';
 import Card from '../card767';
-import ProfileSkils from '../profile-skills';
+import ProfileSkils from '../profile-skills767';
 import AboutMe from '../aboutme767';
 import ProfileExperience from '../profile-experience767';
 
