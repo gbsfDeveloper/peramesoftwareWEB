@@ -1,5 +1,6 @@
 import React from 'react';
 import Header from './components/header';
+import Header767 from './components/header767';
 import Profile from './components/profile';
 import Footer from './components/footer';
 import Global from "./styles/global";
@@ -19,7 +20,7 @@ const App = () => {
     return (
         <Main>
             <Global/>
-            <Header/>
+            <Header767/>
             <Profile/>
             <Footer/>
         </Main>

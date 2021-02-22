@@ -9,7 +9,7 @@ const SocialButton = styled.a.attrs(({href}) => ({
   }))`
     align-self:'center';
     justify-self:'center';
-	font-size: ${px2vw(70)};
+	font-size: ${({FontSize}) => {return (FontSize !== undefined) ? px2vw(FontSize): px2vw(70)}};
     padding-left: 0.8rem;
     transition: all 0.3s;
     &:visited{
