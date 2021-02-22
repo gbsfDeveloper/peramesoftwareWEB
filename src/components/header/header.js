@@ -28,13 +28,13 @@ const DefaultHeader = () =>{
             />
             <Title 
                 Text={"PeraMe Software"}
-                Width={ (Width>768) ? '80vw' : '70vw'}
+                Width={'80vw'}
                 JustifyContent={'flex-start'}
                 FontFamily={'Fredoka One'}
                 FontSize={50}
             />
             <SocialContainer
-                Width={ (Width>768) ? '10vw' : '20vw'}
+                Width={ '10vw'}
                 Wrap={'wrap'}
                 FontSize={50}
             />
