@@ -40,28 +40,6 @@ const Card = () =>{
                 bgcolor={colors.darkcolor}
                 padding={`${px2vw(0)} ${px2vw(0)} ${px2vw(0)} ${px2vw(20)}`}
             >
-                {/* <Container
-                    width={'100%'}
-                    height={px2vw(70)}
-                    flexDirection={'row'}
-                    alignItems={'center'}
-                >
-                    <Container
-                        width={'5%'}
-                    >
-                        <Icon 
-                            Class={'fas fa-user'}  
-                            FontSize={40}
-                        />
-                    </Container>
-                    <Message
-                        Text={"Gelacio Santos Fernandez"}
-                        Width={'90%'}
-                        JustifyContent={'flex-start'}
-                        FontSize={50}
-                        FontColor={colors.white}
-                    />
-                </Container> */}
                 <Container
                     width={'100%'}
                     height={px2vw(80)}
@@ -69,7 +47,7 @@ const Card = () =>{
                     alignItems={'center'}
                 >
                     <Container
-                        width={'5%'}
+                        width={'7%'}
                     >
                         <Icon 
                             Class={'fas fa-map-marker-alt'}  
@@ -91,7 +69,7 @@ const Card = () =>{
                     alignItems={'center'}
                 >
                     <Container
-                        width={'5%'}
+                        width={'7%'}
                     >
                         <Icon 
                             Class={'fas fa-mobile-alt'}
@@ -113,7 +91,7 @@ const Card = () =>{
                     alignItems={'center'}
                 >
                     <Container
-                        width={'5%'}
+                        width={'7%'}
                     >
                         <Icon 
                             Class={'fas fa-envelope-open-text'}
