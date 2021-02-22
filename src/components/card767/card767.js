@@ -73,14 +73,14 @@ const Card = () =>{
                     >
                         <Icon 
                             Class={'fas fa-map-marker-alt'}  
-                            FontSize={40}
+                            FontSize={50}
                         />
                     </Container>
                     <Message
                         Text={"Ciudad de Mexico"}
                         Width={'90%'}
                         JustifyContent={'flex-start'}
-                        FontSize={50}
+                        FontSize={55}
                         FontColor={colors.white}
                     />
                 </Container>
@@ -95,14 +95,14 @@ const Card = () =>{
                     >
                         <Icon 
                             Class={'fas fa-mobile-alt'}
-                            FontSize={40}
+                            FontSize={50}
                         />
                     </Container>
                     <Message
                         Text={"914 114 18 95"}
                         Width={'90%'}
                         JustifyContent={'flex-start'}
-                        FontSize={50}
+                        FontSize={55}
                         FontColor={colors.white}
                     />
                 </Container>
@@ -117,14 +117,14 @@ const Card = () =>{
                     >
                         <Icon 
                             Class={'fas fa-envelope-open-text'}
-                            FontSize={40}
+                            FontSize={50}
                         />
                     </Container>
                     <Message
                         Text={"gbsf.software.dev@gmail.com"}
                         Width={'90%'}
                         JustifyContent={'flex-start'}
-                        FontSize={50}
+                        FontSize={55}
                         FontColor={colors.white}
                     />
                 </Container>
