@@ -25,7 +25,7 @@ const DefaultFooter = () =>{
             <Container
                     width={'100%'}
                     height={'100%'}
-                    padding={`${px2vw(5)} ${px2vw(0)} ${px2vw(0)} ${px2vw(0)}`}
+                    padding={`${px2vw(20)} ${px2vw(0)} ${px2vw(0)} ${px2vw(0)}`}
                     flexDirection={'column'}
             >
                 <OtherWorks/>
