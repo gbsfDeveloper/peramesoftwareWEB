@@ -8,7 +8,7 @@ import NavBar from '../navbar';
 import Card from '../card767';
 import ProfileSkils from '../profile-skills';
 import AboutMe from '../aboutme767';
-import ProfileExperience from '../profile-experience';
+import ProfileExperience from '../profile-experience767';
 
 
 const Profile = styled.div`
@@ -59,13 +59,19 @@ const DefaultProfile = ({bgColor}) =>{
                         />
                         <Container
                             width={'100%'}
-                            height={px2vw(20)}
+                            height={px2vw(10)}
                             bgcolor={colors.darkcolor}
                         >
                         </Container>
                         <ProfileExperience
                             Display={'flex'}
                         />
+                        <Container
+                            width={'100%'}
+                            height={px2vw(10)}
+                            bgcolor={colors.darkcolor}
+                        >
+                        </Container>
                         <ProfileSkils
                             Display={'flex'}
                         />
