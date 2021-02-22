@@ -47,21 +47,21 @@ const AboutMe = ({Display}) =>{
     ];
     const SkillList = SkillCirclesData.map((skill)=>{
         return <Container
-                width={'20%'}
-                height={px2vw(100)}
+                width={'45%'}
+                height={px2vw(550)}
                 flexDirection={'column'}
             >
                 <SkillCircle
                     FillValue={1}
                     TextColor={skill.Color}
-                    Width={30}
-                    Height={30}
+                    Width={50}
+                    Height={50}
                     TrackColor={'#F2F2F2'}
                     ProgressColor={skill.Color}
-                    ProgressWidth={5}
+                    ProgressWidth={10}
                     TrackWidth={5}
-                    LogoDY={'1rem'}
-                    LogoFontSize={'5rem'}
+                    LogoDY={'18px'}
+                    LogoFontSize={'8rem'}
                     LogoClass={skill.LogoClass}
                     PercentageDY={'1.5rem'}
                     PercentageFontSize={'1rem'}
@@ -72,14 +72,14 @@ const AboutMe = ({Display}) =>{
                     Width={'100%'}
                     Padding={`${px2vw(10)} ${px2vw(0)} ${px2vw(0)} ${px2vw(0)}`}
                     JustifyContent={'center'}
-                    FontSize={50}
+                    FontSize={60}
                 />
             </Container>
     })
     return(
         <Container
             width={'100%'}
-            height={px2vw(2000)}
+            height={px2vw(3000)}
             display={Display}
             padding={`${px2vw(0)} ${px2vw(40)}`}
             bgcolor={colors.white}
@@ -135,9 +135,10 @@ const AboutMe = ({Display}) =>{
             />
             <Container
                 width={'100%'}
-                height={px2vw(500)}
+                height={px2vw(2500)}
                 flexDirection={'row'}
                 alignItems={'center'}
+                flexWrap={'wrap'}
             >
                 {SkillList}
             </Container>
