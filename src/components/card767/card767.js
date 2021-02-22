@@ -40,7 +40,7 @@ const Card = () =>{
                 bgcolor={colors.darkcolor}
                 padding={`${px2vw(0)} ${px2vw(0)} ${px2vw(0)} ${px2vw(20)}`}
             >
-                <Container
+                {/* <Container
                     width={'100%'}
                     height={px2vw(70)}
                     flexDirection={'row'}
@@ -61,10 +61,10 @@ const Card = () =>{
                         FontSize={50}
                         FontColor={colors.white}
                     />
-                </Container>
+                </Container> */}
                 <Container
                     width={'100%'}
-                    height={px2vw(70)}
+                    height={px2vw(80)}
                     flexDirection={'row'}
                     alignItems={'center'}
                 >
@@ -86,7 +86,7 @@ const Card = () =>{
                 </Container>
                 <Container
                     width={'100%'}
-                    height={px2vw(70)}
+                    height={px2vw(80)}
                     flexDirection={'row'}
                     alignItems={'center'}
                 >
@@ -108,7 +108,7 @@ const Card = () =>{
                 </Container>
                 <Container
                     width={'100%'}
-                    height={px2vw(70)}
+                    height={px2vw(80)}
                     flexDirection={'row'}
                     alignItems={'center'}
                 >
