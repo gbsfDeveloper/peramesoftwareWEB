@@ -32,14 +32,14 @@ const NavBar = ({HandleSection,SectionsState}) =>{
             HandleSection:HandleSection,
             SectionsState:SectionsState.Skills
         },
-        {
-            text:"Proyectos",
-            section:'Contact',
-            href:"#",
-            hrefTarget:"",
-            HandleSection:HandleSection,
-            SectionsState:SectionsState.Contact
-        }
+        // {
+        //     text:"Proyectos",
+        //     section:'Contact',
+        //     href:"#",
+        //     hrefTarget:"",
+        //     HandleSection:HandleSection,
+        //     SectionsState:SectionsState.Contact
+        // }
     ]
     const buttonsList = buttonsContent.map((button)=>{
         return <Button
