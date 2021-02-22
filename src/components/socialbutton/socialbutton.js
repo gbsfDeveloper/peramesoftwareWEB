@@ -18,20 +18,6 @@ const SocialButton = styled.a.attrs(({href}) => ({
     &:hover{
         font-size: ${({FontSize})=>{return (FontSize !== undefined) ? px2vw(FontSize) : px2vw(70)}};
     }
-
-    @media (min-width: 768px) {
-        font-size: ${({FontSize})=>{return (FontSize !== undefined) ? px2vw((FontSize - (FontSize * 0.35))) : px2vw(50)}};
-        &:hover{
-            font-size: ${({FontSize})=>{return (FontSize !== undefined) ? px2vw((FontSize - (FontSize * 0.3))) : px2vw(55)}};
-        }
-    }
-
-    @media (min-width: 1024px) {
-        font-size: ${({FontSize})=>{return (FontSize !== undefined) ? px2vw((FontSize - (FontSize * 0.25))) : px2vw(40)}};
-        &:hover{
-            font-size: ${({FontSize})=>{return (FontSize !== undefined) ? px2vw((FontSize - (FontSize * 0.2))) : px2vw(45)}};
-        }
-    }
 `;
 
 const SocialIcon = styled.i.attrs(({Class}) => ({

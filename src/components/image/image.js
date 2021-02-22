@@ -9,14 +9,6 @@ const Image = styled.img.attrs(({src,alt}) => ({
   }))`
     border-radius:${({BorderRadius})=>{return (BorderRadius !== undefined) ? px2vw(BorderRadius) : px2vw(0)}};
     width:${({ImgWidth})=>{return (ImgWidth !== undefined) ? px2vw(ImgWidth) : px2vw(70)}};
-
-    @media (min-width: 768px) {
-        width: ${({ImgWidth})=>{return (ImgWidth !== undefined) ? px2vw((ImgWidth - (ImgWidth * 0.1))) : px2vw(40)}};
-    }
-
-    @media (min-width: 1024px) {
-        width: ${({ImgWidth})=>{return (ImgWidth !== undefined) ? px2vw((ImgWidth - (ImgWidth * 0.15))) : px2vw(35)}};
-    }
 `;
 
 const DefaultImage = ({Width, Height, Src, Alt, ImgWidth, BorderRadius,border,borderStyle,BgImage}) =>{

@@ -22,9 +22,6 @@ const Container = styled.div`
     border-bottom:${({borderBottom})=>{return (borderBottom !== undefined) ? borderBottom : ''}};
     border-style:${({borderStyle})=>{return (borderStyle !== undefined) ? borderStyle : ''}};
     box-shadow:${({boxShadow})=>{return (boxShadow !== undefined) ? boxShadow : ''}};
-    @media (min-width: 1024px) {
-        flex-wrap: nowrap;
-    }
 `
 
 const DefaultContainer = (props) =>{

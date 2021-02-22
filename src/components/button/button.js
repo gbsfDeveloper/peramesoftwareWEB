@@ -27,13 +27,6 @@ const Button = styled.a.attrs(({Href,HrefTarget,onClick}) => ({
     }
     
     font-size:${({FontSize})=>{return (FontSize !== undefined) ? px2vw(FontSize) : px2vw(70)}};
-    @media (min-width: 768px) {
-        font-size: ${({FontSize})=>{return (FontSize !== undefined) ? px2vw((FontSize - (FontSize * 0.2))) : px2vw(40)}};
-    }
-
-    @media (min-width: 1024px) {
-        font-size: ${({FontSize})=>{return (FontSize !== undefined) ? px2vw((FontSize - (FontSize * 0.25))) : px2vw(35)}};
-    }
 `;
 
 const Icon = styled.i.attrs(({Class}) => ({
