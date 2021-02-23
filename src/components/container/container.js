@@ -21,11 +21,12 @@ const Container = styled.div`
     border:${({border})=>{return (border !== undefined) ? border : ''}};
     border-bottom:${({borderBottom})=>{return (borderBottom !== undefined) ? borderBottom : ''}};
     border-style:${({borderStyle})=>{return (borderStyle !== undefined) ? borderStyle : ''}};
+    border-radius:${({borderRadius})=>{return (borderRadius !== undefined) ? borderRadius : ''}};
     box-shadow:${({boxShadow})=>{return (boxShadow !== undefined) ? boxShadow : ''}};
 `
 
 const DefaultContainer = (props) =>{
-    const {width,height,flexDirection,justifyItems,justifyContent,alignItems,alignContent,flexGrow,flexWrap,children,padding,margin,bgcolor,bgimage,border,borderStyle,boxShadow,display,borderBottom} = props
+    const {width,height,flexDirection,justifyItems,justifyContent,alignItems,alignContent,flexGrow,flexWrap,children,padding,margin,bgcolor,bgimage,border,borderStyle,boxShadow,display,borderBottom,borderRadius} = props
     return(
         <Container 
             width={width}
@@ -46,6 +47,7 @@ const DefaultContainer = (props) =>{
             borderStyle={borderStyle}       
             boxShadow={boxShadow}
             borderBottom={borderBottom}       
+            borderRadius={borderRadius}       
         >
             {children}
         </Container>

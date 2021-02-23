@@ -7,6 +7,7 @@ import Container from '../container';
 import Title from '../title';
 import Message from '../message';
 import SkillCircle from '../skill-circle';
+import SkillCircle2 from '../skill-circle-two';
 
 const Icon = styled.i.attrs(({Class,FontSize}) => ({
     className:  (Class !== undefined) ? Class : '',
@@ -22,29 +23,58 @@ const AboutMe = ({Display}) =>{
         {
             Text:'PHP',
             Color:'#213078',
-            LogoClass:''
+            LogoClass:'',
+            IconClass:'fab fa-php'
         },
         {
             Text:'Python',
             Color:'#FFDB4E',
-            LogoClass:''
+            LogoClass:'',
+            IconClass:'fab fa-python'
         },
         {
             Text:'Node JS',
             Color:'#168130',
-            LogoClass:''
+            LogoClass:'',
+            IconClass:'fab fa-node'
         },
         {
             Text:'Linux',
             Color:'#E33434',
-            LogoClass:''
+            LogoClass:'',
+            IconClass:'fab fa-linux'
         },
         {
             Text:'SQL y MongoDB',
             Color:'#2677C7',
-            LogoClass:''
+            LogoClass:'',
+            IconClass:'fas fa-database'
         }
     ];
+    const SkillList2 = SkillCirclesData.map((skill)=>{
+        return <Container
+            width={'45%'}
+            height={px2vw(700)}
+            flexDirection={'column'}
+        >
+            <SkillCircle2
+                    ContainerWidth={px2vw(500)}
+                    ContainerHeight={px2vw(500)}
+                    BorderWith={'1rem'}
+                    BorderColor={skill.Color}
+                    IconClass={skill.IconClass}
+                    IconSize={250}
+                    IconColor={skill.Color}
+            />
+            <Title
+                Text={skill.Text}
+                Width={'100%'}
+                Padding={`${px2vw(10)} ${px2vw(0)} ${px2vw(0)} ${px2vw(0)}`}
+                JustifyContent={'center'}
+                FontSize={60}
+            />
+        </Container>
+    })
     const SkillList = SkillCirclesData.map((skill)=>{
         return <Container
                 width={'45%'}
@@ -59,12 +89,12 @@ const AboutMe = ({Display}) =>{
                     TrackColor={'#F2F2F2'}
                     ProgressColor={skill.Color}
                     ProgressWidth={10}
-                    TrackWidth={5}
-                    LogoDY={'18px'}
-                    LogoFontSize={'8rem'}
+                    TrackWidth={10}
+                    LogoDY={'20'}
+                    LogoFontSize={'60'}
                     LogoClass={skill.LogoClass}
-                    PercentageDY={'1.5rem'}
-                    PercentageFontSize={'1rem'}
+                    PercentageDY={''}
+                    PercentageFontSize={''}
                     PercentageText={''}
                 />
                 <Title
@@ -79,7 +109,7 @@ const AboutMe = ({Display}) =>{
     return(
         <Container
             width={'100%'}
-            height={px2vw(3000)}
+            height={px2vw(3500)}
             display={Display}
             padding={`${px2vw(0)} ${px2vw(40)}`}
             bgcolor={colors.white}
@@ -140,7 +170,7 @@ const AboutMe = ({Display}) =>{
                 alignItems={'center'}
                 flexWrap={'wrap'}
             >
-                {SkillList}
+                {SkillList2}
             </Container>
         </Container>
     )
