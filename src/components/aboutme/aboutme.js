@@ -53,14 +53,14 @@ const AboutMe = ({Display}) =>{
                 <SkillCircle
                     FillValue={1}
                     TextColor={skill.Color}
-                    Width={((Width>768) ? 50 : ((Width>360) ? 25 : 10))}
-                    Height={((Width>768) ? 50 : ((Width>360) ? 25 : 10))}
+                    Width={50}
+                    Height={50}
                     TrackColor={'#F2F2F2'}
                     ProgressColor={skill.Color}
-                    ProgressWidth={((Width>768) ? 10 : ((Width>360) ? 5 : 2))}
-                    TrackWidth={((Width>768) ? 10 : ((Width>360) ? 5 : 2))}
-                    LogoDY={((Width>768) ? '1rem' : ((Width>360) ? '1rem' : '0.6rem'))}
-                    LogoFontSize={((Width>768) ? '2.5rem' : ((Width>360) ? '2rem' : '1.8rem'))}
+                    ProgressWidth={10}
+                    TrackWidth={10}
+                    LogoDY={'1rem'}
+                    LogoFontSize={'2.5rem'}
                     LogoClass={skill.LogoClass}
                     PercentageDY={'1.5rem'}
                     PercentageFontSize={'1rem'}
@@ -71,7 +71,7 @@ const AboutMe = ({Display}) =>{
                     Width={'100%'}
                     Padding={`${px2vw(10)} ${px2vw(0)} ${px2vw(0)} ${px2vw(0)}`}
                     JustifyContent={'center'}
-                    FontSize={20}
+                    FontSize={15}
                 />
             </Container>
     })
@@ -98,36 +98,35 @@ const AboutMe = ({Display}) =>{
                     Text={"Gelacio Santos Fernández"}
                     Width={'100%'}
                     JustifyContent={'flex-start'}
-                    FontSize={50}
+                    FontSize={30}
                     FontColor={colors.darkcolor}
                 />
                 <Message
                     Text={"Desarrollador Backend"}
                     Width={'100%'}
                     JustifyContent={'flex-start'}
-                    FontSize={30}
+                    FontSize={23}
                     FontColor={colors.darkcolor}
                 />
             </Container>
             <Container
                 width={'100%'}
-                height={px2vw(10)}
+                height={px2vw(20)}
                 flexDirection={'row'}
                 alignItems={'center'}
-            >
-            </Container>
+            />
             <Message
                 Width={'100%'}
                 Height={px2vw(80)}
                 Text={"Mi meta más grande siempre fue desempeñarme como un profesional del desarrollo de software y aunque este mundo está en constante cambio, cada dia que pasa busco la forma de seguir aprendiendo y de mejorar continuamente, aprovechando al máximo todas las ventajas de las tendencias tecnológicas."}
-                FontSize={22}
+                FontSize={15}
                 TextAlign={'justify'}
             />
             <Message
                 Width={'100%'}
                 Height={px2vw(80)}
                 TextBold={"Tecnologias que utilizo:"}
-                FontSize={22}
+                FontSize={16}
                 JustifyContent={'flex-start'}
                 TextAlign={'left'}
             />
