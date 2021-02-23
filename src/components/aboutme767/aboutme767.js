@@ -17,7 +17,6 @@ const Icon = styled.i.attrs(({Class,FontSize}) => ({
 
 
 const AboutMe = ({Display}) =>{
-    let {Width} = useViewport();
     const SkillCirclesData = [
         {
             Text:'PHP',
