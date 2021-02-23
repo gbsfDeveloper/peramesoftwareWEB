@@ -51,13 +51,14 @@ const AboutMe = ({Display}) =>{
             flexDirection={'column'}
         >
             <SkillCircle
-                    ContainerWidth={px2vw(500)}
-                    ContainerHeight={px2vw(500)}
-                    BorderWith={'1rem'}
-                    BorderColor={skill.Color}
-                    IconClass={skill.IconClass}
-                    IconSize={250}
-                    IconColor={skill.Color}
+                ContainerMargin={`${px2vw(0)} ${px2vw(0)}`}
+                ContainerWidth={px2vw(500)}
+                ContainerHeight={px2vw(500)}
+                BorderWith={'1rem'}
+                BorderColor={skill.Color}
+                IconClass={skill.IconClass}
+                IconSize={250}
+                IconColor={skill.Color}
             />
             <Title
                 Text={skill.Text}

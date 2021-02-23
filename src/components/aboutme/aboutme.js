@@ -6,7 +6,8 @@ import colors from '../../constants/Colors';
 import Container from '../container';
 import Title from '../title';
 import Message from '../message';
-import SkillCircle from '../skill-circle';
+// import SkillCircle from '../skill-circle';
+import SkillCircle from '../skill-circle-two';
 
 const AboutMe = ({Display}) =>{
     let {Width} = useViewport();
@@ -14,58 +15,53 @@ const AboutMe = ({Display}) =>{
         {
             Text:'PHP',
             Color:'#213078',
-            LogoClass:''
+            IconClass:'fab fa-php'
         },
         {
             Text:'Python',
             Color:'#FFDB4E',
-            LogoClass:''
+            IconClass:'fab fa-python'
         },
         {
             Text:'Node JS',
             Color:'#168130',
-            LogoClass:''
+            IconClass:'fab fa-node'
         },
         {
             Text:'Linux',
             Color:'#E33434',
-            LogoClass:''
+            IconClass:'fab fa-linux'
         },
         {
             Text:'SQL y MongoDB',
             Color:'#2677C7',
-            LogoClass:''
+            IconClass:'fas fa-database'
         }
     ];
     const SkillList = SkillCirclesData.map((skill)=>{
         return <Container
-                height={px2vw(100)}
-                flexDirection={'column'}
-            >
-                <SkillCircle
-                    FillValue={1}
-                    TextColor={skill.Color}
-                    Width={50}
-                    Height={50}
-                    TrackColor={'#F2F2F2'}
-                    ProgressColor={skill.Color}
-                    ProgressWidth={10}
-                    TrackWidth={10}
-                    LogoDY={'1rem'}
-                    LogoFontSize={'2.5rem'}
-                    LogoClass={skill.LogoClass}
-                    PercentageDY={'1.5rem'}
-                    PercentageFontSize={'1rem'}
-                    PercentageText={''}
-                />
-                <Title
-                    Text={skill.Text}
-                    Width={'100%'}
-                    Padding={`${px2vw(10)} ${px2vw(0)} ${px2vw(0)} ${px2vw(0)}`}
-                    JustifyContent={'center'}
-                    FontSize={15}
-                />
-            </Container>
+            width={'45%'}
+            height={px2vw(700)}
+            flexDirection={'column'}
+        >
+            <SkillCircle
+                ContainerMargin={`${px2vw(0)} ${px2vw(0)}`}
+                ContainerWidth={px2vw(100)}
+                ContainerHeight={px2vw(100)}
+                BorderWith={'0.5rem'}
+                BorderColor={skill.Color}
+                IconClass={skill.IconClass}
+                IconSize={50}
+                IconColor={skill.Color}
+            />
+            <Title
+                Text={skill.Text}
+                Width={'100%'}
+                Padding={`${px2vw(10)} ${px2vw(0)} ${px2vw(0)} ${px2vw(0)}`}
+                JustifyContent={'center'}
+                FontSize={15}
+            />
+        </Container>
     })
     return(
         <Container

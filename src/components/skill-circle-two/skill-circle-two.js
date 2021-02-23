@@ -7,12 +7,12 @@ import colors from '../../constants/Colors';
 const Icon = styled.i.attrs(({Class,FontSize}) => ({
     className:  (Class !== undefined) ? Class : '',
   }))`
-    padding-right:${({Class})=>{return (Class !== undefined) ? px2vw(10) : '0'}};
     font-size:${({FontSize})=>{return (FontSize !== undefined) ? px2vw(FontSize) : px2vw(70)}};
     color:${({Color})=>{return (Color !== undefined) ? Color : ''}};
 `;
 
 const SkillCircleTwo = ({
+    ContainerMargin,
     ContainerWidth,
     ContainerHeight,
     BorderWith,
@@ -25,16 +25,16 @@ const SkillCircleTwo = ({
         <Container 
             width={ContainerWidth}
             height={ContainerHeight}
-            margin={`${px2vw(30)} ${px2vw(30)}`}
+            margin={ContainerMargin}
             flexDirection={'row'}
             border= {`${BorderWith} solid ${BorderColor}`}
             borderRadius={'50%'}
         >
-              <Icon 
-                    Class={IconClass}  
-                    FontSize={IconSize}
-                    Color={IconColor}
-                />                    
+            <Icon 
+                Class={IconClass}  
+                FontSize={IconSize}
+                Color={IconColor}
+            />                    
         </Container>
     )
 }
