@@ -58,7 +58,7 @@ const Card = () =>{
                         Text={"Gelacio Santos Fernandez"}
                         Width={'90%'}
                         JustifyContent={'flex-start'}
-                        FontSize={22}
+                        FontSize={15}
                         FontColor={colors.white}
                     />
                 </Container>
@@ -80,7 +80,7 @@ const Card = () =>{
                         Text={"Ciudad de Mexico"}
                         Width={'90%'}
                         JustifyContent={'flex-start'}
-                        FontSize={22}
+                        FontSize={15}
                         FontColor={colors.white}
                     />
                 </Container>
@@ -102,7 +102,7 @@ const Card = () =>{
                         Text={"914 114 18 95"}
                         Width={'90%'}
                         JustifyContent={'flex-start'}
-                        FontSize={22}
+                        FontSize={15}
                         FontColor={colors.white}
                     />
                 </Container>
@@ -124,7 +124,7 @@ const Card = () =>{
                         Text={"gbsf.software.dev@gmail.com"}
                         Width={'90%'}
                         JustifyContent={'flex-start'}
-                        FontSize={22}
+                        FontSize={15}
                         FontColor={colors.white}
                     />
                 </Container>
