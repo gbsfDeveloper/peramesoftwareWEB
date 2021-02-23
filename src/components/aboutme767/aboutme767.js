@@ -6,7 +6,6 @@ import colors from '../../constants/Colors';
 import Container from '../container';
 import Title from '../title';
 import Message from '../message';
-import SkillCircle from '../skill-circle';
 import SkillCircle2 from '../skill-circle-two';
 
 const Icon = styled.i.attrs(({Class,FontSize}) => ({
