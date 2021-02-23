@@ -1,13 +1,12 @@
 import React,{useState,useEffect} from 'react';
-import useViewport from '../../hooks/useViewport';
 import styled from 'styled-components';
 import colors from '../../constants/Colors';
 import px2vw from "../../utils/px2vw";
 import Container from '../container';
-import NavBar from '../navbar';
 import Card from '../card767';
 import ProfileSkils from '../profile-skills767';
 import AboutMe from '../aboutme767';
+import Message from '../message';
 import ProfileExperience from '../profile-experience767';
 
 
@@ -24,15 +23,7 @@ const Profile = styled.div`
     background-color:${({bgColor}) => {return (bgColor != undefined) ? bgColor: colors.slowlycolor2}};
 `;
 
-
-
 const DefaultProfile = ({bgColor}) =>{
-    const Sections = {
-        About: {name:'About',isActive:true},
-        Skills: {name:'Skills',isActive:false},
-        Experience: {name:'Experience',isActive:true},
-        Contact: {name:'Contact',isActive:false}
-    }
 
     return(
         <Profile bgColor={bgColor}>
@@ -46,9 +37,25 @@ const DefaultProfile = ({bgColor}) =>{
                 <Container
                      width={'100%'}
                      flexDirection={'column'}
+                     margin={`${px2vw(50)} ${px2vw(0)} ${px2vw(0)} ${px2vw(0)}`}
                      justifyContent={'space-between'}
                 >
-                    <Card/>
+
+                        <Container
+                            width={'95%'}
+                            bgcolor={colors.darkcolor}
+                            margin={`${px2vw(20)} ${px2vw(0)} ${px2vw(0)} ${px2vw(0)}`}
+                            padding={`${px2vw(20)} ${px2vw(0)}`}
+                        >
+                            <Message
+                                Text={"Acerca de mi"}
+                                Width={'100%'}
+                                JustifyContent={'center'}
+                                FontSize={100}
+                                FontColor={colors.white}
+                            />
+                        </Container>
+                        <Card/>
                     <Container
                         width={'95%'}
                         flexDirection={'column'}
@@ -57,21 +64,40 @@ const DefaultProfile = ({bgColor}) =>{
                         <AboutMe 
                             Display={'flex'}
                         />
+                        
                         <Container
                             width={'100%'}
-                            height={px2vw(10)}
                             bgcolor={colors.darkcolor}
+                            margin={`${px2vw(20)} ${px2vw(0)} ${px2vw(0)} ${px2vw(0)}`}
+                            padding={`${px2vw(20)} ${px2vw(0)}`}
                         >
+                            <Message
+                                Text={"Experiencia"}
+                                Width={'100%'}
+                                JustifyContent={'center'}
+                                FontSize={100}
+                                FontColor={colors.white}
+                            />
                         </Container>
+
                         <ProfileExperience
                             Display={'flex'}
                         />
+                        
                         <Container
                             width={'100%'}
-                            height={px2vw(10)}
                             bgcolor={colors.darkcolor}
+                            padding={`${px2vw(20)} ${px2vw(0)}`}
                         >
+                            <Message
+                                Text={"Tecnologías"}
+                                Width={'100%'}
+                                JustifyContent={'center'}
+                                FontSize={100}
+                                FontColor={colors.white}
+                            />
                         </Container>
+
                         <ProfileSkils
                             Display={'flex'}
                         />
@@ -80,6 +106,7 @@ const DefaultProfile = ({bgColor}) =>{
                 <Container
                      width={'95%'}
                      height={px2vw(20)}
+                     margin={`${px2vw(0)} ${px2vw(0)} ${px2vw(50)} ${px2vw(0)}`}
                      bgcolor={colors.darkcolor}
                 >
                 </Container>
