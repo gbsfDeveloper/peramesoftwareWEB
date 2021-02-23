@@ -23,31 +23,26 @@ const AboutMe = ({Display}) =>{
         {
             Text:'PHP',
             Color:'#213078',
-            LogoClass:'',
             IconClass:'fab fa-php'
         },
         {
             Text:'Python',
             Color:'#FFDB4E',
-            LogoClass:'',
             IconClass:'fab fa-python'
         },
         {
             Text:'Node JS',
             Color:'#168130',
-            LogoClass:'',
             IconClass:'fab fa-node'
         },
         {
             Text:'Linux',
             Color:'#E33434',
-            LogoClass:'',
             IconClass:'fab fa-linux'
         },
         {
             Text:'SQL y MongoDB',
             Color:'#2677C7',
-            LogoClass:'',
             IconClass:'fas fa-database'
         }
     ];
