@@ -29,7 +29,11 @@ const App = () => {
             </>
         }
         else if(Width>768 && Width<1024){
-
+            return <>
+                <Header767/>
+                <Profile767/>
+                <Footer767/>
+            </>
         }
         else if(Width>1025){
             return <>

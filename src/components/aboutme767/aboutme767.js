@@ -6,7 +6,7 @@ import colors from '../../constants/Colors';
 import Container from '../container';
 import Title from '../title';
 import Message from '../message';
-import SkillCircle2 from '../skill-circle-two';
+import SkillCircle from '../skill-circle-two';
 
 const Icon = styled.i.attrs(({Class,FontSize}) => ({
     className:  (Class !== undefined) ? Class : '',
@@ -50,7 +50,7 @@ const AboutMe = ({Display}) =>{
             height={px2vw(700)}
             flexDirection={'column'}
         >
-            <SkillCircle2
+            <SkillCircle
                     ContainerWidth={px2vw(500)}
                     ContainerHeight={px2vw(500)}
                     BorderWith={'1rem'}
