@@ -1,6 +1,7 @@
 {
   "name": "peramesoftwareweb",
   "version": "0.1.0",
+  "homepage":"http://www.peramegames.com/react/",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.11.8",
