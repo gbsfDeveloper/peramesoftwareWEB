@@ -8,14 +8,6 @@ import Title from '../title';
 import Message from '../message';
 import SkillCircle from '../skill-circle';
 
-const Icon = styled.i.attrs(({Class,FontSize}) => ({
-    className:  (Class !== undefined) ? Class : '',
-  }))`
-    padding-right:${({Class})=>{return (Class !== undefined) ? px2vw(10) : '0'}};
-    font-size:${({FontSize})=>{return (FontSize !== undefined) ? px2vw(FontSize) : px2vw(70)}};
-`;
-
-
 const AboutMe = ({Display}) =>{
     let {Width} = useViewport();
     const SkillCirclesData = [
