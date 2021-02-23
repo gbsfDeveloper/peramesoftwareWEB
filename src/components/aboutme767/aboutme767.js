@@ -51,7 +51,7 @@ const AboutMe = ({Display}) =>{
             IconClass:'fas fa-database'
         }
     ];
-    const SkillList2 = SkillCirclesData.map((skill)=>{
+    const SkillList = SkillCirclesData.map((skill)=>{
         return <Container
             width={'45%'}
             height={px2vw(700)}
@@ -74,37 +74,6 @@ const AboutMe = ({Display}) =>{
                 FontSize={60}
             />
         </Container>
-    })
-    const SkillList = SkillCirclesData.map((skill)=>{
-        return <Container
-                width={'45%'}
-                height={px2vw(550)}
-                flexDirection={'column'}
-            >
-                <SkillCircle
-                    FillValue={1}
-                    TextColor={skill.Color}
-                    Width={50}
-                    Height={50}
-                    TrackColor={'#F2F2F2'}
-                    ProgressColor={skill.Color}
-                    ProgressWidth={10}
-                    TrackWidth={10}
-                    LogoDY={'20'}
-                    LogoFontSize={'60'}
-                    LogoClass={skill.LogoClass}
-                    PercentageDY={''}
-                    PercentageFontSize={''}
-                    PercentageText={''}
-                />
-                <Title
-                    Text={skill.Text}
-                    Width={'100%'}
-                    Padding={`${px2vw(10)} ${px2vw(0)} ${px2vw(0)} ${px2vw(0)}`}
-                    JustifyContent={'center'}
-                    FontSize={60}
-                />
-            </Container>
     })
     return(
         <Container
@@ -170,7 +139,7 @@ const AboutMe = ({Display}) =>{
                 alignItems={'center'}
                 flexWrap={'wrap'}
             >
-                {SkillList2}
+                {SkillList}
             </Container>
         </Container>
     )
