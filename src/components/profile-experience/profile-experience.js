@@ -36,7 +36,7 @@ const ProfileExperience = ({Display}) =>{
             >
                 <Container
                     width={'100%'}
-                    height={px2vw(50)}
+                    height={px2vw(10)}
                     flexDirection={'row'}
                     alignItems={'flex-start'}
                     justifyContent={'flex-end'}
@@ -51,19 +51,19 @@ const ProfileExperience = ({Display}) =>{
                     Width={'100%'}
                     TextBold={"Desarrollador Jr - PHP"}
                     JustifyContent={'flex-start'}
-                    FontSize={30}
+                    FontSize={20}
                 />
                 <Message
                     Width={'100%'}
                     TextBold={"Febrero 2020 - Actualmente"}
                     JustifyContent={'flex-start'}
-                    FontSize={20}
+                    FontSize={16}
                 />
                 <Message
                     Width={'100%'}
                     TextBold={"Actividades: "}
                     Text={"Desarrollo de APIs REST con el lenguaje PHP destinados a proporcionar información a  aplicaciones Android y IOS creadas con React Native, uso de base de datos SQL SERVER y MySQL. Desarrollo de aplicaciones web (backend y frontend) con el framework Yii2."}
-                    FontSize={22}
+                    FontSize={15}
                     TextAlign={'justify'}
                     Padding={`${px2vw(15)} ${px2vw(0)}`}
                 />
@@ -79,7 +79,7 @@ const ProfileExperience = ({Display}) =>{
             >
                 <Container
                     width={'100%'}
-                    height={px2vw(50)}
+                    height={px2vw(10)}
                     flexDirection={'row'}
                     alignItems={'flex-start'}
                     justifyContent={'flex-end'}
@@ -94,19 +94,19 @@ const ProfileExperience = ({Display}) =>{
                     Width={'100%'}
                     TextBold={"Desarrollador Jr - Python"}
                     JustifyContent={'flex-start'}
-                    FontSize={30}
+                    FontSize={20}
                 />
                 <Message
                     Width={'100%'}
                     TextBold={"Agosto 2018 - Septiembre 2019"}
                     JustifyContent={'flex-start'}
-                    FontSize={20}
+                    FontSize={16}
                 />
                 <Message
                     Width={'100%'}
                     TextBold={"Actividades: "}
                     Text={"Desarrollo de software en lenguaje Python para solución de problemas específicos, uso y Gestión de bases de datos con MONGODB, uso de ambientes y servidores virtuales LINUX (UBUNTU, CentOS) y AWS, Frameworks para diseño de aplicaciones web :FLASK (medio)."}
-                    FontSize={22}
+                    FontSize={15}
                     TextAlign={'justify'}
                     Padding={`${px2vw(15)} ${px2vw(0)}`}
                 />
