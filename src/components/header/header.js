@@ -1,5 +1,4 @@
 import React,{useState} from 'react';
-import useViewport from '../../hooks/useViewport';
 import styled from 'styled-components';
 import colors from '../../constants/Colors';
 import Image from '../image';
@@ -13,30 +12,30 @@ const Header = styled.div`
     padding :${px2vw(10)};
     display:flex;
     flex-direction:row;
+    justify-content: space-evenly;
     color:${colors.slowlycolor};
     background-color:${({bgColor}) => {return (bgColor !== undefined) ? bgColor: colors.darkcolor}};
 `;
 
 const DefaultHeader = () =>{
-    let {Width} = useViewport();
     return(
         <Header>
             <Image
-                Width={'10vw'}
+                Width={'10%'}
                 ImgWidth={'100'}
                 Src={'/imgs/logo.svg'}
             />
             <Title 
                 Text={"PeraMe Software"}
-                Width={'80vw'}
+                Width={'75%'}
                 JustifyContent={'flex-start'}
                 FontFamily={'Fredoka One'}
-                FontSize={50}
+                FontSize={45}
             />
             <SocialContainer
-                Width={ '10vw'}
-                Wrap={'wrap'}
-                FontSize={50}
+                Width={'10%'}
+                Wrap={'nowrap'}
+                FontSize={45}
             />
         </Header>
     )
