@@ -47,7 +47,7 @@ const DefaultEmailSender = ({bgColor}) =>{
                     Text={"Contactame"}
                     Width={'100%'}
                     JustifyContent={'center'}
-                    FontSize={30}
+                    FontSize={20}
                     FontColor={colors.white}
                 />
                 <Container

@@ -22,12 +22,12 @@ const DefaultOtherWorks = ({bgColor}) =>{
                     Text={"Portafolio"}
                     Width={'100%'}
                     JustifyContent={'center'}
-                    FontSize={30}
+                    FontSize={20}
                     FontColor={colors.white}
                 />
                 <Container
                     width={'50%'}
-                    padding={`${px2vw(10)} ${px2vw(0)} ${px2vw(0)} ${px2vw(0)}`}
+                    padding={`${px2vw(25)} ${px2vw(0)} ${px2vw(0)} ${px2vw(0)}`}
                     flexDirection={'row'}
                     justifyContent={'space-around'}
                 >
@@ -36,7 +36,7 @@ const DefaultOtherWorks = ({bgColor}) =>{
                         Href={'https://github.com/gbsfDeveloper'}
                         Width={'8vw'}
                         Height={'7vw'}
-                        FontSize={80}
+                        FontSize={65}
                         IconClassFA={'fab fa-github'}
                         ButtonWidth={'100%'}
                         ButtonHeight={'100%'}
@@ -50,7 +50,7 @@ const DefaultOtherWorks = ({bgColor}) =>{
                         Href={'https://www.hackerrank.com/gbsfgames'}
                         Width={'8vw'}
                         Height={'7vw'}
-                        FontSize={80}
+                        FontSize={65}
                         IconClassFA={'fab fa-hackerrank'}
                         ButtonWidth={'100%'}
                         ButtonHeight={'100%'}
