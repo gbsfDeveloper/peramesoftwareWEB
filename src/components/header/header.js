@@ -30,12 +30,12 @@ const DefaultHeader = () =>{
                 Width={'75%'}
                 JustifyContent={'flex-start'}
                 FontFamily={'Fredoka One'}
-                FontSize={45}
+                FontSize={35}
             />
             <SocialContainer
                 Width={'10%'}
                 Wrap={'nowrap'}
-                FontSize={45}
+                FontSize={35}
             />
         </Header>
     )

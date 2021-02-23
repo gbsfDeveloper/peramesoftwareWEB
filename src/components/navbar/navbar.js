@@ -51,7 +51,7 @@ const NavBar = ({HandleSection,SectionsState}) =>{
             Text={button.text}
             Width={'12.5vw'}
             height={px2vw(100)}
-            FontSize={20}
+            FontSize={15}
             Href={button.href}
             HrefTarget={button.hrefTarget}
             ButtonWidth={'100%'}
@@ -79,7 +79,7 @@ const NavBar = ({HandleSection,SectionsState}) =>{
                 <Title
                     Text={"Informacion General"}
                     Width={'100%'}
-                    FontSize={35}
+                    FontSize={20}
                     FontColor={colors.white}
                 />
             </Container>
