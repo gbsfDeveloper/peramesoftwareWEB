@@ -13,7 +13,9 @@ const Icon = styled.i.attrs(({Class,FontSize}) => ({
     padding-right:${({Class})=>{return (Class !== undefined) ? px2vw(10) : '0'}};
     font-size:${({FontSize})=>{return (FontSize !== undefined) ? px2vw(FontSize) : px2vw(70)}};
 `;
-
+const skillTitles = 18;
+const skillVineta = 20;
+const skillText = 15;
 const ProfileSkils = ({Display}) =>{
     return(
         <Container
@@ -37,14 +39,14 @@ const ProfileSkils = ({Display}) =>{
             >
                 <Icon 
                     Class={'fas fa-caret-right'}
-                    FontSize={25}
+                    FontSize={skillVineta}
                 />
             </Container>
             <Message
                 TextBold={"Lenguajes de programacion: "}
                 Width={'90%'}
                 JustifyContent={'flex-start'}
-                FontSize={25}
+                FontSize={skillTitles}
             />
         </Container>
         <Container
@@ -60,7 +62,7 @@ const ProfileSkils = ({Display}) =>{
                 Text={"Python, C++"}
                 Width={'90%'}
                 JustifyContent={'flex-start'}
-                FontSize={20}
+                FontSize={skillText}
             />
         </Container>
         <Container
@@ -76,7 +78,7 @@ const ProfileSkils = ({Display}) =>{
                 Text={"PHP, Javascript"}
                 Width={'90%'}
                 JustifyContent={'flex-start'}
-                FontSize={20}
+                FontSize={skillText}
             />
         </Container>
         <Container
@@ -92,7 +94,7 @@ const ProfileSkils = ({Display}) =>{
                 Text={"React JS, CSS, HTML"}
                 Width={'90%'}
                 JustifyContent={'flex-start'}
-                FontSize={20}
+                FontSize={skillText}
             />
         </Container>
         <Container
@@ -108,7 +110,7 @@ const ProfileSkils = ({Display}) =>{
                 Text={"Yii2, React JS, Flask, Django"}
                 Width={'90%'}
                 JustifyContent={'flex-start'}
-                FontSize={20}
+                FontSize={skillText}
             />
         </Container>
         <Container
@@ -124,14 +126,14 @@ const ProfileSkils = ({Display}) =>{
             >
                 <Icon 
                     Class={'fas fa-caret-right'}
-                    FontSize={25}
+                    FontSize={skillVineta}
                 />
             </Container>
             <Message
                 TextBold={"Bases de Datos: "}
                 Width={'90%'}
                 JustifyContent={'flex-start'}
-                FontSize={25}
+                FontSize={skillTitles}
             />
         </Container>
         <Container
@@ -147,7 +149,7 @@ const ProfileSkils = ({Display}) =>{
                 Text={"SQL Server, MySql"}
                 Width={'90%'}
                 JustifyContent={'flex-start'}
-                FontSize={20}
+                FontSize={skillText}
             />
         </Container>
         <Container
@@ -163,7 +165,7 @@ const ProfileSkils = ({Display}) =>{
                 Text={"Mongo DB"}
                 Width={'90%'}
                 JustifyContent={'flex-start'}
-                FontSize={20}
+                FontSize={skillText}
             />
         </Container>
         <Container
@@ -179,14 +181,14 @@ const ProfileSkils = ({Display}) =>{
             >
                 <Icon 
                     Class={'fas fa-caret-right'}
-                    FontSize={25}
+                    FontSize={skillVineta}
                 />
             </Container>
             <Message
                 TextBold={"Servidores: "}
                 Width={'90%'}
                 JustifyContent={'flex-start'}
-                FontSize={25}
+                FontSize={skillTitles}
             />
         </Container>
         <Container
@@ -202,7 +204,7 @@ const ProfileSkils = ({Display}) =>{
                 Text={"Ubuntu, Cent OS, SUSE"}
                 Width={'90%'}
                 JustifyContent={'flex-start'}
-                FontSize={20}
+                FontSize={skillText}
             />
         </Container>
         <Container
@@ -218,14 +220,14 @@ const ProfileSkils = ({Display}) =>{
             >
                 <Icon 
                     Class={'fas fa-caret-right'}
-                    FontSize={25}
+                    FontSize={skillVineta}
                 />
             </Container>
             <Message
                 TextBold={"Tecnologias Google: "}
                 Width={'90%'}
                 JustifyContent={'flex-start'}
-                FontSize={25}
+                FontSize={skillTitles}
             />
         </Container>
         <Container
@@ -241,7 +243,7 @@ const ProfileSkils = ({Display}) =>{
                 Text={"Cloud Messagging, Realtime Database"}
                 Width={'90%'}
                 JustifyContent={'flex-start'}
-                FontSize={20}
+                FontSize={skillText}
             />
         </Container>
         <Container
@@ -257,14 +259,14 @@ const ProfileSkils = ({Display}) =>{
             >
                 <Icon 
                     Class={'fas fa-caret-right'}
-                    FontSize={25}
+                    FontSize={skillVineta}
                 />
             </Container>
             <Message
                 TextBold={"Desarrollo de Videojuegos: "}
                 Width={'90%'}
                 JustifyContent={'flex-start'}
-                FontSize={25}
+                FontSize={skillTitles}
             />
         </Container>
         <Container
@@ -280,7 +282,7 @@ const ProfileSkils = ({Display}) =>{
                 Text={"Phaser, Godot"}
                 Width={'90%'}
                 JustifyContent={'flex-start'}
-                FontSize={20}
+                FontSize={skillText}
             />
         </Container>
         
