@@ -28,7 +28,7 @@ const Card = () =>{
             <Image
                 Width={'25%'}
                 Height={'90%'}
-                BgImage={'/imgs/user.png'}
+                BgImage={process.env.PUBLIC_URL + '/imgs/user.png'}
             />
             <Container
                 width={'70%'}

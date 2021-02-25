@@ -44,7 +44,7 @@ const ProfileExperience = ({Display}) =>{
                     <Image
                         Width={px2vw(150)}
                         Height={px2vw(50)}
-                        BgImage={'/imgs/logo-exitus.png'}
+                        BgImage={process.env.PUBLIC_URL + '/imgs/logo-exitus.png'}
                     />
                 </Container>
                 <Message
@@ -87,7 +87,7 @@ const ProfileExperience = ({Display}) =>{
                     <Image
                         Width={px2vw(150)}
                         Height={px2vw(50)}
-                        BgImage={'/imgs/logo-konekt.png'}
+                        BgImage={process.env.PUBLIC_URL + '/imgs/logo-konekt.png'}
                     />
                 </Container>
                 <Message

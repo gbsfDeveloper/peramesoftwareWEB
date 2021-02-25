@@ -23,7 +23,7 @@ const DefaultHeader = () =>{
             <Image
                 Width={'10%'}
                 ImgWidth={'100'}
-                Src={'/imgs/logo.svg'}
+                Src={process.env.PUBLIC_URL + '/imgs/logo.svg'}
             />
             <Title 
                 Text={"PeraMe Software"}
