@@ -35,7 +35,10 @@ const DefaultFooter = () =>{
                 .then(res => res.json())
                 .then(
                     (result) => {
-                        console.log(result);
+                        // console.log(result);
+                        setInputMail('')
+                        setInputName('')
+                        setInputMessage('')
                     },
                     (error) => {
                         console.log(error);
