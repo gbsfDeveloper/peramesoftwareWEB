@@ -17,6 +17,10 @@ const Footer = styled.div`
 `;
 
 const DefaultFooter = () =>{
+    const [InputEmail, setInputMail] = useState(''); 
+    const [InputName, setInputName] = useState(''); 
+    const [InputMessage, setInputMessage] = useState('');
+    
     let {Width} = useViewport();
     return(
         <Footer>

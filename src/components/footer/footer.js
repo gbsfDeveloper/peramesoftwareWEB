@@ -19,6 +19,10 @@ const Footer = styled.div`
 
 const DefaultFooter = () =>{
     let {Width} = useViewport();
+    const [InputEmail, setInputMail] = useState('222'); 
+    const [InputName, setInputName] = useState(''); 
+    const [InputMessage, setInputMessage] = useState('');
+    
     return(
         <Footer>
             <Container
@@ -28,7 +32,14 @@ const DefaultFooter = () =>{
                     flexDirection={'row'}
             >
                 <OtherWorks/>
-                <EmailSender/>
+                <EmailSender
+                     InputEmailValue={InputEmail}
+                     HandleEmailValue={setInputMail}
+                     InputNameValue={InputName}
+                     HandleNameValue={setInputName}
+                     InputMessageValue={InputMessage}
+                     HandleMessageValue={setInputMessage}
+                />
             </Container>
         </Footer>
     )
