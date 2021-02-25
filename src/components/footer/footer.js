@@ -30,7 +30,17 @@ const DefaultFooter = () =>{
     
     const sendForm = (emailValue,nameValue,messageValue) =>{
         if(isValidForm(emailValue,nameValue,messageValue)){
-            console.log("El formulario esta OK");
+            // console.log("El formulario esta OK");
+            fetch('https://www.peramegames.com/games/apis/recieveMessage.php?name=' + nameValue + '&email=' + emailValue + '&message=' + messageValue)
+                .then(res => res.json())
+                .then(
+                    (result) => {
+                        console.log(result);
+                    },
+                    (error) => {
+                        console.log(error);
+                    }
+                );
         }
         else{
             console.log("Existe algun error en el form");
