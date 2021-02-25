@@ -1,5 +1,4 @@
 import React,{useState} from 'react';
-import useViewport from '../../hooks/useViewport';
 import styled from 'styled-components';
 import colors from '../../constants/Colors';
 import px2vw from "../../utils/px2vw";
@@ -9,7 +8,7 @@ import Button from '../button';
 
 
 const HandleDefault = () =>{
-    console.log("Defaul Action");
+    console.log("Default Action");
 }
 
 const Input = styled.input.attrs(({PlaceHolder,Type,Id,Value,HandleInput}) => ({
@@ -17,11 +16,26 @@ const Input = styled.input.attrs(({PlaceHolder,Type,Id,Value,HandleInput}) => ({
     id:(Id !== undefined) ? Id : '',
     onChange:(HandleInput !== undefined) ? (e)=>{HandleInput(e.target.value)} : HandleDefault,
     placeholder: (PlaceHolder !== undefined) ? PlaceHolder : '',
-    type:(Type !== undefined) ? Type : '',
+    type:(Type !== undefined) ? Type : ''
   }))`
     width:100%;
     height:100%;
     padding: 3% 3%;
+    background-color:${({ErrorState})=>{
+        let color = 'white';
+        switch (ErrorState) {
+            case 0:
+                color = 'white'
+                break;
+            case 1:
+                color = 'green'
+                break;
+            case 2:
+                color = 'red'
+                break;
+        }
+        return color;
+    }};
 `;
 
 const TextArea = styled.textarea.attrs(({PlaceHolder,Type,Id,Rows,Value,HandleInput}) => ({
@@ -39,19 +53,33 @@ const TextArea = styled.textarea.attrs(({PlaceHolder,Type,Id,Rows,Value,HandleIn
     max-width:100%;
     max-height:100%;
     padding: 2% 2%;
+    background-color:${({ErrorState})=>{
+        let color = 'white';
+        switch (ErrorState) {
+            case 0:
+                color = 'white'
+                break;
+            case 1:
+                color = 'green'
+                break;
+            case 2:
+                color = 'red'
+                break;
+        }
+        return color;
+    }};
 `;
 
 const DefaultEmailSender = ({
-    bgColor,
     InputEmailValue,
     HandleEmailValue,
     InputNameValue,
     HandleNameValue,
     InputMessageValue,
     HandleMessageValue,
-    HandleButtonActions
+    HandleButtonActions,
+    ErrorsState
 }) =>{
-    let {Width} = useViewport();
     return(
         <Container
             width={'50%'}
@@ -86,6 +114,7 @@ const DefaultEmailSender = ({
                             Type={'email'}
                             Value={InputEmailValue}
                             HandleInput={HandleEmailValue}
+                            ErrorState={ErrorsState.Email}
                         />
                     </Container>
                     <Container
@@ -101,6 +130,7 @@ const DefaultEmailSender = ({
                             Type={'text'}
                             Value={InputNameValue}
                             HandleInput={HandleNameValue}
+                            ErrorState={ErrorsState.Name}
                         />
                     </Container>
                 </Container>
@@ -116,6 +146,7 @@ const DefaultEmailSender = ({
                         PlaceHolder={'Mensaje'}
                         Value={InputMessageValue}
                         HandleInput={HandleMessageValue}
+                        ErrorState={ErrorsState.Message}
                         // Rows={'3'}
                     />
                 </Container>

@@ -25,8 +25,6 @@ const Profile = styled.div`
     background-color:${({bgColor}) => {return (bgColor != undefined) ? bgColor: colors.slowlycolor2}};
 `;
 
-
-
 const DefaultProfile = ({bgColor}) =>{
     const Sections = {
         About: {name:'About',isActive:true},
