@@ -49,6 +49,7 @@ const DefaultEmailSender = ({
     HandleNameValue,
     InputMessageValue,
     HandleMessageValue,
+    HandleButtonActions
 }) =>{
     let {Width} = useViewport();
     return(
@@ -119,6 +120,10 @@ const DefaultEmailSender = ({
                     />
                 </Container>
                 <Button
+                    onClick={(e)=>{
+                        e.preventDefault();
+                        HandleButtonActions(InputEmailValue,InputNameValue,InputMessageValue);
+                    }}
                     Text={"Enviar"}
                     Width={'20%'}
                     FontSize={17}
