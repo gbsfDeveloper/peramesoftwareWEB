@@ -1,5 +1,8 @@
 import React,{useState} from 'react';
 import ReactDOM from 'react-dom'
+import alertify from "alertifyjs";
+import "../../../node_modules/alertifyjs/build/css/alertify.css";
+import "../../../node_modules/alertifyjs/build/css/themes/semantic.css";
 import Container from '../container';
 import styled from 'styled-components';
 import colors from '../../constants/Colors';
@@ -29,7 +32,7 @@ const DefaultFooter = () =>{
     const [InputEmail, setInputMail] = useState(''); 
     const [InputName, setInputName] = useState(''); 
     const [InputMessage, setInputMessage] = useState('');
-    const [ShowMailModal, setShowMailModal] = useState(false);
+    const [ShowMailModal, setShowMailModal] = useState(true);
     const [LoadingStatus, setLoadingStatus] = useState(false);
     
     const sendForm = (emailValue,nameValue,messageValue) =>{
@@ -46,12 +49,21 @@ const DefaultFooter = () =>{
                         setShowMailModal(true);
                     },
                     (error) => {
-                        console.log(error);
+                        alertify.error('Por el momento no es posible enviar tu mensaje');
+                        // console.log(error);
                     }
                 );
         }
         else{
-            console.log("Existe algun error en el form");
+            if(!emailValue){
+                alertify.error('El Correo electronico es requerido');
+            }
+            else if(!nameValue){
+                alertify.error('El Nombre es requerido');
+            }
+            else if(!messageValue){
+                alertify.error('Porfavor agrega un mensaje');
+            }
         }
     }
     

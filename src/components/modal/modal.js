@@ -42,10 +42,10 @@ const PortalModal = ({children,IsModalVisible,HandleIsModalVisible}) =>{
                         width={'45%'}
                         flexDirection={'column'}
                         alignItems={'flex-end'}
-                        bgcolor={colors.white}
+                        bgcolor={colors.darkcolor}
                     >   
                         <Button
-                            onClick={(e)=>{ e.preventDefault()}}
+                            OnClick={(e)=>{ e.preventDefault()}}
                             Text={""}
                             Width={'5%'}
                             FontSize={17}
@@ -62,6 +62,7 @@ const PortalModal = ({children,IsModalVisible,HandleIsModalVisible}) =>{
                         width={'45%'}
                         bgcolor={colors.white}
                         flexDirection={'column'}
+                        padding={`${px2vw(20)} ${px2vw(0)} ${px2vw(0)} ${px2vw(0)}`}
                     > 
                         <Message 
                             TextBold={"¡Gracias por contactarme!"}

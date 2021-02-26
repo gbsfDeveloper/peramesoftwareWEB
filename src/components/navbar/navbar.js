@@ -43,7 +43,7 @@ const NavBar = ({HandleSection,SectionsState}) =>{
     ]
     const buttonsList = buttonsContent.map((button)=>{
         return <Button
-            onClick={(e)=>{
+            OnClick={(e)=>{
                 e.preventDefault();
                 button.HandleSection(button.section)
             }}
