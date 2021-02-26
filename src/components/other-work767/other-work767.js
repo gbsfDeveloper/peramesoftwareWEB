@@ -1,6 +1,4 @@
 import React,{useState} from 'react';
-import useViewport from '../../hooks/useViewport';
-import styled from 'styled-components';
 import colors from '../../constants/Colors';
 import px2vw from "../../utils/px2vw";
 import Container from '../container';
@@ -8,7 +6,6 @@ import Title from '../title';
 import Button from '../button';
 
 const DefaultOtherWorks = ({bgColor}) =>{
-    let {Width} = useViewport();
     return(
         <Container
             width={'50%'}

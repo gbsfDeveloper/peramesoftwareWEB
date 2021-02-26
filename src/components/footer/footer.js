@@ -1,5 +1,4 @@
 import React,{useState} from 'react';
-import ReactDOM from 'react-dom'
 import alertify from "alertifyjs";
 import "../../../node_modules/alertifyjs/build/css/alertify.css";
 import "../../../node_modules/alertifyjs/build/css/themes/semantic.css";

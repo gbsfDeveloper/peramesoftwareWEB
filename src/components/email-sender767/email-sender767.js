@@ -7,23 +7,77 @@ import Container from '../container';
 import Title from '../title';
 import Button from '../button';
 
+const HandleDefault = () =>{
+    console.log("Default Action");
+}
 
-const Input = styled.input.attrs(({PlaceHolder,Type,Id}) => ({
+const Input = styled.input.attrs(({PlaceHolder,Type,Id,Value,HandleInput}) => ({
+    value:Value,
+    id:(Id !== undefined) ? Id : '',
+    onChange:(HandleInput !== undefined) ? (e)=>{HandleInput(e.target.value)} : HandleDefault,
     placeholder: (PlaceHolder !== undefined) ? PlaceHolder : '',
-    type:(Type !== undefined) ? Type : '',
-    id:(Id !== undefined) ? Id : ''
+    type:(Type !== undefined) ? Type : ''
   }))`
     width:100%;
     height:100%;
     padding: 3% 3%;
     font-size:${({FontSize})=>{return (FontSize !== undefined) ? px2vw(FontSize) : px2vw(70)}};
+    background-color:${({ErrorState})=>{
+        let color = 'white';
+        switch (ErrorState) {
+            case 0:
+                color = 'white'
+                break;
+            case 1:
+                color = 'green'
+                break;
+            case 2:
+                color = 'red'
+                break;
+        }
+        return color;
+    }};
+    color:${({ErrorState})=>{
+        let color = 'white';
+        switch (ErrorState) {
+            case 0:
+                color = 'black'
+                break;
+            case 1:
+                color = 'white'
+                break;
+            case 2:
+                color = 'white'
+                break;
+        }
+        return color;
+    }};
+    &::placeholder{
+        color:${({ErrorState})=>{
+            let color = 'white';
+            switch (ErrorState) {
+                case 0:
+                    color = 'grey'
+                    break;
+                case 1:
+                    color = 'white'
+                    break;
+                case 2:
+                    color = 'white'
+                    break;
+            }
+            return color;
+        }};
+    }
 `;
 
-const TextArea = styled.textarea.attrs(({PlaceHolder,Type,Id,Rows}) => ({
-    placeholder: (PlaceHolder !== undefined) ? PlaceHolder : '',
-    type:(Type !== undefined) ? Type : '',
+const TextArea = styled.textarea.attrs(({PlaceHolder,Type,Id,Rows,Value,HandleInput}) => ({
+    value:Value,
     id:(Id !== undefined) ? Id : '',
-    rows:(Rows !== undefined) ? Rows : ''
+    onChange:(HandleInput !== undefined) ? (e)=>{HandleInput(e.target.value)} : HandleDefault,
+    placeholder: (PlaceHolder !== undefined) ? PlaceHolder : '',
+    rows:(Rows !== undefined) ? Rows : '',
+    type:(Type !== undefined) ? Type : '',
   }))`
     width:100%;
     height:80%;
@@ -33,10 +87,106 @@ const TextArea = styled.textarea.attrs(({PlaceHolder,Type,Id,Rows}) => ({
     max-height:100%;
     padding: 2% 2%;
     font-size:${({FontSize})=>{return (FontSize !== undefined) ? px2vw(FontSize) : px2vw(70)}};
+    background-color:${({ErrorState})=>{
+        let color = 'white';
+        switch (ErrorState) {
+            case 0:
+                color = 'white'
+                break;
+            case 1:
+                color = 'green'
+                break;
+            case 2:
+                color = 'red'
+                break;
+        }
+        return color;
+    }};
+    color:${({ErrorState})=>{
+        let color = 'white';
+        switch (ErrorState) {
+            case 0:
+                color = 'black'
+                break;
+            case 1:
+                color = 'white'
+                break;
+            case 2:
+                color = 'white'
+                break;
+        }
+        return color;
+    }};
+    &::placeholder{
+        color:${({ErrorState})=>{
+            let color = 'white';
+            switch (ErrorState) {
+                case 0:
+                    color = 'grey'
+                    break;
+                case 1:
+                    color = 'white'
+                    break;
+                case 2:
+                    color = 'white'
+                    break;
+            }
+            return color;
+        }};
+    }
 `;
 
-const DefaultEmailSender = ({bgColor}) =>{
-    let {Width} = useViewport();
+const DefaultEmailSender = ({
+    InputEmailValue,
+    HandleEmailValue,
+    InputNameValue,
+    HandleNameValue,
+    InputMessageValue,
+    HandleMessageValue,
+    HandleButtonActions,
+    ErrorsState,
+    IsSendingMail,
+    HandleIsSendingMail
+}) =>{
+    
+    const ManageSendingButton = (IsSendingMail) =>{
+        if(!IsSendingMail){
+            return <Button
+                    OnClick={(e)=>{
+                        e.preventDefault();
+                        HandleButtonActions(InputEmailValue,InputNameValue,InputMessageValue);
+                    }}
+                    Text={"Enviar"}
+                    Width={'100%'}
+                    FontSize={60}
+                    Padding={`${px2vw(30)} 0vw 0vw 0vw`}
+                    IconClassFA={'fas fa-paper-plane'}
+                    ButtonPadding={`${px2vw(30)} ${px2vw(0)} ${px2vw(30)} ${px2vw(0)}`}
+                    ButtonBorderRadius={'0'}
+                    ButtonBgColor={colors.primary}
+                    ButtonFontColor={colors.white}
+                    ButtonHoverFontColor={colors.white}
+                />
+        }
+        else{
+            return <Button
+                OnClick={(e)=>{
+                    e.preventDefault();
+                }}
+                Text={"Enviar"}
+                Width={'100%'}
+                FontSize={60}
+                Padding={`${px2vw(30)} 0vw 0vw 0vw`}
+                IconClassFA={'fas fa-paper-plane'}
+                ButtonPadding={`${px2vw(30)} ${px2vw(0)} ${px2vw(30)} ${px2vw(0)}`}
+                ButtonBorderRadius={'0'}
+                ButtonBgColor={colors.primary}
+                ButtonFontColor={colors.white}
+                ButtonHoverFontColor={colors.white}
+            />
+        }
+    }
+
     return(
         <Container
             width={'95%'}
@@ -63,6 +213,9 @@ const DefaultEmailSender = ({bgColor}) =>{
                         Id={'inputEmail'}
                         PlaceHolder={'Correo Electronico'}
                         Type={'email'}
+                        Value={InputEmailValue}
+                        HandleInput={HandleEmailValue}
+                        ErrorState={ErrorsState.Email}
                     />
                 </Container>
                 <Container
@@ -76,6 +229,9 @@ const DefaultEmailSender = ({bgColor}) =>{
                         Id={'inputName'}
                         PlaceHolder={'Tu Nombre'}
                         Type={'text'}
+                        Value={InputNameValue}
+                        HandleInput={HandleNameValue}
+                        ErrorState={ErrorsState.Name}
                     />
                 </Container>
                 <Container
@@ -88,21 +244,13 @@ const DefaultEmailSender = ({bgColor}) =>{
                     <TextArea 
                         Id={'inputMessage'}
                         PlaceHolder={'Mensaje'}
+                        Value={InputMessageValue}
+                        HandleInput={HandleMessageValue}
+                        ErrorState={ErrorsState.Message}
                         // Rows={'3'}
                     />
                 </Container>
-                <Button
-                    Text={"Enviar"}
-                    Width={'100%'}
-                    FontSize={60}
-                    Padding={`${px2vw(30)} 0vw 0vw 0vw`}
-                    IconClassFA={'fas fa-paper-plane'}
-                    ButtonPadding={`${px2vw(30)} ${px2vw(0)} ${px2vw(30)} ${px2vw(0)}`}
-                    ButtonBorderRadius={'0'}
-                    ButtonBgColor={colors.primary}
-                    ButtonFontColor={colors.white}
-                    ButtonHoverFontColor={colors.white}
-                />
+                {ManageSendingButton(IsSendingMail)}
         </Container>            
     )
 }
