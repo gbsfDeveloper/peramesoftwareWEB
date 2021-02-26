@@ -36,6 +36,38 @@ const Input = styled.input.attrs(({PlaceHolder,Type,Id,Value,HandleInput}) => ({
         }
         return color;
     }};
+    color:${({ErrorState})=>{
+        let color = 'white';
+        switch (ErrorState) {
+            case 0:
+                color = 'black'
+                break;
+            case 1:
+                color = 'white'
+                break;
+            case 2:
+                color = 'white'
+                break;
+        }
+        return color;
+    }};
+    &::placeholder{
+        color:${({ErrorState})=>{
+            let color = 'white';
+            switch (ErrorState) {
+                case 0:
+                    color = 'grey'
+                    break;
+                case 1:
+                    color = 'white'
+                    break;
+                case 2:
+                    color = 'white'
+                    break;
+            }
+            return color;
+        }};
+    }
 `;
 
 const TextArea = styled.textarea.attrs(({PlaceHolder,Type,Id,Rows,Value,HandleInput}) => ({
@@ -68,6 +100,38 @@ const TextArea = styled.textarea.attrs(({PlaceHolder,Type,Id,Rows,Value,HandleIn
         }
         return color;
     }};
+    color:${({ErrorState})=>{
+        let color = 'white';
+        switch (ErrorState) {
+            case 0:
+                color = 'black'
+                break;
+            case 1:
+                color = 'white'
+                break;
+            case 2:
+                color = 'white'
+                break;
+        }
+        return color;
+    }};
+    &::placeholder{
+        color:${({ErrorState})=>{
+            let color = 'white';
+            switch (ErrorState) {
+                case 0:
+                    color = 'grey'
+                    break;
+                case 1:
+                    color = 'white'
+                    break;
+                case 2:
+                    color = 'white'
+                    break;
+            }
+            return color;
+        }};
+    }
 `;
 
 const DefaultEmailSender = ({

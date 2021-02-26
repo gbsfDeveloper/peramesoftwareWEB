@@ -21,7 +21,6 @@ export const Global = createGlobalStyle`
     }
     textarea{
         font-family:'Noto Sans JP';
-        font-weight:bold;
     }
 `;
 
