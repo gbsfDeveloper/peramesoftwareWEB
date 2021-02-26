@@ -92,6 +92,9 @@ const DefaultFooter = () =>{
             isValidMail = true;
         }
         else{
+            if(!emailValidate){
+                alertify.error('El formato de tu correo electronico es incorrecto');
+            }
             newState = {
                 ...newState,
                 Email:2
