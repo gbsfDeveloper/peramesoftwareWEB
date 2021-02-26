@@ -58,10 +58,10 @@ const DefaultFooter = () =>{
             if(!emailValue){
                 alertify.error('El Correo electronico es requerido');
             }
-            else if(!nameValue){
+            if(!nameValue){
                 alertify.error('El Nombre es requerido');
             }
-            else if(!messageValue){
+            if(!messageValue){
                 alertify.error('Porfavor agrega un mensaje');
             }
         }
