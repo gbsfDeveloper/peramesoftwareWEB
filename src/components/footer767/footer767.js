@@ -31,7 +31,7 @@ const DefaultFooter = () =>{
     const [InputEmail, setInputMail] = useState(''); 
     const [InputName, setInputName] = useState(''); 
     const [InputMessage, setInputMessage] = useState('');
-    const [ShowMailModal, setShowMailModal] = useState(true);
+    const [ShowMailModal, setShowMailModal] = useState(false);
     const [LoadingStatus, setLoadingStatus] = useState(false);
     
     const sendForm = (emailValue,nameValue,messageValue) =>{
