@@ -29,7 +29,8 @@ const DefaultFooter = () =>{
     const [InputEmail, setInputMail] = useState(''); 
     const [InputName, setInputName] = useState(''); 
     const [InputMessage, setInputMessage] = useState('');
-    const [ShowMailModal, setShowMailModal] = useState(true);
+    const [ShowMailModal, setShowMailModal] = useState(false);
+    const [LoadingStatus, setLoadingStatus] = useState(false);
     
     const sendForm = (emailValue,nameValue,messageValue) =>{
         if(isValidForm(emailValue,nameValue,messageValue)){
@@ -125,6 +126,8 @@ const DefaultFooter = () =>{
                      HandleButtonActions={sendForm}
                      ErrorsState={InputsErrorState}
                      HandleErrorsState={setInputsErrorState}
+                     IsSendingMail={LoadingStatus}
+                     HandlesSendingMail={setLoadingStatus}
                 />
             </Container>
             <Modal

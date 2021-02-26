@@ -78,8 +78,50 @@ const DefaultEmailSender = ({
     InputMessageValue,
     HandleMessageValue,
     HandleButtonActions,
-    ErrorsState
+    ErrorsState,
+    IsSendingMail,
+    HandleIsSendingMail
 }) =>{
+
+    const ManageSendingButton = (IsSendingMail) =>{
+            if(!IsSendingMail){
+                return <Button
+                    OnClick={(e)=>{
+                        e.preventDefault();
+                        HandleButtonActions(InputEmailValue,InputNameValue,InputMessageValue);
+                    }}
+                    Text={"Enviar"}
+                    Width={'20%'}
+                    FontSize={17}
+                    Padding={`${px2vw(5)} 0vw 0vw 0vw`}
+                    IconClassFA={'fas fa-paper-plane'}
+                    ButtonPadding={px2vw(5)}
+                    ButtonBorderRadius={'0'}
+                    ButtonBgColor={colors.primary}
+                    ButtonFontColor={colors.white}
+                    ButtonHoverFontColor={colors.white}
+                />
+            }
+            else{
+                return <Button
+                    OnClick={(e)=>{
+                        e.preventDefault();
+                    }}
+                    Width={'20%'}
+                    FontSize={17}
+                    Padding={`${px2vw(5)} 0vw 0vw 0vw`}
+                    IconClassFA={'fas fa-cog'}
+                    ButtonPadding={px2vw(5)}
+                    ButtonBorderRadius={'0'}
+                    ButtonBgColor={colors.slowdarkcolor}
+                    ButtonFontColor={colors.white}
+                    ButtonHoverFontColor={colors.white}
+                    ButtonHoverBgColor={colors.slowdarkcolor}
+                    IsIconAnimate
+                />
+            }
+    }
+
     return(
         <Container
             width={'50%'}
@@ -150,22 +192,7 @@ const DefaultEmailSender = ({
                         // Rows={'3'}
                     />
                 </Container>
-                <Button
-                    onClick={(e)=>{
-                        e.preventDefault();
-                        HandleButtonActions(InputEmailValue,InputNameValue,InputMessageValue);
-                    }}
-                    Text={"Enviar"}
-                    Width={'20%'}
-                    FontSize={17}
-                    Padding={`${px2vw(5)} 0vw 0vw 0vw`}
-                    IconClassFA={'fas fa-paper-plane'}
-                    ButtonPadding={px2vw(5)}
-                    ButtonBorderRadius={'0'}
-                    ButtonBgColor={colors.primary}
-                    ButtonFontColor={colors.white}
-                    ButtonHoverFontColor={colors.white}
-                />
+                {ManageSendingButton(IsSendingMail)}
         </Container>            
     )
 }

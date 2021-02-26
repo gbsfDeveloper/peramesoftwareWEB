@@ -1,12 +1,12 @@
 import React,{useState} from 'react';
-import styled from 'styled-components';
+import styled,{keyframes} from 'styled-components';
 import px2vw from "../../utils/px2vw";
 import Container from '../container';
 
-const Button = styled.a.attrs(({Href,HrefTarget,onClick}) => ({
+const Button = styled.a.attrs(({Href,HrefTarget,OnClick}) => ({
     href: (Href !== undefined) ? Href : 'https://www.facebook.com/gelaciobenyair.santosfernandez.3',
     target: (HrefTarget !== undefined) ? HrefTarget : '_blank',
-    onClick:(onClick !== undefined) ? onClick : ''
+    onClick:(OnClick !== undefined) ? OnClick : ''
   }))`
     width:${({ButtonWidth})=>{return (ButtonWidth !== undefined) ? ButtonWidth : '100%'}};
     height:${({ButtonHeight})=>{return (ButtonHeight !== undefined) ? ButtonHeight : ''}};
@@ -28,11 +28,21 @@ const Button = styled.a.attrs(({Href,HrefTarget,onClick}) => ({
     
     font-size:${({FontSize})=>{return (FontSize !== undefined) ? px2vw(FontSize) : px2vw(70)}};
 `;
+const rotate = keyframes`
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+`;
 
 const Icon = styled.i.attrs(({Class}) => ({
     className:  (Class !== undefined) ? Class : '',
   }))`
     padding-right:${({Padding})=>{return (Padding !== undefined) ? Padding : '0'}};
+    animation: ${({IsIconAnimate})=>{return (IsIconAnimate !== undefined) ? `${rotate} 2s linear infinite` : ''}} ;
 `;
 
 const DefaultButton = ({
@@ -55,7 +65,8 @@ const DefaultButton = ({
     ButtonFontColor,
     ButtonHoverFontColor,
     IconClassFA,
-    onClick
+    OnClick,
+    IsAnimate
 }) =>{
     return(
         <Container width={Width} height={Height} justifyContent={JustifyContent} padding={Padding}>
@@ -73,7 +84,7 @@ const DefaultButton = ({
                 FontSize={FontSize}
                 Href={Href}
                 HrefTarget={HrefTarget}
-                onClick={onClick}
+                OnClick={OnClick}
             >
                 <Icon Class={IconClassFA}/>
                 {Text}
