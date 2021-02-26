@@ -8,7 +8,7 @@ import colors from '../../constants/Colors';
 import px2vw from "../../utils/px2vw";
 import EmailSender from '../email-sender767';
 import OtherWorks from '../other-work767';
-import Modal from '../modal';
+import Modal from '../modal767';
 
 const Footer = styled.div`
     width:100%;
@@ -31,7 +31,7 @@ const DefaultFooter = () =>{
     const [InputEmail, setInputMail] = useState(''); 
     const [InputName, setInputName] = useState(''); 
     const [InputMessage, setInputMessage] = useState('');
-    const [ShowMailModal, setShowMailModal] = useState(false);
+    const [ShowMailModal, setShowMailModal] = useState(true);
     const [LoadingStatus, setLoadingStatus] = useState(false);
     
     const sendForm = (emailValue,nameValue,messageValue) =>{
