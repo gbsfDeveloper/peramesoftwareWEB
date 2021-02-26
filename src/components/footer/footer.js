@@ -1,10 +1,12 @@
 import React,{useState} from 'react';
+import ReactDOM from 'react-dom'
 import Container from '../container';
 import styled from 'styled-components';
 import colors from '../../constants/Colors';
 import px2vw from "../../utils/px2vw";
 import EmailSender from '../email-sender';
 import OtherWorks from '../other-work';
+import Modal from '../modal';
 
 const Footer = styled.div`
     width:100%;
@@ -27,6 +29,7 @@ const DefaultFooter = () =>{
     const [InputEmail, setInputMail] = useState(''); 
     const [InputName, setInputName] = useState(''); 
     const [InputMessage, setInputMessage] = useState('');
+    const [ShowMailModal, setShowMailModal] = useState(true);
     
     const sendForm = (emailValue,nameValue,messageValue) =>{
         if(isValidForm(emailValue,nameValue,messageValue)){
@@ -36,9 +39,10 @@ const DefaultFooter = () =>{
                 .then(
                     (result) => {
                         // console.log(result);
-                        setInputMail('')
-                        setInputName('')
-                        setInputMessage('')
+                        setInputMail('');
+                        setInputName('');
+                        setInputMessage('');
+                        setShowMailModal(true);
                     },
                     (error) => {
                         console.log(error);
@@ -123,6 +127,10 @@ const DefaultFooter = () =>{
                      HandleErrorsState={setInputsErrorState}
                 />
             </Container>
+            <Modal
+                IsModalVisible={ShowMailModal}
+                HandleIsModalVisible={setShowMailModal}
+            />
         </Footer>
     )
 }
