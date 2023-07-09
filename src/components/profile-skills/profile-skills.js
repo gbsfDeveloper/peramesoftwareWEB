@@ -1,11 +1,9 @@
-import React,{useState} from 'react';
+import React from 'react';
 import styled from 'styled-components';
 import px2vw from "../../utils/px2vw";
 import colors from '../../constants/Colors';
 import Container from '../container';
-import Title from '../title';
 import Message from '../message';
-import SkillCircle from '../skill-circle';
 
 const Icon = styled.i.attrs(({Class,FontSize}) => ({
     className:  (Class !== undefined) ? Class : '',

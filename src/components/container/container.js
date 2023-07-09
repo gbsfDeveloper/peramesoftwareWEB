@@ -1,6 +1,5 @@
 import React from 'react';
 import styled from 'styled-components';
-import px2vw from "../../utils/px2vw";
 
 const Container = styled.div`
     width:${({width})=>{return (width !== undefined) ? width : '10vw'}};

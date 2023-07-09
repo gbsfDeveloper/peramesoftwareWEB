@@ -1,18 +1,9 @@
 import React from 'react';
 import px2vw from "../../utils/px2vw";
-import styled from 'styled-components';
 import colors from '../../constants/Colors';
 import Container from '../container';
 import Image from '../image';
 import Message from '../message';
-import Title from '../title';
-
-const Icon = styled.i.attrs(({Class,FontSize}) => ({
-    className:  (Class !== undefined) ? Class : '',
-  }))`
-    padding-right:${({Class})=>{return (Class !== undefined) ? px2vw(10) : '0'}};
-    font-size:${({FontSize})=>{return (FontSize !== undefined) ? px2vw(FontSize) : px2vw(70)}};
-`;
 
 const ProfileExperience = ({Display}) =>{
     return(

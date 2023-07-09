@@ -1,5 +1,4 @@
-import React,{useState} from 'react';
-import useViewport from '../../hooks/useViewport';
+import React from 'react';
 import styled from 'styled-components';
 import colors from '../../constants/Colors';
 import Image from '../image';
@@ -18,7 +17,6 @@ const Header = styled.div`
 `;
 
 const DefaultHeader = () =>{
-    let {Width} = useViewport();
     return(
         <Header>
             <Image

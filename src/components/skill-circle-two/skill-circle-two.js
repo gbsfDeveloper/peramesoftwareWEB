@@ -2,7 +2,6 @@ import React from 'react';
 import styled from 'styled-components';
 import px2vw from "../../utils/px2vw";
 import Container from '../container';
-import colors from '../../constants/Colors';
 
 const Icon = styled.i.attrs(({Class,FontSize}) => ({
     className:  (Class !== undefined) ? Class : '',

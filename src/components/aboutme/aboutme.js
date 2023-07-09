@@ -1,6 +1,4 @@
-import React,{useState} from 'react';
-import useViewport from '../../hooks/useViewport';
-import styled from 'styled-components';
+import React from 'react';
 import px2vw from "../../utils/px2vw";
 import colors from '../../constants/Colors';
 import Container from '../container';
@@ -10,7 +8,6 @@ import Message from '../message';
 import SkillCircle from '../skill-circle-two';
 
 const AboutMe = ({Display}) =>{
-    let {Width} = useViewport();
     const SkillCirclesData = [
         {
             Text:'PHP',

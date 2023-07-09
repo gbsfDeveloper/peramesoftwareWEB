@@ -22,7 +22,7 @@ const Profile = styled.div`
     align-items:center;
     align-content:center;
     color:${colors.darkcolor};
-    background-color:${({bgColor}) => {return (bgColor != undefined) ? bgColor: colors.slowlycolor2}};
+    background-color:${({bgColor}) => {return (bgColor !== undefined) ? bgColor: colors.slowlycolor2}};
 `;
 
 const DefaultProfile = ({bgColor}) =>{
@@ -34,7 +34,6 @@ const DefaultProfile = ({bgColor}) =>{
     }
 
     let {Width} = useViewport();
-    const [ActiveSection,setActiveSection] = useState(Sections.About.name);
     const [SectionsState,setSectionsState] = useState(Sections);
     
     useEffect(() => { 
@@ -71,6 +70,15 @@ const DefaultProfile = ({bgColor}) =>{
                 });
                 break;
             case 'Contact':
+                setSectionsState({
+                    ...SectionsState,
+                    About:{name:'About',isActive:false},
+                    Skills:{name:'Skills',isActive:false},
+                    Experience:{name:'Experience',isActive:false},
+                    Contact:{name:'Contact',isActive:true}
+                });
+                break;
+            default:
                 setSectionsState({
                     ...SectionsState,
                     About:{name:'About',isActive:false},

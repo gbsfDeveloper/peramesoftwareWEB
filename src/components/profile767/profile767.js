@@ -1,4 +1,4 @@
-import React,{useState,useEffect} from 'react';
+import React from 'react';
 import styled from 'styled-components';
 import colors from '../../constants/Colors';
 import px2vw from "../../utils/px2vw";
@@ -20,7 +20,7 @@ const Profile = styled.div`
     align-items:center;
     align-content:center;
     color:${colors.darkcolor};
-    background-color:${({bgColor}) => {return (bgColor != undefined) ? bgColor: colors.slowlycolor2}};
+    background-color:${({bgColor}) => {return (bgColor !== undefined) ? bgColor: colors.slowlycolor2}};
 `;
 
 const DefaultProfile = ({bgColor}) =>{

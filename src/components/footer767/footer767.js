@@ -76,7 +76,7 @@ const DefaultFooter = () =>{
             Message: 0
         };
 
-        if (nameValue != "" && nameValue != undefined) {
+        if (nameValue !== "" && nameValue !== undefined) {
             isValidName = true;
         }
         else{
@@ -87,7 +87,7 @@ const DefaultFooter = () =>{
         }
         let regex = /^[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?$/;
         let emailValidate = regex.test(emailValue);
-        if (emailValue != "" && emailValue != undefined && emailValidate) {
+        if (emailValue !== "" && emailValue !== undefined && emailValidate) {
             isValidMail = true;
         }
         else{
@@ -99,7 +99,7 @@ const DefaultFooter = () =>{
                 Email:2
             }
         }
-        if (messageValue != "" && messageValue != undefined) {
+        if (messageValue !== "" && messageValue !== undefined) {
             isValidMessage = true;
         }
         else{

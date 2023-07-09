@@ -1,20 +1,10 @@
-import React,{useState} from 'react';
-import useViewport from '../../hooks/useViewport';
-import styled from 'styled-components';
+import React from 'react';
 import px2vw from "../../utils/px2vw";
 import colors from '../../constants/Colors';
 import Container from '../container';
 import Title from '../title';
 import Message from '../message';
 import SkillCircle from '../skill-circle-two';
-
-const Icon = styled.i.attrs(({Class,FontSize}) => ({
-    className:  (Class !== undefined) ? Class : '',
-  }))`
-    padding-right:${({Class})=>{return (Class !== undefined) ? px2vw(10) : '0'}};
-    font-size:${({FontSize})=>{return (FontSize !== undefined) ? px2vw(FontSize) : px2vw(70)}};
-`;
-
 
 const AboutMe = ({Display}) =>{
     const SkillCirclesData = [

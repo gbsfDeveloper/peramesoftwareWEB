@@ -1,4 +1,4 @@
-import React,{useState} from 'react';
+import React from 'react';
 import styled from 'styled-components';
 import colors from '../../constants/Colors';
 import px2vw from "../../utils/px2vw";
@@ -33,6 +33,9 @@ const Input = styled.input.attrs(({PlaceHolder,Type,Id,Value,HandleInput}) => ({
             case 2:
                 color = 'red'
                 break;
+            default:
+                color = 'white'
+                break;
         }
         return color;
     }};
@@ -46,6 +49,9 @@ const Input = styled.input.attrs(({PlaceHolder,Type,Id,Value,HandleInput}) => ({
                 color = 'white'
                 break;
             case 2:
+                color = 'white'
+                break;
+            default:
                 color = 'white'
                 break;
         }
@@ -62,6 +68,9 @@ const Input = styled.input.attrs(({PlaceHolder,Type,Id,Value,HandleInput}) => ({
                     color = 'white'
                     break;
                 case 2:
+                    color = 'white'
+                    break;
+                default:
                     color = 'white'
                     break;
             }
@@ -97,6 +106,9 @@ const TextArea = styled.textarea.attrs(({PlaceHolder,Type,Id,Rows,Value,HandleIn
             case 2:
                 color = 'red'
                 break;
+            default:
+                color = 'white'
+                break;
         }
         return color;
     }};
@@ -110,6 +122,9 @@ const TextArea = styled.textarea.attrs(({PlaceHolder,Type,Id,Rows,Value,HandleIn
                 color = 'white'
                 break;
             case 2:
+                color = 'white'
+                break;
+            default:
                 color = 'white'
                 break;
         }
@@ -126,6 +141,9 @@ const TextArea = styled.textarea.attrs(({PlaceHolder,Type,Id,Rows,Value,HandleIn
                     color = 'white'
                     break;
                 case 2:
+                    color = 'white'
+                    break;
+                default:
                     color = 'white'
                     break;
             }

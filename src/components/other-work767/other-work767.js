@@ -1,4 +1,4 @@
-import React,{useState} from 'react';
+import React from 'react';
 import colors from '../../constants/Colors';
 import px2vw from "../../utils/px2vw";
 import Container from '../container';
