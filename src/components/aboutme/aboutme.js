@@ -86,7 +86,7 @@ const AboutMe = ({Display}) =>{
         >
             <Container
                 width={'100%'}
-                height={px2vw(130)}
+                height={px2vw(120)}
                 flexDirection={'column'}
                 borderBottom={`1px solid ${colors.slowlycolor}`}
                 bgcolor={colors.white}
@@ -107,22 +107,23 @@ const AboutMe = ({Display}) =>{
                     FontColor={colors.darkcolor}
                 />
             </Container>
+            <Message
+                Width={'100%'}
+                Height={px2vw(120)}
+                Text={"Hoy en día la tecnología es algo muy importante en nuestras vidas y es necesario que nos adaptemos lo mas rápido posible, por esta razón creo en el aprendizaje asi como en la mejora continua, además pienso firmemente que el uso de las diferentes herramientas tecnológicas y su implementación es muy importante para ahorrar tiempo y recursos en la búsqueda de soluciones a problemas tecnológicos reales."}
+                FontSize={15}
+                TextAlign={'justify'}
+            />
             <Container
                 width={'100%'}
                 height={px2vw(20)}
                 flexDirection={'row'}
                 alignItems={'center'}
             />
+
             <Message
                 Width={'100%'}
-                Height={px2vw(80)}
-                Text={"Mi meta más grande siempre fue desempeñarme como un profesional del desarrollo de software y aunque este mundo está en constante cambio, cada dia que pasa busco la forma de seguir aprendiendo y de mejorar continuamente, aprovechando al máximo todas las ventajas de las tendencias tecnológicas."}
-                FontSize={15}
-                TextAlign={'justify'}
-            />
-            <Message
-                Width={'100%'}
-                Height={px2vw(50)}
+                Height={px2vw(20)}
                 TextBold={"Tecnologias que utilizo:"}
                 FontSize={16}
                 JustifyContent={'flex-start'}
