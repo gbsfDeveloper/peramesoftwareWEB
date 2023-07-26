@@ -5,6 +5,7 @@ const Container = styled.div`
     width:${({width})=>{return (width !== undefined) ? width : '10vw'}};
     height:${({height})=>{return (height !== undefined) ? height : ''}};
     display:${({display})=>{return (display !== undefined) ? display : 'flex'}};
+    flex:${({flex})=>{return (flex !== undefined) ? flex : ''}};
     flex-grow:${({flexGrow})=>{return (flexGrow !== undefined) ? flexGrow : ''}};
     flex-wrap: ${({flexWrap})=>{return (flexWrap !== undefined) ? flexWrap : 'nowrap'}};
     flex-direction:${({flexDirection})=>{return (flexDirection !== undefined) ? flexDirection : 'row'}};
@@ -22,10 +23,48 @@ const Container = styled.div`
     border-style:${({borderStyle})=>{return (borderStyle !== undefined) ? borderStyle : ''}};
     border-radius:${({borderRadius})=>{return (borderRadius !== undefined) ? borderRadius : ''}};
     box-shadow:${({boxShadow})=>{return (boxShadow !== undefined) ? boxShadow : ''}};
+    overflow-x:${({overflowX})=>{return (overflowX !== undefined) ? overflowX : ''}};
+    overflow-y:${({overflowY})=>{return (overflowY !== undefined) ? overflowY : ''}};
+    overflow:${({orflow})=>{return (orflow !== undefined) ? orflow : ''}};
+    &::-webkit-scrollbar {
+        height:0.5rem;
+        width:0.5rem;
+    }
+    &::-webkit-scrollbar-track {
+        background-color:#C2C2C2;
+    }
+    &::-webkit-scrollbar-thumb {
+        background-color: #213078;
+        border-radius: 10rem;
+    }
 `
 
 const DefaultContainer = (props) =>{
-    const {width,height,flexDirection,justifyItems,justifyContent,alignItems,alignContent,flexGrow,flexWrap,children,padding,margin,bgcolor,bgimage,border,borderStyle,boxShadow,display,borderBottom,borderRadius} = props
+    const {
+        width,
+        height,
+        flexDirection,
+        justifyItems,
+        justifyContent,
+        alignItems,
+        alignContent,
+        flexGrow,
+        flexWrap,
+        children,
+        padding,
+        margin,
+        bgcolor,
+        bgimage,
+        border,
+        borderStyle,
+        boxShadow,
+        display,
+        borderBottom,
+        borderRadius,
+        overflowX,
+        overflowY,
+        overflow,
+    } = props
     return(
         <Container 
             width={width}
@@ -47,6 +86,9 @@ const DefaultContainer = (props) =>{
             boxShadow={boxShadow}
             borderBottom={borderBottom}       
             borderRadius={borderRadius}       
+            overflowX={overflowX}       
+            overflowY={overflowY}       
+            overflow={overflow}       
         >
             {children}
         </Container>

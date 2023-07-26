@@ -4,6 +4,7 @@ const Colors = {
 	slowlycolor: '#dae1e7',
 	slowlycolor2: '#F9F9F9',
 	darkcolor: '#213078',
+	darkcolor_inactive_tab: '#35427D',
 	seconddarkcolor:'#1111A8',
 	darkcoloralpha: 'rgba(20, 40, 80,0.05)',
 	slowdarkcolor:'#27496d',

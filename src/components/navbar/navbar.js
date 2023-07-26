@@ -57,8 +57,8 @@ const NavBar = ({HandleSection,SectionsState}) =>{
             ButtonHeight={px2vw(100)}
             ButtonPadding={`${px2vw(40)} ${px2vw(0)} ${px2vw(0)} ${px2vw(0)}`}
             ButtonBorderRadius={'0'}
-            ButtonBgColor={button.SectionsState.isActive ? colors.white :colors.darkcolor}
-            ButtonFontColor={button.SectionsState.isActive ? colors.darkcolor :colors.white}
+            ButtonBgColor={button.SectionsState.isActive ? colors.white : colors.darkcolor_inactive_tab}
+            ButtonFontColor={button.SectionsState.isActive ? colors.darkcolor : colors.white}
             ButtonHoverBgColor={colors.white}
             ButtonHoverFontColor={colors.darkcolor}
         />

@@ -10,6 +10,16 @@ import SkillCircle from '../skill-circle-two';
 const AboutMe = ({Display}) =>{
     const SkillCirclesData = [
         {
+            Text:'TypeScript',
+            Color:'#213078',
+            IconClass:'fas fa-file-code'
+        },
+        {
+            Text:'IA / Chatgpt',
+            Color:'#168130',
+            IconClass:'fas fa-microchip'
+        },
+        {
             Text:'PHP',
             Color:'#213078',
             IconClass:'fab fa-php'
@@ -30,16 +40,19 @@ const AboutMe = ({Display}) =>{
             IconClass:'fab fa-linux'
         },
         {
-            Text:'SQL y MongoDB',
+            Text:'SQL/MongoDB',
             Color:'#2677C7',
             IconClass:'fas fa-database'
         }
     ];
     const SkillList = SkillCirclesData.map((skill)=>{
         return <Container
-            width={'45%'}
+            // width={'16.6%'} 
+            width={'15rem'} 
             height={px2vw(700)}
             flexDirection={'column'}
+            orflow={'scroll'}
+            flex={'0 0 auto'}
         >
             <SkillCircle
                 ContainerMargin={`${px2vw(0)} ${px2vw(0)}`}
@@ -48,7 +61,7 @@ const AboutMe = ({Display}) =>{
                 BorderWith={'0.5rem'}
                 BorderColor={skill.Color}
                 IconClass={skill.IconClass}
-                IconSize={50}
+                IconSize={40}
                 IconColor={skill.Color}
             />
             <Title
@@ -80,7 +93,7 @@ const AboutMe = ({Display}) =>{
                 padding={`${px2vw(0)} ${px2vw(0)} ${px2vw(0)} ${px2vw(0)}`}
             >
                 <Title
-                    Text={"Gelacio Santos Fernández"}
+                    Text={"Gelacio Ben Yair Santos Fernández"}
                     Width={'100%'}
                     JustifyContent={'flex-start'}
                     FontSize={30}
@@ -109,20 +122,31 @@ const AboutMe = ({Display}) =>{
             />
             <Message
                 Width={'100%'}
-                Height={px2vw(80)}
+                Height={px2vw(50)}
                 TextBold={"Tecnologias que utilizo:"}
                 FontSize={16}
                 JustifyContent={'flex-start'}
                 TextAlign={'left'}
             />
+            
             <Container
                 width={'100%'}
-                height={px2vw(100)}
-                flexDirection={'row'}
-                alignItems={'center'}
+                height={px2vw(165)}
+                justifyContent={'start'}
+                alignItems={'start'}
+                overflowX={'scroll'}
+                overflowY={'hidden'}
             >
-                {SkillList}
+                <Container
+                    width={'58rem'}
+                    height={px2vw(165)}
+                    alignItems={'center'}  
+                >
+                    {SkillList}
+                </Container>
             </Container>
+            
+            
         </Container>
     )
 }

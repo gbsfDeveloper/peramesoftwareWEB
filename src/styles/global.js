@@ -22,6 +22,10 @@ export const Global = createGlobalStyle`
     textarea{
         font-family:'Noto Sans JP';
     }
+
+    .container::-webkit-scrollbar-track {
+        background: #000000;
+    }
 `;
 
 export default Global;
