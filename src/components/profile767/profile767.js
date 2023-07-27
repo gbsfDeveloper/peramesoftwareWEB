@@ -41,21 +41,21 @@ const DefaultProfile = ({bgColor}) =>{
                      justifyContent={'space-between'}
                 >
 
-                        <Container
-                            width={'95%'}
-                            bgcolor={colors.darkcolor}
-                            margin={`${px2vw(20)} ${px2vw(0)} ${px2vw(0)} ${px2vw(0)}`}
-                            padding={`${px2vw(20)} ${px2vw(0)}`}
-                        >
-                            <Message
-                                Text={"Acerca de mi"}
-                                Width={'100%'}
-                                JustifyContent={'center'}
-                                FontSize={100}
-                                FontColor={colors.white}
-                            />
-                        </Container>
-                        <Card/>
+                    <Container
+                        width={'95%'}
+                        bgcolor={colors.darkcolor}
+                        margin={`${px2vw(20)} ${px2vw(0)} ${px2vw(0)} ${px2vw(0)}`}
+                        padding={`${px2vw(20)} ${px2vw(0)}`}
+                    >
+                        <Message
+                            Text={"Acerca de mi"}
+                            Width={'100%'}
+                            JustifyContent={'center'}
+                            FontSize={100}
+                            FontColor={colors.white}
+                        />
+                    </Container>
+                    <Card/>
                     <Container
                         width={'95%'}
                         flexDirection={'column'}
