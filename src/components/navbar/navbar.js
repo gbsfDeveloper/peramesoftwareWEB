@@ -8,7 +8,8 @@ import Title from '../title';
 const NavBar = ({HandleSection,SectionsState}) =>{
     const buttonsContent = [
         {
-            text:"Acerca de",
+            // text:"Acerca de",
+            text:"About Me",
             section:'About',
             href:"#",
             hrefTarget:"",
@@ -16,7 +17,8 @@ const NavBar = ({HandleSection,SectionsState}) =>{
             SectionsState:SectionsState.About
         },
         {
-            text:"Experiencia",
+            // text:"Experiencia",
+            text:"Experience",
             section:'Experience',
             href:"#",
             hrefTarget:"",
@@ -24,7 +26,8 @@ const NavBar = ({HandleSection,SectionsState}) =>{
             SectionsState:SectionsState.Experience
         },
         {
-            text:"Tecnologías",
+            // text:"Tecnologías",
+            text:"Skills",
             section:'Skills',
             href:"#",
             hrefTarget:"",
@@ -76,7 +79,7 @@ const NavBar = ({HandleSection,SectionsState}) =>{
                 justifyContent={'flex-start'}
             >
                 <Title
-                    Text={"Informacion General"}
+                    Text={"General Info"}
                     Width={'100%'}
                     FontSize={20}
                     FontColor={colors.white}

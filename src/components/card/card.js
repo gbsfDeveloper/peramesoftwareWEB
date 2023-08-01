@@ -77,7 +77,8 @@ const Card = () =>{
                         />
                     </Container>
                     <Message
-                        Text={"Ciudad de Mexico"}
+                        Text={"Mexico City"}
+                        // Text={"Ciudad de Mexico"}
                         Width={'90%'}
                         JustifyContent={'flex-start'}
                         FontSize={15}

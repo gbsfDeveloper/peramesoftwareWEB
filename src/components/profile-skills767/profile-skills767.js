@@ -43,7 +43,7 @@ const ProfileSkils = ({Display}) =>{
                 />
             </Container>
             <Message
-                TextBold={"Lenguajes de programacion: "}
+                TextBold={"Programming Languages: "}
                 Width={'90%'}
                 JustifyContent={'flex-start'}
                 FontSize={titleFontSize}
@@ -59,7 +59,7 @@ const ProfileSkils = ({Display}) =>{
             padding={`${px2vw(0)} ${px2vw(0)} ${px2vw(0)} ${px2vw(50)}`}
         >
             <Message
-                TextBold={"Lenguajes de proposito general: "}
+                TextBold={"General Purpose Languages: "}
                 Text={"Python, C++"}
                 Width={'90%'}
                 JustifyContent={'flex-start'}
@@ -76,7 +76,7 @@ const ProfileSkils = ({Display}) =>{
             padding={`${px2vw(0)} ${px2vw(0)} ${px2vw(0)} ${px2vw(50)}`}
         >
             <Message
-                TextBold={"Lenguajes Web: "}
+                TextBold={"Web Languages: "}
                 Text={"Typescript / Javascript, PHP"}
                 Width={'90%'}
                 JustifyContent={'flex-start'}
@@ -92,7 +92,7 @@ const ProfileSkils = ({Display}) =>{
             padding={`${px2vw(0)} ${px2vw(0)} ${px2vw(0)} ${px2vw(50)}`}
         >
             <Message
-                TextBold={"Tecnologias Web: "}
+                TextBold={"Web Technologies: "}
                 Text={"React JS, CSS, HTML"}
                 Width={'90%'}
                 JustifyContent={'flex-start'}
@@ -108,7 +108,7 @@ const ProfileSkils = ({Display}) =>{
             padding={`${px2vw(0)} ${px2vw(0)} ${px2vw(0)} ${px2vw(50)}`}
         >
             <Message
-                TextBold={"Frameworks y Librerias: "}
+                TextBold={"Frameworks & Libraries: "}
                 Text={"Laravel, Yii2, React JS, Flask"}
                 Width={'90%'}
                 JustifyContent={'flex-start'}
@@ -132,7 +132,7 @@ const ProfileSkils = ({Display}) =>{
                 />
             </Container>
             <Message
-                TextBold={"Bases de Datos: "}
+                TextBold={"Data Bases: "}
                 Width={'90%'}
                 JustifyContent={'flex-start'}
                 FontSize={titleFontSize}
@@ -147,7 +147,7 @@ const ProfileSkils = ({Display}) =>{
             padding={`${px2vw(0)} ${px2vw(0)} ${px2vw(0)} ${px2vw(40)}`}
         >
             <Message
-                TextBold={"Relacionales: "}
+                TextBold={"Relational: "}
                 Text={"SQL Server, MySql"}
                 Width={'90%'}
                 JustifyContent={'flex-start'}
@@ -163,7 +163,7 @@ const ProfileSkils = ({Display}) =>{
             padding={`${px2vw(0)} ${px2vw(0)} ${px2vw(0)} ${px2vw(40)}`}
         >
             <Message
-                TextBold={"No Relacionales: "}
+                TextBold={"No Relational: "}
                 Text={"Mongo DB"}
                 Width={'90%'}
                 JustifyContent={'flex-start'}
@@ -187,7 +187,7 @@ const ProfileSkils = ({Display}) =>{
                 />
             </Container>
             <Message
-                TextBold={"Servidores: "}
+                TextBold={"Servers: "}
                 Width={'90%'}
                 JustifyContent={'flex-start'}
                 FontSize={titleFontSize}
@@ -226,7 +226,7 @@ const ProfileSkils = ({Display}) =>{
                 />
             </Container>
             <Message
-                TextBold={"Tecnologias Google: "}
+                TextBold={"Google Technologies: "}
                 Width={'90%'}
                 JustifyContent={'flex-start'}
                 FontSize={titleFontSize}
@@ -265,7 +265,7 @@ const ProfileSkils = ({Display}) =>{
                 />
             </Container>
             <Message
-                TextBold={"Desarrollo de Videojuegos: "}
+                TextBold={"Videogame Development: "}
                 Width={'90%'}
                 JustifyContent={'flex-start'}
                 FontSize={titleFontSize}

@@ -9,7 +9,7 @@ const ProfileExperience = ({Display}) =>{
     return(
         <Container
             width={'100%'}
-            height={px2vw(3000)}
+            height={px2vw(3200)}
             display={Display}
             padding={`${px2vw(60)} ${px2vw(40)}`}
             bgcolor={colors.white}
@@ -39,21 +39,21 @@ const ProfileExperience = ({Display}) =>{
                 </Container>
                 <Message
                     Width={'100%'}
-                    TextBold={"Desarrollador - Typescript / PHP"}
+                    TextBold={"Back/Front Developer - Typescript / PHP"}
                     JustifyContent={'flex-start'}
                     FontSize={70}
                     Padding={`${px2vw(80)} ${px2vw(0)} ${px2vw(0)} ${px2vw(0)}`}
                 />
                 <Message
                     Width={'100%'}
-                    TextBold={"Junio 2022 - Actualmente"}
+                    TextBold={"June 2022 - Actually"}
                     JustifyContent={'flex-start'}
                     FontSize={60}
                 />
                 <Message
                     Width={'100%'}
                     TextBold={"Actividades: "}
-                    Text={"Desarrollo backend de RESTful APIs con Typescript / PHP para consumo de la aplicacion pacomax, uso de inteligencia artificial para desarrollo agil y testeo de funcionalidades del backend, implementacion de codigo reutilizable y facilmente escalable, implementacion de seguridad y proteccion de datos, conexion e integracion de Typescript y PHP con Mongodb, Integracion de IA (chatgpt 3.5) en el proyecto PacoMax. "}
+                    Text={"Backend development of RESTful APIs with Typescript / PHP for consumption of the pacomax application, use of artificial intelligence for agile development and testing of backend functionalities, implementation of reusable and easily scalable code, implementation of security and data protection, connection and integration of Typescript and PHP with Mongodb, AI integration (chatgpt 3.5) in the PacoMax project."}
                     FontSize={60}
                     TextAlign={'justify'}
                     Padding={`${px2vw(15)} ${px2vw(0)}`}
@@ -62,9 +62,10 @@ const ProfileExperience = ({Display}) =>{
 
             {/* ESPACIO */}
             <Container
-                width={'100%'}
-                height={`${px2vw(5)}`}
-                borderBottom={`1px solid ${colors.slowlycolor}`}
+                width={'95%'}
+                height={px2vw(1)}
+                margin={`${px2vw(50)} ${px2vw(0)} ${px2vw(50)} ${px2vw(0)}`}
+                bgcolor={colors.darkcolor}
             ></Container>
 
             {/* ANTERIOR EXPERIENCIA */}
@@ -91,20 +92,20 @@ const ProfileExperience = ({Display}) =>{
                 </Container>
                 <Message
                     Width={'100%'}
-                    TextBold={"Desarrollador Jr - PHP"}
+                    TextBold={"Developer Jr - PHP"}
                     JustifyContent={'flex-start'}
                     FontSize={70}
                 />
                 <Message
                     Width={'100%'}
-                    TextBold={"Febrero 2020 - Junio 2022"}
+                    TextBold={"February 2020 - June 2022"}
                     JustifyContent={'flex-start'}
                     FontSize={60}
                 />
                 <Message
                     Width={'100%'}
-                    TextBold={"Actividades: "}
-                    Text={"Desarrollo de APIs REST con el lenguaje PHP destinados a proporcionar información a  aplicaciones Android y IOS creadas con React Native, uso de base de datos SQL SERVER y MySQL. Desarrollo de aplicaciones web (backend y frontend) con el framework Yii2."}
+                    TextBold={"Activities: "}
+                    Text={"Development of REST APIs with the PHP language intended to provide information to Android and IOS applications created with React Native, use of SQL SERVER and MySQL databases. Development of web applications (backend and frontend) with the Yii2 framework."}
                     FontSize={60}
                     TextAlign={'justify'}
                     Padding={`${px2vw(15)} ${px2vw(0)}`}
@@ -113,9 +114,10 @@ const ProfileExperience = ({Display}) =>{
             
             {/* ESPACIO */}
             <Container
-                width={'100%'}
-                height={`${px2vw(5)}`}
-                borderBottom={`1px solid ${colors.slowlycolor}`}
+                width={'95%'}
+                height={px2vw(1)}
+                margin={`${px2vw(50)} ${px2vw(0)} ${px2vw(50)} ${px2vw(0)}`}
+                bgcolor={colors.darkcolor}
             ></Container>
             
             {/* ANTERIOR EXPERIENCIA */}
@@ -141,20 +143,20 @@ const ProfileExperience = ({Display}) =>{
                 </Container>
                 <Message
                     Width={'100%'}
-                    TextBold={"Desarrollador Jr - Python"}
+                    TextBold={"Developer Jr - Python"}
                     JustifyContent={'flex-start'}
                     FontSize={70}
                 />
                 <Message
                     Width={'100%'}
-                    TextBold={"Agosto 2018 - Septiembre 2019"}
+                    TextBold={"August 2018 - September 2019"}
                     JustifyContent={'flex-start'}
                     FontSize={60}
                 />
                 <Message
                     Width={'100%'}
-                    TextBold={"Actividades: "}
-                    Text={"Desarrollo de software en lenguaje Python para solución de problemas específicos, uso y Gestión de bases de datos con MONGODB, uso de ambientes y servidores virtuales LINUX (UBUNTU, CentOS) y AWS, Frameworks para diseño de aplicaciones web :FLASK (medio)."}
+                    TextBold={"Activities: "}
+                    Text={"Software development in Python language for solving specific problems, use and management of databases with MONGODB, use of LINUX environments and virtual servers (UBUNTU, CentOS) and AWS, Frameworks for web application design: FLASK."}
                     FontSize={55}
                     TextAlign={'justify'}
                     Padding={`${px2vw(15)} ${px2vw(0)}`}

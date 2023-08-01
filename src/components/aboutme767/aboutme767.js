@@ -96,7 +96,7 @@ const AboutMe = ({Display}) =>{
                     FontColor={colors.darkcolor}
                 />
                 <Message
-                    Text={"Desarrollador Backend"}
+                    Text={"Backend Developer"}
                     Width={'100%'}
                     JustifyContent={'flex-start'}
                     FontSize={70}
@@ -113,7 +113,8 @@ const AboutMe = ({Display}) =>{
             <Message
                 Width={'100%'}
                 Height={px2vw(500)}
-                Text={"Creo en el aprendizaje y en la mejora continua, además pienso firmemente que el uso de las diferentes herramientas tecnológicas y su implementación es muy importante para ahorrar tiempo y recursos en la búsqueda de soluciones a problemas tecnológicos reales."}
+                // Text={"Creo en el aprendizaje y en la mejora continua, además pienso firmemente que el uso de las diferentes herramientas tecnológicas y su implementación es muy importante para ahorrar tiempo y recursos en la búsqueda de soluciones a problemas tecnológicos reales."}
+                Text={"I believe in learning and continuous improvement, I also firmly believe that the use of different technological tools and their implementation is very important to save time and resources in the search for solutions to real technological problems."}
                 FontSize={58}
                 TextAlign={'justify'}
                 Padding={`${px2vw(50)} ${px2vw(0)} ${px2vw(0)} ${px2vw(0)}`}
@@ -121,7 +122,8 @@ const AboutMe = ({Display}) =>{
             <Message
                 Width={'100%'}
                 Height={px2vw(300)}
-                TextBold={"Tecnologias que utilizo:"}
+                // TextBold={"Tecnologias que utilizo:"}
+                TextBold={"Technologies:"}
                 FontSize={60}
                 JustifyContent={'flex-start'}
                 TextAlign={'left'}

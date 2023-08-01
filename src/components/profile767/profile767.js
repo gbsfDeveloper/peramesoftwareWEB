@@ -48,7 +48,8 @@ const DefaultProfile = ({bgColor}) =>{
                         padding={`${px2vw(20)} ${px2vw(0)}`}
                     >
                         <Message
-                            Text={"Acerca de mi"}
+                            // Text={"Acerca de mi"}
+                            Text={"About me"}
                             Width={'100%'}
                             JustifyContent={'center'}
                             FontSize={100}
@@ -72,7 +73,7 @@ const DefaultProfile = ({bgColor}) =>{
                             padding={`${px2vw(20)} ${px2vw(0)}`}
                         >
                             <Message
-                                Text={"Experiencia"}
+                                Text={"Experience"}
                                 Width={'100%'}
                                 JustifyContent={'center'}
                                 FontSize={100}

@@ -31,7 +31,7 @@ const DefaultHeader = () =>{
                 height={px2vw(70)}
             />
             <Title 
-                Text={"Curriculum Vitae"}
+                Text={"Personal Resume"}
                 Width={'75%'}
                 JustifyContent={'flex-start'}
                 FontFamily={'Fredoka One'}
