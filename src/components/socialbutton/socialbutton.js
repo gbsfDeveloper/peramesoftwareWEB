@@ -12,6 +12,7 @@ const SocialButton = styled.a.attrs(({href}) => ({
 	font-size: ${({FontSize}) => {return (FontSize !== undefined) ? px2vw(FontSize): px2vw(70)}};
     padding-left: 0.8rem;
     transition: all 0.3s;
+    color:${colors.white};
     &:visited{
         color:${colors.slowlycolor};
     }
