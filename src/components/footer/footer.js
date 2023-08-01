@@ -130,7 +130,7 @@ const DefaultFooter = () =>{
                 flexDirection={'row'}
             >
                 <OtherWorks/>
-                <EmailSender
+                {/* <EmailSender
                      InputEmailValue={InputEmail}
                      HandleEmailValue={setInputMail}
                      InputNameValue={InputName}
@@ -142,12 +142,12 @@ const DefaultFooter = () =>{
                      HandleErrorsState={setInputsErrorState}
                      IsSendingMail={LoadingStatus}
                      HandlesSendingMail={setLoadingStatus}
-                />
+                /> */}
             </Container>
-            <Modal
+            {/* <Modal
                 IsModalVisible={ShowMailModal}
                 HandleIsModalVisible={setShowMailModal}
-            />
+            /> */}
         </Footer>
     )
 }

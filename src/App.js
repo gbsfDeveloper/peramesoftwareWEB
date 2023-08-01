@@ -39,7 +39,7 @@ const App = () => {
             return <>
                 <Header/>
                 <Profile/>
-                <Footer/>
+                {/* <Footer/> */}
             </>
         }
     }
