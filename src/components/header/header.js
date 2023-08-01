@@ -1,10 +1,11 @@
 import React from 'react';
 import styled from 'styled-components';
 import colors from '../../constants/Colors';
-import Image from '../image';
+// import Image from '../image';
 import Title from '../title';
 import SocialContainer from '../socialContainer';
 import px2vw from "../../utils/px2vw";
+import Container from '../container';
 
 const Header = styled.div`
     width:100%;
@@ -20,13 +21,17 @@ const Header = styled.div`
 const DefaultHeader = () =>{
     return(
         <Header>
-            <Image
+            {/* <Image
                 Width={'10%'}
                 ImgWidth={'100'}
                 Src={process.env.PUBLIC_URL + '/imgs/logo.svg'}
+            /> */}
+            <Container 
+                width={'0%'}
+                height={px2vw(70)}
             />
             <Title 
-                Text={"PeraMe Software"}
+                Text={"Curriculum Vitae"}
                 Width={'75%'}
                 JustifyContent={'flex-start'}
                 FontFamily={'Fredoka One'}

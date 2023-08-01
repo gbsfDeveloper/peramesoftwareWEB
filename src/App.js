@@ -5,7 +5,7 @@ import Footer767 from './components/footer767';
 import Profile767 from './components/profile767';
 import Header from './components/header';
 import Profile from './components/profile';
-import Footer from './components/footer';
+// import Footer from './components/footer';
 import Global from "./styles/global";
 import styled from 'styled-components';
 
