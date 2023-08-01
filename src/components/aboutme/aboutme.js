@@ -110,8 +110,9 @@ const AboutMe = ({Display}) =>{
             <Message
                 Width={'100%'}
                 Height={px2vw(120)}
-                Text={"Hoy en día la tecnología es algo muy importante en nuestras vidas y es necesario que nos adaptemos lo mas rápido posible, por esta razón creo en el aprendizaje asi como en la mejora continua, además pienso firmemente que el uso de las diferentes herramientas tecnológicas y su implementación es muy importante para ahorrar tiempo y recursos en la búsqueda de soluciones a problemas tecnológicos reales."}
-                FontSize={15}
+                // Text={"Hoy en día la tecnología es algo muy importante en nuestras vidas y es necesario que nos adaptemos lo mas rápido posible, por esta razón creo en el aprendizaje asi como en la mejora continua, además pienso firmemente que el uso de las diferentes herramientas tecnológicas y su implementación es muy importante para ahorrar tiempo y recursos en la búsqueda de soluciones a problemas tecnológicos reales."}
+                Text={"Creo en el aprendizaje y en la mejora continua, además pienso firmemente que el uso de las diferentes herramientas tecnológicas y su implementación es muy importante para ahorrar tiempo y recursos en la búsqueda de soluciones a problemas tecnológicos reales."}
+                FontSize={16}
                 TextAlign={'justify'}
             />
             <Container
