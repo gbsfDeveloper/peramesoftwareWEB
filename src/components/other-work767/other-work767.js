@@ -9,7 +9,7 @@ const DefaultOtherWorks = ({bgColor}) =>{
     return(
         <Container
             width={'50%'}
-            height={px2vw(400)}
+            height={px2vw(500)}
             padding={`${px2vw(13)} ${px2vw(0)} ${px2vw(0)} ${px2vw(0)}`}
             flexDirection={'column'}
             justifyContent={'flex-start'}
@@ -24,7 +24,7 @@ const DefaultOtherWorks = ({bgColor}) =>{
                 />
                 <Container
                     width={'100%'}
-                    padding={`${px2vw(10)} ${px2vw(0)} ${px2vw(0)} ${px2vw(0)}`}
+                    padding={`${px2vw(50)} ${px2vw(0)} ${px2vw(0)} ${px2vw(0)}`}
                     flexDirection={'row'}
                     justifyContent={'space-around'}
                 >
@@ -42,7 +42,7 @@ const DefaultOtherWorks = ({bgColor}) =>{
                         ButtonFontColor={colors.white}
                         ButtonHoverFontColor={colors.white}
                     />
-                    <Button
+                    {/* <Button
                         Text={""}
                         Href={'https://www.hackerrank.com/gbsfgames'}
                         Width={'20vw'}
@@ -55,7 +55,7 @@ const DefaultOtherWorks = ({bgColor}) =>{
                         ButtonBgColor={colors.primary}
                         ButtonFontColor={colors.white}
                         ButtonHoverFontColor={colors.white}
-                    />
+                    /> */}
                 </Container>
         </Container>
             

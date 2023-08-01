@@ -28,7 +28,7 @@ const App = () => {
                 <Footer767/>
             </>
         }
-        else if(Width>768 && Width<1024){
+        else if(Width>767 && Width<1024){
             return <>
                 <Header767/>
                 <Profile767/>
