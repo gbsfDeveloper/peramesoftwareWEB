@@ -19,14 +19,14 @@ const Header = styled.div`
 const DefaultHeader = () =>{
     return(
         <Header>
-            <Image
+            {/* <Image
                 Width={'10vw'}
                 ImgWidth={'150'}
                 Src={process.env.PUBLIC_URL + '/imgs/logo.svg'}
-            />
+            /> */}
             <Title 
-                Text={"PeraMe Software"}
-                Width={'70vw'}
+                Text={"Curriculum Vitae"}
+                Width={'80vw'}
                 Padding={`${px2vw(0)} ${px2vw(0)} ${px2vw(0)} ${px2vw(20)}`}
                 JustifyContent={'flex-start'}
                 FontFamily={'Fredoka One'}
