@@ -1,4 +1,4 @@
-# Personal Portfolio
+# Personal Portfolio Web
 
 ![React](https://img.shields.io/badge/React-18.2.0-blue)
 ![Node.js](https://img.shields.io/badge/Node.js-16+-green)
@@ -20,10 +20,12 @@ Before starting, make sure you have the following installed on your system:
 - **Node.js** (version 16 or higher)
 - **npm** (usually included with Node.js)
 
-### Verify installation
+### Installation
 
 Open your terminal and run:
 
 ```bash
-node --version
-npm --version
+npm install
+
+```bash
+npm run start
