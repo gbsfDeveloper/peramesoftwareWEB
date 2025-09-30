@@ -20,7 +20,7 @@ Before starting, make sure you have the following installed on your system:
 - **Node.js** (version 16 or higher)
 - **npm** (usually included with Node.js)
 
-### Installation
+### Running the project locally:
 
 Open your terminal and run:
 
