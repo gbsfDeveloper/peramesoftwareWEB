@@ -25,7 +25,7 @@ Before starting, make sure you have the following installed on your system:
 Open your terminal and run:
 
 ```bash
-npm dasd
+npm install
 ```
 
 Then run:
