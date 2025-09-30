@@ -1,28 +1,28 @@
-# Portafolio Personal
+# Personal Portfolio
 
 ![React](https://img.shields.io/badge/React-18.2.0-blue)
 ![Node.js](https://img.shields.io/badge/Node.js-16+-green)
 ![License](https://img.shields.io/badge/License-MIT-yellow)
 
-Portafolio personal desarrollado con React.js que algunos de mis proyectos, habilidades y experiencia como desarrollador de software.
+Personal portfolio developed with React.js showcasing some of my projects, skills, and experience as a software developer.
 
-## 🚀 Características
+## 🚀 Features
 
-- Diseño moderno y responsive
-- Secciones: Inicio, Sobre mí, Proyectos, Habilidades, Contacto
-- Diseño optimizado para móviles
-- Animaciones y transiciones
+- Modern and responsive design
+- Sections: Home, About Me, Projects, Skills, Contact
+- Mobile-optimized design
+- Animations and transitions
 
-## 📋 Prerrequisitos
+## 📋 Prerequisites
 
-Es necesario tener instalado en tu sistema lo siguiente:
+Before starting, make sure you have the following installed on your system:
 
-- **Node.js** (versión 16 o superior)
-- **npm** (generalmente viene incluido con Node.js)
+- **Node.js** (version 16 or higher)
+- **npm** (usually included with Node.js)
 
-### Verificar instalación
+### Verify installation
 
-Abre tu terminal y ejecuta:
+Open your terminal and run:
 
 ```bash
 node --version
