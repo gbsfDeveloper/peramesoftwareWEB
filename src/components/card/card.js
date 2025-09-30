@@ -95,28 +95,6 @@ const Card = () =>{
                         width={'5%'}
                     >
                         <Icon 
-                            Class={'fas fa-mobile-alt'}
-                            FontSize={15}
-                        />
-                    </Container>
-                    <Message
-                        Text={"914 114 18 95"}
-                        Width={'90%'}
-                        JustifyContent={'flex-start'}
-                        FontSize={15}
-                        FontColor={colors.white}
-                    />
-                </Container>
-                <Container
-                    width={'100%'}
-                    height={px2vw(30)}
-                    flexDirection={'row'}
-                    alignItems={'center'}
-                >
-                    <Container
-                        width={'5%'}
-                    >
-                        <Icon 
                             Class={'fas fa-envelope-open-text'}
                             FontSize={15}
                         />
