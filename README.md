@@ -25,7 +25,10 @@ Before starting, make sure you have the following installed on your system:
 Open your terminal and run:
 
 ```bash
-npm install
+npm dasd
+```
+
+Then run:
 
 ```bash
 npm run start
