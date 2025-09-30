@@ -51,7 +51,7 @@ const ProfileExperience = ({Display}) =>{
                 <Message
                     Width={'100%'}
                     // TextBold={"Junio 2022 - Actualmente"}
-                    TextBold={"June 2022 - Actually"}
+                    TextBold={"June 2022 - February 2024"}
                     JustifyContent={'flex-start'}
                     FontSize={16}
                 />
