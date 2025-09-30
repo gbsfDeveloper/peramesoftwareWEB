@@ -96,7 +96,7 @@ const AboutMe = ({Display}) =>{
                     FontColor={colors.darkcolor}
                 />
                 <Message
-                    Text={"Backend Developer"}
+                    Text={"Backend & Frontend Developer"}
                     Width={'100%'}
                     JustifyContent={'flex-start'}
                     FontSize={70}
