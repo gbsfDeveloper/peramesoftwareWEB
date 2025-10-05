@@ -16,10 +16,11 @@ jobs:
         with: 
           node-version: '21.7.1'
           
-      - name: Installing dependencies and running build
-        run:
-          npm install
-          npm run build
+      - name: Installing dependencies
+        run: npm install
+          
+      - name: Building the project
+        run: npm run build
 
       - name: Deploy app
         uses: SamKirkland/FTP-Deploy-Action@v4.3.6
