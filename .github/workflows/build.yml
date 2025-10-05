@@ -1,0 +1,35 @@
+name: buildProject
+on: 
+  push:
+    branches: [ master ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Repo
+        uses: actions/checkout@v5
+        
+      - name: Setup Node
+        uses: actions/setup-node@v5
+        with: 
+          node-version: '21.7.1'
+          
+      - name: Installing dependencies
+        run: npm install
+          
+      - name: Building the project
+        run: npm run build
+
+      - name: Deploy app
+        uses: SamKirkland/FTP-Deploy-Action@v4.3.6
+        with:
+          server: ${{ secrets.FTP_HOST }}
+          username: ${{ secrets.FTP_USERNAME }}
+          password: ${{ secrets.FTP_PASSWORD }}
+          local-dir: build/
+          server-dir: public_html/
+
+
+          
