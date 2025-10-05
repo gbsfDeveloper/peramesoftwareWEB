@@ -36,9 +36,9 @@ const DefaultProfile = ({bgColor}) =>{
     let {Width} = useViewport();
     const [SectionsState,setSectionsState] = useState(Sections);
     
-    useEffect(() => { 
-        return SectionsState;
-    },[]);
+    // useEffect(() => { 
+    //     return SectionsState;
+    // },[]);
 
     const handleSection = (name) =>{
         switch (name) {
