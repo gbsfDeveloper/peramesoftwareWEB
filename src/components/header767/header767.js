@@ -1,7 +1,5 @@
-import React from 'react';
 import styled from 'styled-components';
 import colors from '../../constants/Colors';
-import Image from '../image';
 import Title from '../title';
 import SocialContainer from '../socialContainer';
 import px2vw from "../../utils/px2vw";
