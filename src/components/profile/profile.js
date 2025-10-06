@@ -1,4 +1,4 @@
-import React,{useState,useEffect} from 'react';
+import {useState} from 'react';
 import useViewport from '../../hooks/useViewport';
 import styled from 'styled-components';
 import colors from '../../constants/Colors';
@@ -35,10 +35,6 @@ const DefaultProfile = ({bgColor}) =>{
 
     let {Width} = useViewport();
     const [SectionsState,setSectionsState] = useState(Sections);
-    
-    // useEffect(() => { 
-    //     return SectionsState;
-    // },[]);
 
     const handleSection = (name) =>{
         switch (name) {
