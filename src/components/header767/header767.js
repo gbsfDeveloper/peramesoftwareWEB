@@ -23,7 +23,7 @@ const DefaultHeader = () =>{
                 Src={process.env.PUBLIC_URL + '/imgs/logo.svg'}
             /> */}
             <Title 
-                Text={"Personal Resume"}
+                Text={"Personal Resume *"}
                 Width={'80vw'}
                 Padding={`${px2vw(0)} ${px2vw(0)} ${px2vw(0)} ${px2vw(20)}`}
                 JustifyContent={'flex-start'}

@@ -20,7 +20,7 @@ const Main = styled.div`
 `
 const App = () => {
     let {Width} = useViewport();
-    const reponsiveDesign = () => {
+    const ReponsiveContainer = () => {
         if(Width<767){
             return <>
                 <Header767/>
@@ -47,7 +47,7 @@ const App = () => {
     return (
         <Main>
             <Global/>
-            {reponsiveDesign()}
+            <ReponsiveContainer/>
         </Main>
     )
 }
